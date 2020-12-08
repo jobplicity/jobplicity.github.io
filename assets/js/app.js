@@ -141,6 +141,13 @@ var app = new Vue({
 
   mounted() {
     $(window).scroll(function () {
+      console.log($(window).scrollTop() + $(window).innerHeight());
+
+      if ($(window).scrollTop() + $(window).innerHeight() * 0.5 > $(".testimonial").offset().top) {
+        $(".testimonial").addClass("init");
+      } else {
+        $(".testimonial").removeClass("init");
+      }
       if ($(window).innerWidth() > 1023) {
         $(window).scrollTop() > $(".main").offset().top - 20 ? $("header, .header-search-box").fadeIn(300) : $("header, .header-search-box").fadeOut(300);
       }
