@@ -346,7 +346,7 @@ footer a:hover { text-decoration: underline; }
 
 .testimonial .avatar { position: relative; overflow: hidden; width: 100%; padding-bottom: 100%; -webkit-box-shadow: -30px 10px 100px rgba(0, 0, 0, 0.2); box-shadow: -30px 10px 100px rgba(0, 0, 0, 0.2); border-radius: 50%; }
 
-.testimonial .avatar img { position: absolute; top: 0; left: 0; width: 100%; display: block; }
+.testimonial .avatar img { position: absolute; top: 0; left: 0; width: 100%; display: block; -webkit-filter: grayscale(1); filter: grayscale(1); -webkit-transition: all 4s; transition: all 4s; }
 
 .testimonial .btn-submit { display: inline-block; margin-top: 30px; -webkit-transform: translate(0, 50px); transform: translate(0, 50px); -webkit-transition: 0.7s all 0.4s; transition: 0.7s all 0.4s; opacity: 0; }
 
@@ -355,6 +355,8 @@ footer a:hover { text-decoration: underline; }
 .testimonial .btn-submit:hover:before { margin-right: 30px; }
 
 .testimonial.init .row .col { -webkit-transform: translate(0, 0); transform: translate(0, 0); opacity: 1; }
+
+.testimonial.init .avatar img { -webkit-filter: grayscale(0); filter: grayscale(0); }
 
 .testimonial.init .btn-submit { -webkit-transform: translate(0, 0); transform: translate(0, 0); opacity: 1; }
 
