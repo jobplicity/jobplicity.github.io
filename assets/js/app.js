@@ -151,6 +151,13 @@ var app = new Vue({
       if ($(window).innerWidth() > 1023) {
         $(window).scrollTop() > $(".main").offset().top - 20 ? $("header, .header-search-box").fadeIn(300) : $("header, .header-search-box").fadeOut(300);
       }
+      $.each($(".how-item"), function () {
+        if ($(window).scrollTop() + $(window).innerHeight() * 0.8 > $(this).offset().top) {
+          $(this).addClass("init");
+        } else {
+          $(this).removeClass("init");
+        }
+      });
     });
 
     let typed = new Typed(".typed", {
