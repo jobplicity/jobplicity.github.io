@@ -25,7 +25,20 @@ body {
 ::selection {
   background-color: #ddd;
 }
+#canvas, canvas {
+   
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  clip-path: polygon(0 0, 100% 0%, 100% 20%, 0 57%);
 
+  @include down-md() {
+    opacity: 0.5;
+  }
+}
 a {
   color: inherit;
   text-decoration: none;
@@ -36,6 +49,7 @@ a {
   max-width: 1600px;
   width: 100%;
   margin: auto;
+  z-index: -10;
   @include down-md() {
     padding-left: 50px;
     padding-right: 50px;
@@ -56,7 +70,7 @@ header {
   height: 110px;
   z-index: 100;
 
-  display: none;
+  
   @include down-md() {
     display: block;
     height: auto;
@@ -158,75 +172,7 @@ header {
     }
   }
 }
-.intro {
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  align-items: center;
-  background: #f8f8f8;
-  position: relative;
-  .intro-login-btn {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    color: #bc9ce5;
-    font: 600 16px/24px "Titillium Web";
-    letter-spacing: 3.36px;
-    text-transform: uppercase;
-    display: flex;
-    align-items: center;
-    img {
-      margin-right: 10px;
-      width: 20px;
-    }
-  }
-  h1 {
-    text-align: center;
-    font: 600 70px/106px "Titillium Web";
-    color: #000;
-    margin-bottom: 10px;
-    margin-top: 0;
-    @include down-sm() {
-      font: 600 40px/60px "Titillium Web";
-    }
-  }
-  .tw {
-    p {
-      margin: 0;
-      text-align: center;
-      font: 300 30px/46px "Titillium Web";
-      letter-spacing: 1.8px;
-      color: #919191;
-      @include down-sm() {
-        font: 300 22px/36px "Titillium Web";
-      }
-    }
-  }
-  #scroll {
-    position: absolute;
-    bottom: 20px;
-    left: 0;
-    right: 0;
-    margin: auto;
-    text-align: center;
-    span {
-      display: block;
-      margin-bottom: 15px;
-      text-align: center;
-      font: 700 24px/36px "Titillium Web";
-      letter-spacing: 4.2px;
-      color: #bc9ce5;
-      @include down-sm() {
-        font: 600 16px/28px "Titillium Web";
-        letter-spacing: 2px;
-      }
-    }
-    svg {
-      animation: 1s bounce 1s infinite forwards;
-    }
-  }
-}
+
 
 @keyframes bounce {
   0% {
@@ -349,6 +295,29 @@ header {
       }
     }
   }
+  // #scroll {
+  //   position: absolute;
+  //   bottom: 20px;
+  //   left: 0;
+  //   right: 0;
+  //   margin: auto;
+  //   text-align: center;
+  //   span {
+  //     display: block;
+  //     margin-bottom: 15px;
+  //     text-align: center;
+  //     font: 700 24px/36px "Titillium Web";
+  //     letter-spacing: 4.2px;
+  //     color: #bc9ce5;
+  //     @include down-sm() {
+  //       font: 600 16px/28px "Titillium Web";
+  //       letter-spacing: 2px;
+  //     }
+  //   }
+  //   svg {
+  //     animation: 1s bounce 1s infinite forwards;
+  //   }
+  // }
 }
 
 .about {
@@ -977,15 +946,8 @@ footer {
   position: relative;
   overflow: hidden;
   height: 100vh;
-  canvas {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    z-index: 1;
-    @include down-md() {
-      opacity: 0.5;
-    }
-  }
+  
+  
 }
 .hidden-xs {
   @include down-md() {
@@ -1236,38 +1198,7 @@ https://mamoyz.com/ */
       }
     }
   }
-  .intro {
-    .intro-login-btn {
-      top: 1.04vw;
-      right: 1.04vw;
-      font: 600 0.83vw/1.25vw "Titillium Web";
-      letter-spacing: 0.18vw;
-      img {
-        margin-right: 0.52vw;
-        width: 1.04vw;
-      }
-    }
-    h1 {
-      font: 600 3.65vw/5.52vw "Titillium Web";
-      margin-bottom: 0.52vw;
-    }
-    .tw {
-      p {
-        font: 300 1.56vw/2.4vw "Titillium Web";
-        letter-spacing: 0.09vw;
-      }
-    }
-    #scroll {
-      bottom: 1.04vw;
-      span {
-        margin-bottom: 0.78vw;
-        font: 600 1.2vw/1.61vw "Titillium Web";
-        letter-spacing: 0.22vw;
-      }
-      svg {
-      }
-    }
-  }
+  
 
   @keyframes bounce {
     0% {
@@ -1316,6 +1247,16 @@ https://mamoyz.com/ */
         letter-spacing: 0.03vw;
       }
     }
+    // #scroll {
+    //   bottom: 1.04vw;
+    //   span {
+    //     margin-bottom: 0.78vw;
+    //     font: 600 1.2vw/1.61vw "Titillium Web";
+    //     letter-spacing: 0.22vw;
+    //   }
+    //   svg {
+    //   }
+    // }
   }
 
   .about {
