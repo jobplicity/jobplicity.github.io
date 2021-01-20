@@ -141,7 +141,7 @@ var app = new Vue({
 
   mounted() {
     $(window).scroll(function () {
-      console.log($(window).scrollTop() + $(window).innerHeight());
+      // console.log($(window).scrollTop() + $(window).innerHeight());
 
       if ($(window).scrollTop() + $(window).innerHeight() * 0.5 > $(".testimonial").offset().top) {
         $(".testimonial").addClass("init");
@@ -159,6 +159,5 @@ var app = new Vue({
         }
       });
     });
-
   },
 });

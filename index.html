@@ -11,7 +11,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>JobLaunch</title>
     <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300;400;600;700&display=swap" rel="stylesheet" />
-    <link href="assets/css/particles.css" rel="stylesheet" />
     <link href="assets/css/app.css" rel="stylesheet" />
     <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png" />
     <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png" />
@@ -77,9 +76,9 @@
         </div>
       </header>
      
-      <section id="particles-js" class="main">
+      <section class="main">
         
-
+        <div id="canvas"></div>
         
         <div class="container" >
           
@@ -408,7 +407,7 @@
      
       const renderer = new THREE.WebGLRenderer();
       renderer.setSize( window.innerWidth, window.innerHeight );
-      document.body.appendChild( renderer.domElement )
+      document.getElementById("canvas").appendChild( renderer.domElement )
       
       const scene = new THREE.Scene();
       const camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 0.1, 1000 );
@@ -434,10 +433,10 @@
       let geometry = new THREE.PlaneGeometry(window.innerWidth / 2, 400, 100, 100);
       let material = new THREE.ShaderMaterial({
           uniforms: {
-              u_bg: {type: 'v3', value: rgb(255, 202, 87)},
-              u_bgMain: {type: 'v3', value: rgb(251, 38, 70)},
-              u_color1: {type: 'v3', value: rgb(171, 91, 235)},
-              u_color2: {type: 'v3', value: rgb(169, 192, 217)},
+              u_bg: {type: 'v3', value:rgb(169, 86, 237)},
+              u_color2: {type: 'v3', value:rgb(228,202 ,128)},
+              u_bgMain: {type: 'v3', value:rgb(251 ,180, 89)},
+              u_color1: {type: 'v3', value: rgb(228,202 ,128)},
               u_time: {type: 'f', value: 0},
               u_randomisePosition: { type: 'v2', value: randomisePosition }
           },

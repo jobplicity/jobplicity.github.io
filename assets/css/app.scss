@@ -21,24 +21,12 @@ body {
   font-weight: 300;
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 ::selection {
   background-color: #ddd;
 }
-#canvas, canvas {
-   
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 10;
-  clip-path: polygon(0 0, 100% 0%, 100% 20%, 0 57%);
 
-  @include down-md() {
-    opacity: 0.5;
-  }
-}
 a {
   color: inherit;
   text-decoration: none;
@@ -70,7 +58,6 @@ header {
   height: 110px;
   z-index: 100;
 
-  
   @include down-md() {
     display: block;
     height: auto;
@@ -173,7 +160,6 @@ header {
   }
 }
 
-
 @keyframes bounce {
   0% {
     transform: translate(0, 0);
@@ -212,12 +198,33 @@ header {
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  position: relative;
+
+  #canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 4;
+    clip-path: polygon(0 0, 100% 0%, 100% 20%, 0 100%);
+    @include down-md() {
+      clip-path: none;
+    }
+    canvas {
+      width: 100% !important;
+      height: 100% !important;
+      @include down-md() {
+        opacity: 0.5;
+      }
+    }
+  }
   @include down-md() {
     justify-content: center;
   }
   @include down-sm() {
-    height: auto;
-    padding-top: 50px;
+    padding-top: 150px;
+    padding-bottom: 50px;
   }
   .container {
     display: flex;
@@ -237,7 +244,8 @@ header {
   h2 {
     text-align: left;
     font: 600 75px/90px "Titillium Web";
-    color: #000000;
+    color: #000;
+    // text-shadow: 1px 5px 12px #0000002b;
     margin-top: 0;
     margin-bottom: 50px;
     @include down-md() {
@@ -255,6 +263,8 @@ header {
     letter-spacing: 0.75px;
     margin-top: 0;
     margin-bottom: 75px;
+    // text-shadow: 1px 5px 12px #0000002b;
+    // color: #fff;
     @include down-md() {
       margin-bottom: 40px;
       text-align: center;
@@ -265,7 +275,7 @@ header {
   }
   .signup-form {
     background: #ffffff;
-    box-shadow: 0 0 40px #0000001a;
+    box-shadow: 8px 8px 100px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
     opacity: 1;
     padding: 30px;
@@ -946,8 +956,6 @@ footer {
   position: relative;
   overflow: hidden;
   height: 100vh;
-  
-  
 }
 .hidden-xs {
   @include down-md() {
@@ -990,8 +998,8 @@ footer {
       @include down-sm {
         flex: auto;
         &:first-child {
-          height: 90%;
-          width: 90%;
+          height: 80%;
+          width: 80%;
           padding-right: 0;
           margin-bottom: 30px;
         }
@@ -1027,6 +1035,7 @@ footer {
     padding-bottom: 100%;
     box-shadow: -30px 10px 100px rgba(0, 0, 0, 0.2);
     border-radius: 50%;
+
     img {
       position: absolute;
       top: 0;
@@ -1198,7 +1207,6 @@ https://mamoyz.com/ */
       }
     }
   }
-  
 
   @keyframes bounce {
     0% {
