@@ -92,6 +92,12 @@ header {
     }
     #logo {
       margin-right: 40px;
+      display: flex;
+      svg {
+        width: 30px;
+        height: 30px;
+        margin-right: 10px;
+      }
       span {
         font: 600 24px/24px "Titillium Web";
         font-style: italic;
@@ -1212,6 +1218,11 @@ https://mamoyz.com/ */
       padding-right: 2.6vw;
       #logo {
         margin-right: 2.08vw;
+        svg {
+          width: 1.56vw;
+          height: 1.56vw;
+          margin-right: 0.52vw;
+        }
         span {
           font: 600 1.25vw/1.25vw "Titillium Web";
           letter-spacing: 0.1vw;
