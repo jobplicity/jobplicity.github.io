@@ -230,6 +230,7 @@ header {
       }
     }
   }
+
   @include down-md() {
     justify-content: center;
   }
@@ -741,27 +742,72 @@ header {
   padding-top: 100px;
   padding-bottom: 100px;
   color: #fff;
-  background: #494949;
+  background: #fff;
   text-align: center;
+  position: relative;
+  #gradient-canvas-bottom {
+    transform: scaleX(-1);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 4;
+    clip-path: polygon(0 0, 100% 0%, 100% 25%, 0 55%);
+    --gradient-color-4: #ef008f;
+    --gradient-color-3: #6ec3f4;
+    --gradient-color-2: #7038ff;
+    --gradient-color-1: #ffba27;
+    @include down-md() {
+      clip-path: none;
+    }
+    canvas {
+      width: 100% !important;
+      height: 100% !important;
+      @include down-md() {
+        opacity: 0.5;
+      }
+    }
+  }
+  .container {
+    position: relative;
+    z-index: 5;
+  }
   h2 {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 40%;
     @extend .sec-title;
-    margin-bottom: 50px;
+    margin-top: 140px;
+    margin-bottom: 40px;
+    color: rgba(0, 0, 0, 0.7);
+    font-weight: bold;
+    @include down-md() {
+      font-weight: bold !important;
+      max-width: 100%;
+      margin: 0 0 20px 0;
+      color: #fff;
+    }
   }
   h3 {
     text-align: center;
     font: 300 25px/51px "Titillium Web";
     letter-spacing: 0.75px;
-    color: #ffffff;
+    color: #000;
     opacity: 1;
     margin-top: 0;
     margin-bottom: 20px;
     @include down-sm() {
       font: 300 18px/30px "Titillium Web";
     }
+    @include down-md() {
+      font-weight: 400;
+      color: #fff;
+    }
   }
   .signup-form {
     opacity: 1;
-    padding: 30px;
+    padding: 0 30px 30px 30px;
     form {
       display: flex;
       flex-direction: column;
@@ -772,21 +818,28 @@ header {
       height: 70px;
       -webkit-appearance: none;
       border: none;
-      border-bottom: 3px solid rgba(#ffffff, 0.18);
+      border-bottom: 3px solid rgba(#e0d1f3, 1);
       flex: auto;
       outline: 0;
       font: 200 22px/34px Titillium Web;
       letter-spacing: 0.66px;
-      color: #fff;
+      color: #000;
       background: transparent;
       min-width: 500px;
       text-align: center;
       margin-bottom: 40px;
+      @include down-md() {
+        color: #fff;
+        border-color: #fff;
+      }
       @include down-sm() {
         min-width: 100%;
       }
       &::placeholder {
-        color: #fff;
+        color: #000;
+        @include down-md() {
+          color: #fff;
+        }
       }
     }
   }
@@ -1461,27 +1514,27 @@ https://mamoyz.com/ */
   .signup {
     padding-top: 5.21vw;
     padding-bottom: 5.21vw;
+
     h2 {
-      margin-bottom: 2.6vw;
+      margin-top: 7.29vw;
+      margin-bottom: 2.08vw;
+      font-weight: bold;
     }
     h3 {
       font: 300 1.3vw/2.66vw "Titillium Web";
-      letter-spacing: 0.04vw;
+      letter-spacing: 1px;
       margin-bottom: 1.04vw;
     }
     .signup-form {
-      padding: 1.56vw;
-      form {
-      }
+      padding: 0 1.56vw 1.56vw 1.56vw;
+
       input {
         height: 3.65vw;
-        border-bottom: 0.16vw solid rgba(#ffffff, 0.18);
+        border-bottom: 0.16vw solid rgba(#e0d1f3, 1);
         font: 200 1.15vw/1.77vw Titillium Web;
-        letter-spacing: 0.03vw;
+        letter-spacing: 1px;
         min-width: 26.04vw;
         margin-bottom: 2.08vw;
-        &::placeholder {
-        }
       }
     }
   }

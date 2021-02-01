@@ -282,29 +282,47 @@ header .header-wrapper .header-cta:hover { background: #000; color: #fff; }
 
 @media (max-width: 767px) { .sec-how-it-works .how-items-container .how-item .content p { font: 300 20px/36px "Titillium Web"; } }
 
-.signup { padding-top: 100px; padding-bottom: 100px; color: #fff; background: #494949; text-align: center; }
+.signup { padding-top: 100px; padding-bottom: 100px; color: #fff; background: #fff; text-align: center; position: relative; }
 
-.signup h2 { margin-bottom: 50px; }
+.signup #gradient-canvas-bottom { -webkit-transform: scaleX(-1); transform: scaleX(-1); position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 4; -webkit-clip-path: polygon(0 0, 100% 0%, 100% 25%, 0 55%); clip-path: polygon(0 0, 100% 0%, 100% 25%, 0 55%); --gradient-color-4: #ef008f; --gradient-color-3: #6ec3f4; --gradient-color-2: #7038ff; --gradient-color-1: #ffba27; }
 
-.signup h3 { text-align: center; font: 300 25px/51px "Titillium Web"; letter-spacing: 0.75px; color: #ffffff; opacity: 1; margin-top: 0; margin-bottom: 20px; }
+@media (max-width: 1023px) { .signup #gradient-canvas-bottom { -webkit-clip-path: none; clip-path: none; } }
+
+.signup #gradient-canvas-bottom canvas { width: 100% !important; height: 100% !important; }
+
+@media (max-width: 1023px) { .signup #gradient-canvas-bottom canvas { opacity: 0.5; } }
+
+.signup .container { position: relative; z-index: 5; }
+
+.signup h2 { margin-left: auto; margin-right: auto; max-width: 40%; margin-top: 140px; margin-bottom: 40px; color: rgba(0, 0, 0, 0.7); font-weight: bold; }
+
+@media (max-width: 1023px) { .signup h2 { font-weight: bold !important; max-width: 100%; margin: 0 0 20px 0; color: #fff; } }
+
+.signup h3 { text-align: center; font: 300 25px/51px "Titillium Web"; letter-spacing: 0.75px; color: #000; opacity: 1; margin-top: 0; margin-bottom: 20px; }
 
 @media (max-width: 767px) { .signup h3 { font: 300 18px/30px "Titillium Web"; } }
 
-.signup .signup-form { opacity: 1; padding: 30px; }
+@media (max-width: 1023px) { .signup h3 { font-weight: 400; color: #fff; } }
+
+.signup .signup-form { opacity: 1; padding: 0 30px 30px 30px; }
 
 .signup .signup-form form { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: start; -ms-flex-pack: start; justify-content: flex-start; }
 
-.signup .signup-form input { height: 70px; -webkit-appearance: none; border: none; border-bottom: 3px solid rgba(255, 255, 255, 0.18); -webkit-box-flex: 1; -ms-flex: auto; flex: auto; outline: 0; font: 200 22px/34px Titillium Web; letter-spacing: 0.66px; color: #fff; background: transparent; min-width: 500px; text-align: center; margin-bottom: 40px; }
+.signup .signup-form input { height: 70px; -webkit-appearance: none; border: none; border-bottom: 3px solid #e0d1f3; -webkit-box-flex: 1; -ms-flex: auto; flex: auto; outline: 0; font: 200 22px/34px Titillium Web; letter-spacing: 0.66px; color: #000; background: transparent; min-width: 500px; text-align: center; margin-bottom: 40px; }
+
+@media (max-width: 1023px) { .signup .signup-form input { color: #fff; border-color: #fff; } }
 
 @media (max-width: 767px) { .signup .signup-form input { min-width: 100%; } }
 
-.signup .signup-form input::-webkit-input-placeholder { color: #fff; }
+.signup .signup-form input::-webkit-input-placeholder { color: #000; }
 
-.signup .signup-form input:-ms-input-placeholder { color: #fff; }
+.signup .signup-form input:-ms-input-placeholder { color: #000; }
 
-.signup .signup-form input::-ms-input-placeholder { color: #fff; }
+.signup .signup-form input::-ms-input-placeholder { color: #000; }
 
-.signup .signup-form input::placeholder { color: #fff; }
+.signup .signup-form input::placeholder { color: #000; }
+
+@media (max-width: 1023px) { .signup .signup-form input::-webkit-input-placeholder { color: #fff; } .signup .signup-form input:-ms-input-placeholder { color: #fff; } .signup .signup-form input::-ms-input-placeholder { color: #fff; } .signup .signup-form input::placeholder { color: #fff; } }
 
 footer { background: #414141; padding: 50px 0; text-align: center; font: 300 18px/42px "Titillium Web"; letter-spacing: 0.54px; color: #ffffff; opacity: 1; }
 
@@ -492,10 +510,10 @@ https://mamoyz.com/ */
   .sec-how-it-works .how-items-container .how-item .content h3 { font: 400 2.08vw/3.91vw "Titillium Web"; }
   .sec-how-it-works .how-items-container .how-item .content p { font: 300 1.25vw/1.88vw "Titillium Web"; }
   .signup { padding-top: 5.21vw; padding-bottom: 5.21vw; }
-  .signup h2 { margin-bottom: 2.6vw; }
-  .signup h3 { font: 300 1.3vw/2.66vw "Titillium Web"; letter-spacing: 0.04vw; margin-bottom: 1.04vw; }
-  .signup .signup-form { padding: 1.56vw; }
-  .signup .signup-form input { height: 3.65vw; border-bottom: 0.16vw solid rgba(255, 255, 255, 0.18); font: 200 1.15vw/1.77vw Titillium Web; letter-spacing: 0.03vw; min-width: 26.04vw; margin-bottom: 2.08vw; }
+  .signup h2 { margin-top: 7.29vw; margin-bottom: 2.08vw; font-weight: bold; }
+  .signup h3 { font: 300 1.3vw/2.66vw "Titillium Web"; letter-spacing: 1px; margin-bottom: 1.04vw; }
+  .signup .signup-form { padding: 0 1.56vw 1.56vw 1.56vw; }
+  .signup .signup-form input { height: 3.65vw; border-bottom: 0.16vw solid #e0d1f3; font: 200 1.15vw/1.77vw Titillium Web; letter-spacing: 1px; min-width: 26.04vw; margin-bottom: 2.08vw; }
   footer { padding: 2.6vw 0; font: 300 0.94vw/2.19vw "Titillium Web"; letter-spacing: 0.03vw; }
   .search-box { border-radius: 0.52vw; left: 10.94vw; width: 31.25vw; max-height: 5.73vw; }
   .search-box .search-box-wrapper { padding-left: 1.56vw; padding-right: 1.56vw; }

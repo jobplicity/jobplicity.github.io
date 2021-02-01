@@ -274,6 +274,12 @@
         </div>
       </section>
       <section class="signup" id="create-an-account">
+        <canvas id="gradient-canvas-bottom"  data-transition-in>
+          <!--
+            Remove data-js-darken-top to keep the same brightness in the upper part of the canvas
+          -->
+        </canvas>
+
         <div class="container">
           <h2>Automate applying for jobs today!</h2>
           <h3>
@@ -835,7 +841,9 @@ class Gradient {
 * Gradient.updateFrequency(freq)
 */
 var gradient = new Gradient();
+var gradient2 = new Gradient();
     gradient.initGradient("#gradient-canvas");
+    gradient2.initGradient("#gradient-canvas-bottom");
     </script>
     <noscript>
       <img height="1" width="1" style="display:none;" alt="" src="https://px.ads.linkedin.com/collect/?pid=2835708&fmt=gif" />
