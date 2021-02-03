@@ -57,7 +57,7 @@
             </a>
             <ul class="mobile-menu">
               <li>
-                <a href="https://paul088929.typeform.com/to/TCmMqaIe">
+                <a href="https://21y0ke6detk.typeform.com/to/biELOUxe">
                   <img src="assets/img/login.svg" alt="" />
                 </a>
               </li>
@@ -78,7 +78,7 @@
                 <a @click.prevent="slideToSection(3)" href="#how-it-works">HOW IT WORKS</a>
               </li>
               <li>
-                <a href="https://paul088929.typeform.com/to/TCmMqaIe" id="login">
+                <a href="https://21y0ke6detk.typeform.com/to/biELOUxe" id="login">
                   <img src="assets/img/login.svg" alt="" />
                   <span>LOGIN</span>
                 </a>
@@ -86,21 +86,21 @@
             </ul>
           </div>
           <div>
-            <a href="https://paul088929.typeform.com/to/TCmMqaIe" class="header-cta hidden-xs">CREATE AN ACCOUNT</a>
+            <a href="https://21y0ke6detk.typeform.com/to/biELOUxe" class="header-cta hidden-xs">CREATE AN ACCOUNT</a>
           </div>
         </div>
       </header>
-     
+
       <section class="main">
-        
+
         <canvas id="gradient-canvas"  data-transition-in>
           <!--
             Remove data-js-darken-top to keep the same brightness in the upper part of the canvas
           -->
         </canvas>
-        
+
         <div class="container" >
-          
+
           <div class="col-6">
             <div class="h2">
               <h2>Discover & apply for your dream job. Automatically.</h2><h2>Discover & apply for your dream job. Automatically.</h2>
@@ -118,13 +118,13 @@
             <div class="signup-form">
               <form>
                 <input type="email" name="email" id="email" placeholder="Enter your email & Get JobLaunch for free" />
-                <a class="btn-submit" href="https://paul088929.typeform.com/to/TCmMqaIe">create an account</a>
+                <a class="btn-submit" href="https://21y0ke6detk.typeform.com/to/biELOUxe">create an account</a>
               </form>
             </div>
-         
-        
+
+
         </div>
-      
+
          <div class="col-6">
             <div class="hero-img">
               <img src="assets/img/hero.svg" alt="">
@@ -290,7 +290,7 @@
           <div class="signup-form">
             <form>
               <input type="email" name="email" id="email" placeholder="Enter your email & Get JobLaunch for free" />
-              <a class="btn-submit" href="https://paul088929.typeform.com/to/TCmMqaIe">create an account</a>
+              <a class="btn-submit" href="https://21y0ke6detk.typeform.com/to/biELOUxe">create an account</a>
             </form>
           </div>
         </div>
@@ -320,11 +320,11 @@
     <!-- <script src="assets/js/particles.js"></script> -->
     <script src="assets/js/app.js"></script>
     <script>
-      
+
 /*
 *   Stripe WebGl Gradient Animation
 *   All Credits to Stripe.com
-*   ScrollObserver functionality to disable animation when not scrolled into view has been disabled and 
+*   ScrollObserver functionality to disable animation when not scrolled into view has been disabled and
 *   commented out for now.
 *   https://kevinhufnagl.com
 */
@@ -424,15 +424,15 @@ class MiniGl {
                           if ("array" === uniform.type) return uniform.value[0].getDeclaration(name, type, uniform.value.length) + `\nconst int ${name}_length = ${uniform.value.length};`;
                           if ("struct" === uniform.type) {
                               let name_no_prefix = name.replace("u_", "");
-                              return name_no_prefix = 
-                                name_no_prefix.charAt(0).toUpperCase() + 
-                                name_no_prefix.slice(1), 
-                                `uniform struct ${name_no_prefix} 
-                                {\n` + 
-                                Object.entries(uniform.value).map(([name, uniform]) => 
+                              return name_no_prefix =
+                                name_no_prefix.charAt(0).toUpperCase() +
+                                name_no_prefix.slice(1),
+                                `uniform struct ${name_no_prefix}
+                                {\n` +
+                                Object.entries(uniform.value).map(([name, uniform]) =>
                                 uniform.getDeclaration(name, type)
                                 .replace(/^uniform/, ""))
-                                .join("") 
+                                .join("")
                                 + `\n} ${name}${length>0?`[${length}]`:""};`
                           }
                           return `uniform ${uniform.type} ${name}${length>0?`[${length}]`:""};`
@@ -486,7 +486,7 @@ class MiniGl {
                       geometry.width = width,
                       geometry.height = height,
                       geometry.orientation = orientation,
-                      geometry.attributes.position.values && geometry.attributes.position.values.length === 3 * geometry.vertexCount 
+                      geometry.attributes.position.values && geometry.attributes.position.values.length === 3 * geometry.vertexCount
                       || (geometry.attributes.position.values = new Float32Array(3 * geometry.vertexCount));
                       const o = width / -2,
                           r = height / -2,
@@ -497,7 +497,7 @@ class MiniGl {
                           for (let xIndex = 0; xIndex <= geometry.xSegCount; xIndex++) {
                               const r = o + xIndex * segment_width,
                                   l = yIndex * (geometry.xSegCount + 1) + xIndex;
-                              geometry.attributes.position.values[3 * l + "xyz".indexOf(orientation[0])] = r, 
+                              geometry.attributes.position.values[3 * l + "xyz".indexOf(orientation[0])] = r,
                               geometry.attributes.position.values[3 * l + "xyz".indexOf(orientation[1])] = -t
                           }
                       }
@@ -653,10 +653,10 @@ class Gradient {
           zoom: 1,
           rotation: 0,
           playing: true
-      }, 
+      },
       document.querySelectorAll("canvas").length < 1 ? console.log("DID NOT LOAD HERO STRIPE CANVAS") : (
-        
-        this.minigl = new MiniGl(this.el, null, null, !0), 
+
+        this.minigl = new MiniGl(this.el, null, null, !0),
         requestAnimationFrame(() => {
             this.el && (this.computedCanvasStyle = getComputedStyle(this.el), this.waitForCssVars())
         })
@@ -665,7 +665,7 @@ class Gradient {
         this.scrollObserver.observe(this.el),
         this.scrollObserver.onSeparate(() => {
             window.removeEventListener("scroll", this.handleScroll), window.removeEventListener("mousedown", this.handleMouseDown), window.removeEventListener("mouseup", this.handleMouseUp), window.removeEventListener("keydown", this.handleKeyDown), this.isIntersecting = !1, this.conf.playing && this.pause()
-        }), 
+        }),
         this.scrollObserver.onIntersect(() => {
             window.addEventListener("scroll", this.handleScroll), window.addEventListener("mousedown", this.handleMouseDown), window.addEventListener("mouseup", this.handleMouseUp), window.addEventListener("keydown", this.handleKeyDown), this.isIntersecting = !0, this.addIsLoadedClass(), this.play()
         })*/
