@@ -2,7 +2,9 @@
 https://mamoyz.com/ */
 * { -webkit-box-sizing: border-box; box-sizing: border-box; }
 
-body { font-family: "Titillium Web", sans-serif; font-weight: 300; margin: 0; padding: 0; overflow-x: hidden; }
+html { overflow-x: hidden; }
+
+body { font-family: "Titillium Web", sans-serif; font-weight: 300; margin: 0; overflow-x: hidden; padding: 0; }
 
 ::-moz-selection { background-color: #ddd; }
 
@@ -32,15 +34,23 @@ header .header-wrapper > div { display: -webkit-box; display: -ms-flexbox; displ
 
 header .header-wrapper #logo { margin-right: 40px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
 
+@media (max-width: 767px) { header .header-wrapper #logo { margin-right: 15px; } }
+
 header .header-wrapper #logo img { width: 40px; height: auto; margin-right: 10px; }
 
+@media (max-width: 767px) { header .header-wrapper #logo img { width: 20px; margin-right: 5px; } }
+
 header .header-wrapper #logo span { font: 600 24px/24px "Titillium Web"; font-style: italic; letter-spacing: 2px; color: #333; }
+
+@media (max-width: 767px) { header .header-wrapper #logo span { font: 600 18px/18px "Titillium Web"; } }
 
 @media (min-width: 1024px) { header .header-wrapper .mobile-menu { display: none; } }
 
 header .header-wrapper ul { list-style: none; margin: 0; padding: 0; display: -webkit-inline-box; display: -ms-inline-flexbox; display: inline-flex; -webkit-box-pack: end; -ms-flex-pack: end; justify-content: flex-end; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
 
 header .header-wrapper ul li a { font: 300 16px/24px "Titillium Web"; letter-spacing: 3.36px; color: #000000; text-transform: uppercase; padding: 0 15px; }
+
+@media (max-width: 767px) { header .header-wrapper ul li a { letter-spacing: 0; padding: 0 7px; font-size: 14px; letter-spacing: 2px; } }
 
 header .header-wrapper ul li a img { width: 20px; vertical-align: bottom; }
 
@@ -541,3 +551,110 @@ https://mamoyz.com/ */
   .testimonial .btn-submit:before { width: 1.04vw; height: 1.04vw; margin-right: 0.52vw; }
   .video-player .video-player-container { padding: 15vh 1.56vw; max-width: 62.5vw; }
   .video-player .video-player-container .close-popup { right: 2.6vw; top: 2.6vw; width: 2.6vw; height: 2.6vw; } }
+
+.advisors { padding-top: 110px; }
+
+@media (max-width: 767px) { .advisors { padding-top: 70px; } }
+
+.advisors h1 { margin-top: 60px; text-align: center; font: normal normal bold 50px/76px "Titillium Web"; letter-spacing: 0px; color: #bc9ce5; opacity: 1; margin-bottom: 0; }
+
+@media (max-width: 767px) { .advisors h1 { font: normal normal bold 36px/52px "Titillium Web"; } }
+
+.advisors p { text-align: center; font: normal normal 600 30px/46px "Titillium Web"; letter-spacing: 0px; color: #4e4e4e; opacity: 1; margin: 0; }
+
+@media (max-width: 767px) { .advisors p { margin-top: 10px; font: normal normal 600 22px/38px "Titillium Web"; } }
+
+.advisors .advisor-item { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: center; -ms-flex-align: center; align-items: center; margin: 70px auto 230px; width: 1130px; }
+
+@media (max-width: 1023px) { .advisors .advisor-item { width: 100%; margin: 50px auto 100px; } }
+
+@media (max-width: 767px) { .advisors .advisor-item { -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-pack: start; -ms-flex-pack: start; justify-content: flex-start; -webkit-box-align: start; -ms-flex-align: start; align-items: flex-start; margin: 20px auto 40px; } }
+
+.advisors .advisor-item .advisor-img { width: 100%; max-width: 530px; height: 590px; position: relative; }
+
+@media (max-width: 1023px) { .advisors .advisor-item .advisor-img { width: 200px; max-width: 200px; height: 260px; } }
+
+@media (max-width: 767px) { .advisors .advisor-item .advisor-img { width: 160px; max-width: 160px; height: 160px; -webkit-transform: translate(0, 50%); transform: translate(0, 50%); margin: auto; z-index: 7; } }
+
+.advisors .advisor-item .advisor-img:after { content: " "; background: url("../img/dots-bottom.svg") no-repeat; width: 640px; height: 247px; background-size: 100%; display: block; position: absolute; bottom: 0; left: 0; -webkit-transform: translate(39%, 63%); transform: translate(39%, 63%); z-index: 0; }
+
+@media (max-width: 1023px) { .advisors .advisor-item .advisor-img:after { display: none; } }
+
+.advisors .advisor-item .advisor-img .img { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; border-radius: 10px; z-index: 5; }
+
+@media (max-width: 767px) { .advisors .advisor-item .advisor-img .img { z-index: 7; border-radius: 50%; } }
+
+.advisors .advisor-item .advisor-img .img.shadow { z-index: 4; -webkit-filter: blur(60px); filter: blur(60px); opacity: 0.7; top: 50px; left: -70px; }
+
+@media (max-width: 767px) { .advisors .advisor-item .advisor-img .img.shadow { display: none; } }
+
+.advisors .advisor-item .advisor-about { width: 100%; max-width: 600px; position: relative; left: -70px; padding: 55px; background: #fff; -webkit-box-shadow: -24px 5px 68px #00000026; box-shadow: -24px 5px 68px #00000026; border-radius: 10px; z-index: 6; -webkit-transition: all 0.3s; transition: all 0.3s; }
+
+@media (max-width: 1023px) { .advisors .advisor-item .advisor-about { max-width: calc(100% - 160px); width: calc(100% - 160px); left: -30px; margin-right: -30px; } }
+
+@media (max-width: 767px) { .advisors .advisor-item .advisor-about { width: 100%; max-width: 100%; left: 0; margin-right: 0; padding: 100px 25px 25px 25px; } }
+
+.advisors .advisor-item .advisor-about:hover { -webkit-box-shadow: -24px 5px 80px #00000035; box-shadow: -24px 5px 80px #00000035; }
+
+.advisors .advisor-item .advisor-about h3 { text-align: left; font: normal normal bold 42px/64px Titillium Web; letter-spacing: 0px; color: #c3a7e8; text-transform: uppercase; opacity: 1; margin: 0; }
+
+@media (max-width: 1023px) { .advisors .advisor-item .advisor-about h3 { font: normal normal bold 32px/46px Titillium Web; } }
+
+@media (max-width: 767px) { .advisors .advisor-item .advisor-about h3 { font: normal normal bold 26px/36px Titillium Web; } }
+
+.advisors .advisor-item .advisor-about h4 { text-align: left; font: normal normal 600 24px/40px Titillium Web; letter-spacing: 0px; color: #7d7d7d; opacity: 1; margin: 10px 0; }
+
+@media (max-width: 1023px) { .advisors .advisor-item .advisor-about h4 { font: normal normal 600 20px/36px Titillium Web; } }
+
+.advisors .advisor-item .advisor-about p { text-align: left; font: normal normal normal 20px/40px Titillium Web; letter-spacing: 0px; color: #7d7d7d; opacity: 1; margin: 0; }
+
+@media (max-width: 1023px) { .advisors .advisor-item .advisor-about p { font: normal normal normal 18px/36px Titillium Web; } }
+
+.advisors .advisor-item .advisor-about .read-more { text-align: left; font: normal normal bold 20px/31px Titillium Web; letter-spacing: 0px; color: #c3a7e8; text-transform: uppercase; opacity: 1; border-bottom: 2px solid #c3a7e8; margin-top: 50px; display: inline-block; }
+
+.advisors .advisor-item .advisor-about .read-more span { margin-left: 5px; -webkit-transition: all 0.3s; transition: all 0.3s; }
+
+.advisors .advisor-item .advisor-about .read-more:hover span { margin-left: 30px; }
+
+.advisors .current-advisor { opacity: 0; z-index: 10000; }
+
+.advisors .current-advisor .advisor-item { width: 1200px; max-width: 1200px; margin: 0 auto; opacity: 0; -webkit-transform: translate(0, 100px); transform: translate(0, 100px); position: relative; -webkit-transition: 0.5s all 0.5s; transition: 0.5s all 0.5s; }
+
+@media (max-width: 1023px) { .advisors .current-advisor .advisor-item { max-width: calc(100% - 200px); } }
+
+@media (max-width: 767px) { .advisors .current-advisor .advisor-item { max-width: calc(100% - 50px); } }
+
+.advisors .current-advisor .advisor-item .img { width: 160px; height: 160px; background-size: cover; background-position: 50% 50%; border-radius: 50%; position: absolute; top: 60px; left: 0; -webkit-transform: translate(-50%, 0); transform: translate(-50%, 0); z-index: 100; }
+
+@media (max-width: 767px) { .advisors .current-advisor .advisor-item .img { top: 0; left: 0; right: 0; margin: auto; -webkit-transform: translate(0, -50%); transform: translate(0, -50%); } }
+
+.advisors .current-advisor .advisor-item .advisor-about { left: 0; max-width: 100%; width: 100%; padding-left: 150px; max-height: 90vh; overflow-y: scroll; }
+
+@media (max-width: 1023px) { .advisors .current-advisor .advisor-item .advisor-about { padding-left: 120px; } }
+
+@media (max-width: 767px) { .advisors .current-advisor .advisor-item .advisor-about { max-height: calc(90vh - 100px); padding: 100px 25px 25px 25px !important; } }
+
+@media (max-width: 767px) { .advisors .current-advisor .advisor-item .advisor-about .read-more { position: fixed; left: 0; -webkit-transform: translate(0, 100%); transform: translate(0, 100%); bottom: -10px; } }
+
+.advisors .current-advisor.show { opacity: 1; position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background: #fff; z-index: 100; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
+
+.advisors .current-advisor.show .advisor-item { opacity: 1; -webkit-transform: translate(0, 0); transform: translate(0, 0); }
+
+@media (min-width: 1024px) and (max-width: 1919px) { .advisors { padding-top: 5.73vw; }
+  .advisors h1 { margin-top: 3.13vw; font: normal normal bold 2.6vw/3.96vw "Titillium Web"; letter-spacing: 1px; }
+  .advisors p { font: normal normal 600 1.56vw/2.4vw "Titillium Web"; letter-spacing: 1px; }
+  .advisors .advisor-item { margin: 3.65vw auto 11.98vw; width: 58.85vw; }
+  .advisors .advisor-item .advisor-img { max-width: 27.6vw; height: 30.73vw; }
+  .advisors .advisor-item .advisor-img:after { width: 33.33vw; height: 12.86vw; }
+  .advisors .advisor-item .advisor-img .img { border-radius: 0.52vw; }
+  .advisors .advisor-item .advisor-img .img.shadow { -webkit-filter: blur(3.13vw); filter: blur(3.13vw); top: 2.6vw; left: -3.65vw; }
+  .advisors .advisor-item .advisor-about { max-width: 31.25vw; left: -3.65vw; padding: 2.86vw; -webkit-box-shadow: -1.25vw 0.26vw 3.54vw #00000026; box-shadow: -1.25vw 0.26vw 3.54vw #00000026; border-radius: 0.52vw; }
+  .advisors .advisor-item .advisor-about:hover { -webkit-box-shadow: -1.25vw 0.26vw 4.17vw #00000035; box-shadow: -1.25vw 0.26vw 4.17vw #00000035; }
+  .advisors .advisor-item .advisor-about h3 { font: normal normal bold 2.19vw/3.33vw Titillium Web; letter-spacing: 1px; }
+  .advisors .advisor-item .advisor-about h4 { font: normal normal 600 1.25vw/2.08vw Titillium Web; letter-spacing: 1px; margin: 0.52vw 0; }
+  .advisors .advisor-item .advisor-about p { font: normal normal normal 1.04vw/2.08vw Titillium Web; letter-spacing: 1px; }
+  .advisors .advisor-item .advisor-about .read-more { font: normal normal bold 1.04vw/1.61vw Titillium Web; letter-spacing: 1px; border-bottom: 0.1vw solid #c3a7e8; margin-top: 2.6vw; }
+  .advisors .advisor-item .advisor-about .read-more span { margin-left: 0.26vw; }
+  .advisors .current-advisor .advisor-item { width: 62.5vw; max-width: 62.5vw; -webkit-transform: translate(0, 5.21vw); transform: translate(0, 5.21vw); }
+  .advisors .current-advisor .advisor-item .img { width: 8.33vw; height: 8.33vw; top: 3.13vw; }
+  .advisors .current-advisor .advisor-item .advisor-about { padding-left: 7.81vw; } }
