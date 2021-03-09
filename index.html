@@ -90,12 +90,6 @@
 					<a href="#">Privacy Policy</a>
 				</div>
 			</footer>
-			<div class="video-player" :class="{showPopup}" @click.prevent="hidePopupHandler()">
-				<div class="video-player-container">
-					<a class="close-popup" href="#" @click.prevent="hidePopupHandler()"><img src="assets/img/close.svg" alt="" /></a>
-					<iframe @click.stop="" ref="video" width="560" height="315" :src="'https://www.youtube-nocookie.com/embed/'+videoID+'?controls=0'" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-				</div>
-			</div>
 		</div>
 
 		<script src="https://cdn.jsdelivr.net/npm/lodash@4.17.20/lodash.min.js"></script>

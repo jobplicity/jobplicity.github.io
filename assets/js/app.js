@@ -291,6 +291,12 @@ const Home = Vue.component("Home", {
           </div>
         </div>
       </section>
+	  <div class="video-player" :class="{showPopup}" @click.prevent="hidePopupHandler()">
+				<div class="video-player-container">
+					<a class="close-popup" href="#" @click.prevent="hidePopupHandler()"><img src="assets/img/close.svg" alt="" /></a>
+					<iframe @click.stop="" ref="video" width="560" height="315" :src="'https://www.youtube-nocookie.com/embed/'+videoID+'?controls=0'" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</div>
+			</div>
   </div > `,
 	mounted() {
 		if (this.$router.currentRoute.path == "/") {
@@ -934,6 +940,23 @@ const Home = Vue.component("Home", {
 	beforeDestroy() {
 		$(window).unbind("scroll");
 	},
+	data() {
+		return {
+			videoID: "",
+			originalVideoID: "W-Fc6gFwoms",
+			showPopup: false,
+		};
+	},
+	methods: {
+		showPopupHandler() {
+			this.showPopup = true;
+			this.videoID = this.originalVideoID;
+		},
+		hidePopupHandler() {
+			this.showPopup = false;
+			this.videoID = "";
+		},
+	},
 });
 const routes = [
 	{ path: "/advisors", component: Advisors, name: "advisors" },
@@ -953,8 +976,6 @@ var app = new Vue({
 	el: "#app",
 	router,
 	data: {
-		videoID: "W-Fc6gFwoms",
-		originalVideoID: "W-Fc6gFwoms",
 		currentItem: 0,
 		keyword: null,
 		results: null,
@@ -966,20 +987,12 @@ var app = new Vue({
 			backSpeed: 30,
 			contentType: "html",
 		},
-		showPopup: false,
 		strings: ["End to end automated Job application for you.", "Removes the pain of Job application", "Automatically applies for jobs for you.", "Your personal Job Application Butler"],
 	},
 
 	methods: {
 		/* Main function : Trigger search and show results */
-		showPopupHandler() {
-			this.showPopup = true;
-			this.videoID = this.originalVideoID;
-		},
-		hidePopupHandler() {
-			this.showPopup = false;
-			this.videoID = "";
-		},
+
 		searchChangeHandler() {
 			if (this.keyword && this.keyword.length > 2) {
 				/* Trigger Search when the keyword lenght is 3 or bigger */
