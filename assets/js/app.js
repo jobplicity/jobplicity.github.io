@@ -67,7 +67,7 @@ const Advisors = Vue.component("Advisors", {
     </div>
     <div class="current-advisor" :class="{'show':showCurrentAdvisor}" @click="hideAbout()">
        <div class="advisor-item" @click.prevent.stop="">
-           <div class="img" :style="'background-image: url('+currentAdvisor.image+');'"></div>    
+           <div class="img" :style="'background-image: url('+currentAdvisor.image+');'"></div>
 
         <div class="advisor-about">
          <h3>{{currentAdvisor.name}}</h3>
@@ -86,7 +86,7 @@ const Advisors = Vue.component("Advisors", {
 });
 const Home = Vue.component("Home", {
 	template: `<div>
-  
+
       <section class="main">
 
         <canvas id="gradient-canvas"  data-transition-in>
@@ -953,7 +953,7 @@ var app = new Vue({
 	el: "#app",
 	router,
 	data: {
-		videoID: "",
+		videoID: "W-Fc6gFwoms",
 		originalVideoID: "W-Fc6gFwoms",
 		currentItem: 0,
 		keyword: null,
