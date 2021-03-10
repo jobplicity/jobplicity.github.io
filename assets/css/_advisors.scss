@@ -171,6 +171,7 @@
 				color: #7d7d7d;
 				opacity: 1;
 				margin: 0;
+				margin: 0 0 20px 0;
 				@include down-md {
 					font: normal normal normal 18px/36px Titillium Web;
 				}
@@ -336,6 +337,7 @@
 				p {
 					font: normal normal normal 1.04vw/2.08vw Titillium Web;
 					letter-spacing: 1px;
+					margin: 0 0 1vw 0;
 				}
 				.read-more {
 					font: normal normal bold 1.04vw/1.61vw Titillium Web;
