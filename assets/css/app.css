@@ -554,13 +554,17 @@ https://mamoyz.com/ */
 
 .advisors { padding-top: 110px; }
 
+.advisors .advisors-top { width: 1130px; margin: auto; text-align: left; }
+
+@media (max-width: 1023px) { .advisors .advisors-top { width: 100%; } }
+
 @media (max-width: 767px) { .advisors { padding-top: 70px; } }
 
-.advisors h1 { margin-top: 60px; text-align: center; font: normal normal bold 50px/76px "Titillium Web"; letter-spacing: 0px; color: #bc9ce5; opacity: 1; margin-bottom: 0; }
+.advisors h1 { margin-top: 60px; font: normal normal bold 50px/76px "Titillium Web"; letter-spacing: 0px; color: #bc9ce5; opacity: 1; margin-bottom: 0; }
 
 @media (max-width: 767px) { .advisors h1 { font: normal normal bold 36px/52px "Titillium Web"; } }
 
-.advisors p { text-align: center; font: normal normal 600 30px/46px "Titillium Web"; letter-spacing: 0px; color: #4e4e4e; opacity: 1; margin: 0; }
+.advisors p { font: normal normal 600 30px/46px "Titillium Web"; letter-spacing: 0px; color: #4e4e4e; opacity: 1; margin: 0; }
 
 @media (max-width: 767px) { .advisors p { margin-top: 10px; font: normal normal 600 22px/38px "Titillium Web"; } }
 
@@ -641,6 +645,7 @@ https://mamoyz.com/ */
 .advisors .current-advisor.show .advisor-item { opacity: 1; -webkit-transform: translate(0, 0); transform: translate(0, 0); }
 
 @media (min-width: 1024px) and (max-width: 1919px) { .advisors { padding-top: 5.73vw; }
+  .advisors .advisors-top { width: 58.85vw; }
   .advisors h1 { margin-top: 3.13vw; font: normal normal bold 2.6vw/3.96vw "Titillium Web"; letter-spacing: 1px; }
   .advisors p { font: normal normal 600 1.56vw/2.4vw "Titillium Web"; letter-spacing: 1px; }
   .advisors .advisor-item { margin: 3.65vw auto 11.98vw; width: 58.85vw; }
