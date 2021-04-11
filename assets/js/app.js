@@ -117,7 +117,7 @@ const Home = Vue.component("Home", {
             <div class="signup-form">
               <form>
                 <input type="email" name="email" id="email" placeholder="Enter your email & Get JobLaunch for free" />
-                <a class="btn-submit" href="https://21y0ke6detk.typeform.com/to/biELOUxe">create an account</a>
+                <a class="btn-submit" href="https://app.joblaunch.co/sign_up">create an account</a>
               </form>
             </div>
 
@@ -219,7 +219,7 @@ const Home = Vue.component("Home", {
               </div>
               <div class="content">
                 <h3>5. Feedback.</h3>
-                <p>Track the applications we create for you in real time via the JobLaunch dashboard or app on your phone. If an employer calls, use the app to get the right information, to answer the right questions, straight away.</p>
+                <p>Track the applications we create for you in real time via the JobLaunch dashboard or app on your phone. If an employer calls, use the app to get the right information, to answer the right questions, right away.</p>
               </div>
             </div>
           </div>
@@ -289,7 +289,7 @@ const Home = Vue.component("Home", {
           <div class="signup-form">
             <form>
               <input type="email" name="email" id="email" placeholder="Enter your email & Get JobLaunch for free" />
-              <a class="btn-submit" href="https://21y0ke6detk.typeform.com/to/biELOUxe">create an account</a>
+              <a class="btn-submit" href="https://app.joblaunch.co/sign_up">create an account</a>
             </form>
           </div>
         </div>
@@ -673,7 +673,7 @@ const Home = Vue.component("Home", {
 					e(this, "scrollObserver", void 0),
 					e(this, "amp", 320),
 					e(this, "seed", 5),
-					e(this, "freqX", 14e-5),
+					e(this, "freqX", 19e-5),
 					e(this, "freqY", 29e-5),
 					e(this, "freqDelta", 1e-5),
 					e(this, "activeColors", [1, 1, 1, 1]),
