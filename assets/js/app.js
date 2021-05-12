@@ -980,6 +980,7 @@ var app = new Vue({
 	el: "#app",
 	router,
 	data: {
+		showMenu: false,
 		currentItem: 0,
 		keyword: null,
 		results: null,

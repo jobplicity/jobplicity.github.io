@@ -20,6 +20,24 @@ a { color: inherit; text-decoration: none; }
 
 header { background: #fff; border-bottom: 1px solid #cecece; position: fixed; top: 0; left: 0; right: 0; height: 110px; z-index: 100; }
 
+header .mobile-menu { display: -webkit-box; display: -ms-flexbox; display: flex; }
+
+header .mobile-menu .menu-toggle { margin-left: 10px; display: -webkit-inline-box; display: -ms-inline-flexbox; display: inline-flex; position: relative; z-index: 1001; }
+
+header .mobile-menu .menu-toggle svg { width: 25px; height: auto; }
+
+header .mobile-menu .menu-toggle svg path { fill: #bc9ce5; }
+
+header .mobile-menu .mobile-nav { position: fixed; top: 0; left: 0; height: 100vh; background: #fff; width: 100vw; z-index: 1000; -webkit-transform: translate(-101vw, 0); transform: translate(-101vw, 0); -webkit-transition: all 0.3s; transition: all 0.3s; }
+
+header .mobile-menu .mobile-nav.showMenu { -webkit-transform: translate(0, 0); transform: translate(0, 0); }
+
+header .mobile-menu .mobile-nav ul { -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; height: 100%; }
+
+header .mobile-menu .mobile-nav ul li a { font-size: 20px; padding: 20px !important; display: block; }
+
+header .mobile-menu .mobile-nav .header-cta { margin-top: 20px; font-size: 18px; }
+
 @media (max-width: 1023px) { header { display: block; height: auto; padding-top: 15px; padding-bottom: 15px; } }
 
 header .header-wrapper { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; text-align: center; width: 100%; height: 100%; padding-left: 50px; padding-right: 50px; }
@@ -43,8 +61,6 @@ header .header-wrapper #logo img { width: 40px; height: auto; margin-right: 10px
 header .header-wrapper #logo span { font: 600 24px/24px "Titillium Web"; font-style: italic; letter-spacing: 2px; color: #333; }
 
 @media (max-width: 767px) { header .header-wrapper #logo span { font: 600 18px/18px "Titillium Web"; } }
-
-@media (min-width: 1024px) { header .header-wrapper .mobile-menu { display: none; } }
 
 header .header-wrapper ul { list-style: none; margin: 0; padding: 0; display: -webkit-inline-box; display: -ms-inline-flexbox; display: inline-flex; -webkit-box-pack: end; -ms-flex-pack: end; justify-content: flex-end; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
 
@@ -405,6 +421,8 @@ footer a:hover { text-decoration: underline; }
 #particles-js { background-color: transparent; z-index: 0; position: relative; overflow: hidden; height: 100vh; }
 
 @media (max-width: 1023px) { .hidden-xs { display: none !important; } }
+
+@media (min-width: 1024px) { .xs-only { display: none !important; } }
 
 .testimonial { padding: 75px 0 30px; }
 
