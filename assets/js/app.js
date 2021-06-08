@@ -1,6 +1,7 @@
 /* JS by Mamo YZ
 https://mamoyz.com/ */
-
+import { Runtime, Inspector, Library } from "https://unpkg.com/@observablehq/runtime@4.7.1/dist/runtime.js";
+import notebook from "https://cdn.openai.com/website/scripts/20200901/gradient.3.2.js";
 const baseApiUrl = "http://main.hypergraph.so/api";
 const baseFrontendUrl = "http://main.hypergraph.so/editor/node";
 // const baseApiUrl = "http://localhost:8080/api";
@@ -85,51 +86,38 @@ const Advisors = Vue.component("Advisors", {
   `,
 	mounted() {
 		$(window).scrollTop(0, 0);
+		$("header").removeClass("transparent");
 	},
 });
 const Home = Vue.component("Home", {
 	template: `<div>
 
-      <section class="main">
+      <section class="main-v2">
 
-        <canvas id="gradient-canvas"  data-transition-in>
-          <!--
-            Remove data-js-darken-top to keep the same brightness in the upper part of the canvas
-          -->
-        </canvas>
+       
+  <div id="gradient" class="position-absolute w-100 h-100 d-flex justify-content-center align-items-center overflow-hidden trbl-0 observablehq--running" style="z-index:-1;pointer-events:none"></div>
+
 
         <div class="container" >
 
           <div class="col-6">
             <div class="h2">
-              <h2>Discover & apply for your dream job. Automatically.</h2><h2>Discover & apply for your dream job. Automatically.</h2>
+              <h2>Apply for your dream job. Automatically.</h2>
             </div>
-            <h3>
-              <strong>JobLaunch</strong>
-              uses the best of
-              <strong>human</strong>
-              &
-              <strong>artificial intelligence</strong>
-              to
-              <strong>automatically apply</strong>
-              for jobs for you.
-            </h3>
-            <div class="signup-form">
-              <form>
-                <input type="email" name="email" id="email" placeholder="Enter your email & Get JobLaunch for free" />
-                <a class="btn-submit" href="https://app.joblaunch.co/sign_up">create an account</a>
-              </form>
-            </div>
-
+            <h5>
+             JobLaunch significantly increases your chance of getting an interview by taking the pain out ofcreating unique job applications.            </h5>
+			 <h5>We highlight the best of your skills & experience, rewrite your cover letter & resume to match the job’s requirements & even submit the application for you!</h5>
+			<div class="main-ctas">
+				<a href="https://app.joblaunch.co/sign_up"><span>Get Started</span> <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 256 256" style="enable-background:new 0 0 256 256;" xml:space="preserve">
+		<polygon points="79.093,0 48.907,30.187 146.72,128 48.907,225.813 79.093,256 207.093,128 		" fill="#FFF"/>
+</svg>
+</a>
+				<a href="#"  @click.prevent="showPopupHandler('W-Fc6gFwoms')">Learn More</a>
+			</div>
 
         </div>
-
-         <div class="col-6">
-            <div class="hero-img">
-              <img src="assets/img/hero.svg" alt="">
-            </div>
-
-          </div>
+        
       </section>
       <section class="about">
         <div class="container">
@@ -233,7 +221,7 @@ const Home = Vue.component("Home", {
             </div>
             <div class="col">
               <h4>“I spend the better part of a year applying for over 100 jobs with little to no success. Then I found JobLaunch. After only 1 months subscription I had 2 job offers in my field! Success!”</h4>
-              <a href="#" class="btn-submit" @click.prevent="showPopupHandler()">Hear Tina’s Story</a>
+              <a href="#" class="btn-submit" @click.prevent="showPopupHandler('W-Fc6gFwoms')">Hear Tina’s Story</a>
             </div>
           </div>
         </div>
@@ -302,15 +290,19 @@ const Home = Vue.component("Home", {
 			</div>
   </div > `,
 	mounted() {
+		$("header").addClass("transparent");
+
 		if (this.$router.currentRoute.path == "/") {
 			$(window).scroll(function () {
+				if ($(window).scrollTop() > $(".main-v2").innerHeight() - 400) $("header").removeClass("transparent");
+				else $("header").addClass("transparent");
 				if ($(window).scrollTop() + $(window).innerHeight() * 0.5 > $(".testimonial").offset().top) {
 					$(".testimonial").addClass("init");
 				} else {
 					$(".testimonial").removeClass("init");
 				}
 				if ($(window).innerWidth() > 1023) {
-					$(window).scrollTop() > $(".main").offset().top - 20 ? $("header, .header-search-box").fadeIn(300) : $("header, .header-search-box").fadeOut(300);
+					// $(window).scrollTop() > $(".main").offset().top - 20 ? $("header, .header-search-box").fadeIn(300) : $("header, .header-search-box").fadeOut(300);
 				}
 				$.each($(".how-item"), function () {
 					if ($(window).scrollTop() + $(window).innerHeight() * 0.8 > $(this).offset().top) {
@@ -321,6 +313,72 @@ const Home = Vue.component("Home", {
 				});
 			});
 		}
+
+		const renders = {
+			gradient: "#gradient",
+		};
+		const runtime = new Runtime(Object.assign(new Library())).module(notebook, (name) => {
+			const selector = renders[name];
+			if (selector) {
+				// key exists
+				return new Inspector(document.querySelector(selector));
+			} else {
+				return true;
+			}
+		});
+
+		var scrollTop = 0;
+		var gradientHeight;
+		var windowWidth;
+		var gradientOverlay = document.getElementById("gradient-overlay");
+		var initParallax = function () {
+			if (!gradientOverlay) return;
+			setInitialValues();
+			updateStyle();
+			window.addEventListener("scroll", throttleScroll, false);
+			window.addEventListener("resize", throttleResize, false);
+		};
+		var setInitialValues = function () {
+			gradientHeight = gradientOverlay.offsetHeight;
+		};
+		var updateScrollValues = function () {
+			scrollTop = window.pageYOffset;
+			updateStyle();
+		};
+		var updateStyle = function () {
+			gradientOverlay.style.opacity = Math.min((scrollTop / gradientHeight) * 0.5, 0.5);
+		};
+		var eventTimeout;
+		var throttleResize = function () {
+			// throttle to 15fps
+			if (!eventTimeout) {
+				eventTimeout = setTimeout(function () {
+					eventTimeout = null;
+					handleResize();
+				}, 66);
+			}
+		};
+		var throttleScroll = function () {
+			// throttle to 15fps
+			if (!eventTimeout) {
+				eventTimeout = setTimeout(function () {
+					eventTimeout = null;
+					handleScroll();
+				}, 16);
+			}
+		};
+		var handleResize = function () {
+			setInitialValues();
+			updateScrollValues();
+		};
+		var handleScroll = function () {
+			updateScrollValues();
+		};
+
+		// init
+		document.addEventListener("DOMContentLoaded", function () {
+			initParallax();
+		});
 		/*
 		 *   Stripe WebGl Gradient Animation
 		 *   All Credits to Stripe.com
@@ -937,7 +995,7 @@ const Home = Vue.component("Home", {
 		 */
 		var gradient = new Gradient();
 		var gradient2 = new Gradient();
-		gradient.initGradient("#gradient-canvas");
+		// gradient.initGradient("#gradient-canvas");
 		gradient2.initGradient("#gradient-canvas-bottom");
 	},
 	beforeDestroy() {
@@ -951,9 +1009,9 @@ const Home = Vue.component("Home", {
 		};
 	},
 	methods: {
-		showPopupHandler() {
+		showPopupHandler(videoId) {
 			this.showPopup = true;
-			this.videoID = this.originalVideoID;
+			this.videoID = videoId;
 		},
 		hidePopupHandler() {
 			this.showPopup = false;

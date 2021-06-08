@@ -60,7 +60,7 @@ header {
 	right: 0;
 	height: 110px;
 	z-index: 100;
-
+	transition: background 0.3s, height 0.3s;
 	.mobile-menu {
 		display: flex;
 
@@ -120,10 +120,18 @@ header {
 		align-items: center;
 		justify-content: space-between;
 		text-align: center;
+		max-width: 1600px;
 		width: 100%;
+		margin: auto;
 		height: 100%;
-		padding-left: 50px;
-		padding-right: 50px;
+		@include down-md() {
+			padding-left: 50px;
+			padding-right: 50px;
+		}
+		@include down-sm() {
+			padding-left: 20px;
+			padding-right: 20px;
+		}
 		> div {
 			display: flex;
 			&:first-child {
@@ -227,6 +235,29 @@ header {
 			}
 		}
 	}
+	&.transparent {
+		@media (min-width: 1024px) {
+			background: transparent;
+			border-color: transparent;
+			height: 140px;
+			.header-wrapper #logo img {
+				filter: invert(1);
+			}
+			.header-wrapper ul li a {
+				color: #fff;
+			}
+			.header-wrapper ul li {
+				&:after {
+					color: #fff;
+				}
+			}
+			.header-wrapper .header-cta {
+				border-color: #fff;
+				color: #fff;
+				background: transparent;
+			}
+		}
+	}
 }
 
 @keyframes bounce {
@@ -269,29 +300,6 @@ header {
 	position: relative;
 	@include down-md() {
 		height: auto;
-	}
-	#gradient-canvas {
-		position: absolute;
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: 100%;
-		z-index: 4;
-		clip-path: polygon(0 0, 100% 0%, 100% 25%, 0 55%);
-		--gradient-color-4: #ef008f;
-		--gradient-color-3: #6ec3f4;
-		--gradient-color-2: #7038ff;
-		--gradient-color-1: #ffba27;
-		@include down-md() {
-			clip-path: none;
-		}
-		canvas {
-			width: 100% !important;
-			height: 100% !important;
-			@include down-md() {
-				opacity: 0.5;
-			}
-		}
 	}
 
 	@include down-md() {
@@ -343,66 +351,7 @@ header {
 				width: 100%;
 			}
 		}
-		.h2 {
-			position: relative;
-			z-index: 5;
-			opacity: 0.85;
-			width: 100%;
-			margin-top: 150px;
-			@include down-md() {
-				margin-top: 0;
-				opacity: 1;
-			}
-			h2 {
-				&:first-child {
-					position: absolute;
-					z-index: 3;
-					color: #000;
-					opacity: 0.2;
-					@include down-md() {
-						display: none;
-					}
-				}
-				&:last-child {
-					color: #000;
-					z-index: 5;
-					position: relative;
-					opacity: 0.8;
-				}
-			}
-		}
-		h2 {
-			text-align: left;
-			font: bold 90px/100px "Titillium Web";
-			color: #000;
-			// text-shadow: 1px 5px 12px #0000002b;
-			margin-top: 0;
-			margin-bottom: 30px;
-			@include down-md() {
-				font: bold 60px/75px "Titillium Web";
-				text-align: center;
-				margin-bottom: 30px;
-			}
-			@include down-sm() {
-				font: bold 32px/48px "Titillium Web";
-			}
-		}
-		h3 {
-			text-align: left;
-			font: 300 25px/51px "Titillium Web";
-			letter-spacing: 0.75px;
-			margin-top: 0;
-			margin-bottom: 40px;
-			// text-shadow: 1px 5px 12px #0000002b;
-			// color: #fff;
-			@include down-md() {
-				margin-bottom: 40px;
-				text-align: center;
-			}
-			@include down-sm() {
-				font: 300 20px/35px "Titillium Web";
-			}
-		}
+
 		.signup-form {
 			background: #ffffff;
 			box-shadow: 8px 8px 100px rgba(0, 0, 0, 0.2);
@@ -432,6 +381,117 @@ header {
 					margin-right: 0;
 					text-align: center;
 					margin-bottom: 30px;
+				}
+			}
+		}
+	}
+}
+#gradient-overlay {
+	will-change: opacity;
+}
+#gradient {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	// transform: scale(1.666667);
+	svg {
+		width: 100%;
+		height: 100%;
+	}
+}
+@media (min-width: 600px) {
+	#gradient {
+		// transform: scale(1.333333);
+	}
+}
+@media (min-width: 960px) {
+	#gradient {
+		// transform: scale(1);
+	}
+}
+.main-v2 {
+	// position: relative;
+	height: 100vh;
+	.container {
+		height: 100%;
+		display: flex;
+		justify-content: flex-start;
+		align-items: flex-end;
+		padding-bottom: 80px;
+		.col-6 {
+			flex: 0 1 50%;
+			@include down-md() {
+				flex: 0 1 100%;
+			}
+		}
+
+		h2 {
+			text-align: left;
+			font: bold 70px/80px "Titillium Web";
+			color: #fff;
+			margin-top: 0;
+			margin-bottom: 30px;
+			@include down-md() {
+				font: bold 60px/75px "Titillium Web";
+				margin-bottom: 30px;
+			}
+			@include down-sm() {
+				font: bold 32px/48px "Titillium Web";
+			}
+		}
+		h5 {
+			text-align: left;
+			font: 300 22px/36px "Titillium Web";
+			margin-top: 0;
+			color: #fff;
+			font-weight: 500;
+			max-width: 80%;
+			margin-bottom: 20px;
+			// text-shadow: 1px 5px 12px #0000002b;
+			// color: #fff;
+			@include down-md() {
+				max-width: 100%;
+			}
+			@include down-sm() {
+				font: 300 16px/30px "Titillium Web";
+			}
+		}
+		.main-ctas {
+			margin-top: 30px;
+			a {
+				padding: 15px 40px;
+				color: #fff;
+				background: rgba(0, 0, 0, 0.15);
+				border-radius: 50px;
+				font-weight: 600;
+				letter-spacing: 1px;
+				font-size: 18px;
+				display: inline-flex;
+				margin-right: 10px;
+				text-transform: uppercase;
+				align-items: center;
+				justify-content: center;
+				transition: all 0.3s;
+				margin-bottom: 10px;
+				@include down-sm() {
+					font-size: 14px;
+					letter-spacing: 1px;
+					padding: 10px 20px;
+					margin-right: 5px;
+				}
+				&:hover {
+					background: rgba(0, 0, 0, 0.25);
+				}
+				svg {
+					width: 15px;
+					height: 15px;
+					margin-left: 5px;
+					@include down-sm() {
+						width: 10px;
+						height: 10px;
+					}
 				}
 			}
 		}
@@ -1330,14 +1390,47 @@ https://mamoyz.com/ */
 	}
 
 	header {
-		border-bottom: 0.05vw solid #cecece;
+		border-bottom: 1px solid #cecece;
 		height: 5.73vw;
-
+		.mobile-menu {
+			.menu-toggle {
+				margin-left: 0.52vw;
+				svg {
+					width: 1.3vw;
+					path {
+					}
+				}
+			}
+			.mobile-nav {
+				&.showMenu {
+				}
+				ul {
+					li {
+						a {
+							font-size: 1.04vw;
+							padding: 1.04vw !important;
+						}
+					}
+				}
+				.header-cta {
+					margin-top: 1.04vw;
+					font-size: 0.94vw;
+				}
+			}
+		}
 		.header-wrapper {
-			padding-left: 2.6vw;
-			padding-right: 2.6vw;
+			max-width: 83.33vw;
+
+			> div {
+				&:first-child {
+				}
+			}
+			@include down-md() {
+			}
+
 			#logo {
 				margin-right: 2.08vw;
+
 				img {
 					width: 2.08vw;
 					margin-right: 0.52vw;
@@ -1347,17 +1440,16 @@ https://mamoyz.com/ */
 					letter-spacing: 0.1vw;
 				}
 			}
+
 			ul {
 				li {
 					a {
 						font: 300 0.83vw/1.25vw "Titillium Web";
 						letter-spacing: 0.18vw;
 						padding: 0 0.78vw;
-					}
-					&:after {
-					}
-					&:last-child {
-						&::after {
+
+						img {
+							width: 1.04vw;
 						}
 					}
 				}
@@ -1372,6 +1464,9 @@ https://mamoyz.com/ */
 				&:hover {
 				}
 			}
+		}
+		&.transparent {
+			height: 7.29vw;
 		}
 	}
 
@@ -1430,6 +1525,66 @@ https://mamoyz.com/ */
 			}
 		}
 	}
+	.main-v2 {
+		.container {
+			padding-bottom: 4.17vw;
+			.col-6 {
+				@include down-md() {
+				}
+			}
+
+			h2 {
+				font: bold 3.65vw/4.17vw "Titillium Web";
+				margin-bottom: 1.56vw;
+				@include down-md() {
+					font: bold 3.13vw/3.91vw "Titillium Web";
+					margin-bottom: 1.56vw;
+				}
+				@include down-sm() {
+					font: bold 1.67vw/2.5vw "Titillium Web";
+				}
+			}
+			h5 {
+				font: 300 1.15vw/1.88vw "Titillium Web";
+				margin-bottom: 1.04vw;
+				// text-shadow: 1px 0.26vw 0.63vw #0000002b;
+				@include down-md() {
+				}
+				@include down-sm() {
+					font: 300 0.83vw/1.56vw "Titillium Web";
+				}
+			}
+			.main-ctas {
+				margin-top: 1.56vw;
+				a {
+					padding: 0.78vw 2.08vw;
+					border-radius: 2.6vw;
+					letter-spacing: 1px;
+					font-size: 0.94vw;
+					margin-right: 0.52vw;
+					margin-bottom: 0.52vw;
+					@include down-sm() {
+						font-size: 0.73vw;
+						letter-spacing: 1px;
+						padding: 0.52vw 1.04vw;
+						margin-right: 0.26vw;
+					}
+					&:hover {
+					}
+					svg {
+						width: 0.78vw;
+						height: 0.78vw;
+						margin-left: 0.26vw;
+						@include down-sm() {
+							width: 0.52vw;
+							height: 0.52vw;
+						}
+					}
+				}
+			}
+		}
+	}
+
 	.about {
 		padding-top: 9.38vw;
 		padding-bottom: 7.81vw;

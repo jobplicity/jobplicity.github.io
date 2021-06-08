@@ -18,7 +18,7 @@ a { color: inherit; text-decoration: none; }
 
 @media (max-width: 767px) { .container { padding-left: 20px; padding-right: 20px; } }
 
-header { background: #fff; border-bottom: 1px solid #cecece; position: fixed; top: 0; left: 0; right: 0; height: 110px; z-index: 100; }
+header { background: #fff; border-bottom: 1px solid #cecece; position: fixed; top: 0; left: 0; right: 0; height: 110px; z-index: 100; -webkit-transition: background 0.3s, height 0.3s; transition: background 0.3s, height 0.3s; }
 
 header .mobile-menu { display: -webkit-box; display: -ms-flexbox; display: flex; }
 
@@ -40,7 +40,11 @@ header .mobile-menu .mobile-nav .header-cta { margin-top: 20px; font-size: 18px;
 
 @media (max-width: 1023px) { header { display: block; height: auto; padding-top: 15px; padding-bottom: 15px; } }
 
-header .header-wrapper { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; text-align: center; width: 100%; height: 100%; padding-left: 50px; padding-right: 50px; }
+header .header-wrapper { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; text-align: center; max-width: 1600px; width: 100%; margin: auto; height: 100%; }
+
+@media (max-width: 1023px) { header .header-wrapper { padding-left: 50px; padding-right: 50px; } }
+
+@media (max-width: 767px) { header .header-wrapper { padding-left: 20px; padding-right: 20px; } }
 
 header .header-wrapper > div { display: -webkit-box; display: -ms-flexbox; display: flex; }
 
@@ -82,6 +86,12 @@ header .header-wrapper .header-cta { background: #ffffff; border: 2px solid #000
 
 header .header-wrapper .header-cta:hover { background: #000; color: #fff; }
 
+@media (min-width: 1024px) { header.transparent { background: transparent; border-color: transparent; height: 140px; }
+  header.transparent .header-wrapper #logo img { -webkit-filter: invert(1); filter: invert(1); }
+  header.transparent .header-wrapper ul li a { color: #fff; }
+  header.transparent .header-wrapper ul li:after { color: #fff; }
+  header.transparent .header-wrapper .header-cta { border-color: #fff; color: #fff; background: transparent; } }
+
 @-webkit-keyframes bounce { 0% { -webkit-transform: translate(0, 0); transform: translate(0, 0); }
   40% { -webkit-transform: translate(0, -10px); transform: translate(0, -10px); }
   100% { -webkit-transform: translate(0, 0); transform: translate(0, 0); } }
@@ -97,14 +107,6 @@ header .header-wrapper .header-cta:hover { background: #000; color: #fff; }
 .main { padding-top: 110px; height: 100vh; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: start; -ms-flex-pack: start; justify-content: flex-start; -webkit-box-align: center; -ms-flex-align: center; align-items: center; position: relative; }
 
 @media (max-width: 1023px) { .main { height: auto; } }
-
-.main #gradient-canvas { position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 4; -webkit-clip-path: polygon(0 0, 100% 0%, 100% 25%, 0 55%); clip-path: polygon(0 0, 100% 0%, 100% 25%, 0 55%); --gradient-color-4: #ef008f; --gradient-color-3: #6ec3f4; --gradient-color-2: #7038ff; --gradient-color-1: #ffba27; }
-
-@media (max-width: 1023px) { .main #gradient-canvas { -webkit-clip-path: none; clip-path: none; } }
-
-.main #gradient-canvas canvas { width: 100% !important; height: 100% !important; }
-
-@media (max-width: 1023px) { .main #gradient-canvas canvas { opacity: 0.5; } }
 
 @media (max-width: 1023px) { .main { -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; } }
 
@@ -124,28 +126,6 @@ header .header-wrapper .header-cta:hover { background: #000; color: #fff; }
 
 .main .col-6 .hero-img img { width: 100%; }
 
-.main .col-6 .h2 { position: relative; z-index: 5; opacity: 0.85; width: 100%; margin-top: 150px; }
-
-@media (max-width: 1023px) { .main .col-6 .h2 { margin-top: 0; opacity: 1; } }
-
-.main .col-6 .h2 h2:first-child { position: absolute; z-index: 3; color: #000; opacity: 0.2; }
-
-@media (max-width: 1023px) { .main .col-6 .h2 h2:first-child { display: none; } }
-
-.main .col-6 .h2 h2:last-child { color: #000; z-index: 5; position: relative; opacity: 0.8; }
-
-.main .col-6 h2 { text-align: left; font: bold 90px/100px "Titillium Web"; color: #000; margin-top: 0; margin-bottom: 30px; }
-
-@media (max-width: 1023px) { .main .col-6 h2 { font: bold 60px/75px "Titillium Web"; text-align: center; margin-bottom: 30px; } }
-
-@media (max-width: 767px) { .main .col-6 h2 { font: bold 32px/48px "Titillium Web"; } }
-
-.main .col-6 h3 { text-align: left; font: 300 25px/51px "Titillium Web"; letter-spacing: 0.75px; margin-top: 0; margin-bottom: 40px; }
-
-@media (max-width: 1023px) { .main .col-6 h3 { margin-bottom: 40px; text-align: center; } }
-
-@media (max-width: 767px) { .main .col-6 h3 { font: 300 20px/35px "Titillium Web"; } }
-
 .main .col-6 .signup-form { background: #ffffff; -webkit-box-shadow: 8px 8px 100px rgba(0, 0, 0, 0.2); box-shadow: 8px 8px 100px rgba(0, 0, 0, 0.2); border-radius: 4px; opacity: 1; padding: 30px; }
 
 .main .col-6 .signup-form form { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: end; -ms-flex-align: end; align-items: flex-end; }
@@ -155,6 +135,44 @@ header .header-wrapper .header-cta:hover { background: #000; color: #fff; }
 .main .col-6 .signup-form input { height: 50px; margin-right: 50px; -webkit-appearance: none; border: none; border-bottom: 3px solid #e0d1f3; -webkit-box-flex: 1; -ms-flex: auto; flex: auto; outline: 0; font: 200 22px/34px "Titillium Web"; letter-spacing: 0.66px; color: #000; }
 
 @media (max-width: 1023px) { .main .col-6 .signup-form input { margin-right: 0; text-align: center; margin-bottom: 30px; } }
+
+#gradient-overlay { will-change: opacity; }
+
+#gradient { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+
+#gradient svg { width: 100%; height: 100%; }
+
+.main-v2 { height: 100vh; }
+
+.main-v2 .container { height: 100%; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: start; -ms-flex-pack: start; justify-content: flex-start; -webkit-box-align: end; -ms-flex-align: end; align-items: flex-end; padding-bottom: 80px; }
+
+.main-v2 .container .col-6 { -webkit-box-flex: 0; -ms-flex: 0 1 50%; flex: 0 1 50%; }
+
+@media (max-width: 1023px) { .main-v2 .container .col-6 { -webkit-box-flex: 0; -ms-flex: 0 1 100%; flex: 0 1 100%; } }
+
+.main-v2 .container h2 { text-align: left; font: bold 70px/80px "Titillium Web"; color: #fff; margin-top: 0; margin-bottom: 30px; }
+
+@media (max-width: 1023px) { .main-v2 .container h2 { font: bold 60px/75px "Titillium Web"; margin-bottom: 30px; } }
+
+@media (max-width: 767px) { .main-v2 .container h2 { font: bold 32px/48px "Titillium Web"; } }
+
+.main-v2 .container h5 { text-align: left; font: 300 22px/36px "Titillium Web"; margin-top: 0; color: #fff; font-weight: 500; max-width: 80%; margin-bottom: 20px; }
+
+@media (max-width: 1023px) { .main-v2 .container h5 { max-width: 100%; } }
+
+@media (max-width: 767px) { .main-v2 .container h5 { font: 300 16px/30px "Titillium Web"; } }
+
+.main-v2 .container .main-ctas { margin-top: 30px; }
+
+.main-v2 .container .main-ctas a { padding: 15px 40px; color: #fff; background: rgba(0, 0, 0, 0.15); border-radius: 50px; font-weight: 600; letter-spacing: 1px; font-size: 18px; display: -webkit-inline-box; display: -ms-inline-flexbox; display: inline-flex; margin-right: 10px; text-transform: uppercase; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-transition: all 0.3s; transition: all 0.3s; margin-bottom: 10px; }
+
+@media (max-width: 767px) { .main-v2 .container .main-ctas a { font-size: 14px; letter-spacing: 1px; padding: 10px 20px; margin-right: 5px; } }
+
+.main-v2 .container .main-ctas a:hover { background: rgba(0, 0, 0, 0.25); }
+
+.main-v2 .container .main-ctas a svg { width: 15px; height: 15px; margin-left: 5px; }
+
+@media (max-width: 767px) { .main-v2 .container .main-ctas a svg { width: 10px; height: 10px; } }
 
 .about { padding-top: 180px; padding-bottom: 150px; background: #f5f5f5; }
 
@@ -489,13 +507,19 @@ footer a:hover { text-decoration: underline; }
 @media (min-width: 1024px) and (max-width: 1919px) { /* SCSS by Mamo YZ
 https://mamoyz.com/ */
   .container { padding-left: 0.78vw; padding-right: 0.78vw; max-width: 83.33vw; }
-  header { border-bottom: 0.05vw solid #cecece; height: 5.73vw; }
-  header .header-wrapper { padding-left: 2.6vw; padding-right: 2.6vw; }
+  header { border-bottom: 1px solid #cecece; height: 5.73vw; }
+  header .mobile-menu .menu-toggle { margin-left: 0.52vw; }
+  header .mobile-menu .menu-toggle svg { width: 1.3vw; }
+  header .mobile-menu .mobile-nav ul li a { font-size: 1.04vw; padding: 1.04vw !important; }
+  header .mobile-menu .mobile-nav .header-cta { margin-top: 1.04vw; font-size: 0.94vw; }
+  header .header-wrapper { max-width: 83.33vw; }
   header .header-wrapper #logo { margin-right: 2.08vw; }
   header .header-wrapper #logo img { width: 2.08vw; margin-right: 0.52vw; }
   header .header-wrapper #logo span { font: 600 1.25vw/1.25vw "Titillium Web"; letter-spacing: 0.1vw; }
   header .header-wrapper ul li a { font: 300 0.83vw/1.25vw "Titillium Web"; letter-spacing: 0.18vw; padding: 0 0.78vw; }
+  header .header-wrapper ul li a img { width: 1.04vw; }
   header .header-wrapper .header-cta { border: 0.1vw solid #000000; border-radius: 0.52vw; padding: 0.78vw 1.82vw; font: 600 0.83vw/1.25vw "Titillium Web"; letter-spacing: 0.08vw; margin-left: 1.04vw; }
+  header.transparent { height: 7.29vw; }
   @-webkit-keyframes bounce { 0% { }
     40% { -webkit-transform: translate(0, -0.52vw); transform: translate(0, -0.52vw); }
     100% { } }
@@ -510,7 +534,27 @@ https://mamoyz.com/ */
   .main .col-6 h3 { font: 300 1.3vw/2.66vw "Titillium Web"; letter-spacing: 1px; margin-bottom: 2.08vw; }
   .main .col-6 .signup-form { -webkit-box-shadow: 0.42vw 0.42vw 5.21vw rgba(0, 0, 0, 0.2); box-shadow: 0.42vw 0.42vw 5.21vw rgba(0, 0, 0, 0.2); border-radius: 0.21vw; padding: 1.56vw; }
   .main .col-6 .signup-form input { height: 2.6vw; margin-right: 2.6vw; border-bottom: 0.16vw solid #e0d1f3; font: 200 1.15vw/1.77vw "Titillium Web"; letter-spacing: 1px; }
-  .about { padding-top: 9.38vw; padding-bottom: 7.81vw; }
+  .main-v2 .container { padding-bottom: 4.17vw; }
+  .main-v2 .container h2 { font: bold 3.65vw/4.17vw "Titillium Web"; margin-bottom: 1.56vw; } }
+
+@media (min-width: 1024px) and (max-width: 1919px) and (max-width: 1023px) { .main-v2 .container h2 { font: bold 3.13vw/3.91vw "Titillium Web"; margin-bottom: 1.56vw; } }
+
+@media (min-width: 1024px) and (max-width: 1919px) and (max-width: 767px) { .main-v2 .container h2 { font: bold 1.67vw/2.5vw "Titillium Web"; } }
+
+@media (min-width: 1024px) and (max-width: 1919px) { .main-v2 .container h5 { font: 300 1.15vw/1.88vw "Titillium Web"; margin-bottom: 1.04vw; } }
+
+@media (min-width: 1024px) and (max-width: 1919px) and (max-width: 767px) { .main-v2 .container h5 { font: 300 0.83vw/1.56vw "Titillium Web"; } }
+
+@media (min-width: 1024px) and (max-width: 1919px) { .main-v2 .container .main-ctas { margin-top: 1.56vw; }
+  .main-v2 .container .main-ctas a { padding: 0.78vw 2.08vw; border-radius: 2.6vw; letter-spacing: 1px; font-size: 0.94vw; margin-right: 0.52vw; margin-bottom: 0.52vw; } }
+
+@media (min-width: 1024px) and (max-width: 1919px) and (max-width: 767px) { .main-v2 .container .main-ctas a { font-size: 0.73vw; letter-spacing: 1px; padding: 0.52vw 1.04vw; margin-right: 0.26vw; } }
+
+@media (min-width: 1024px) and (max-width: 1919px) { .main-v2 .container .main-ctas a svg { width: 0.78vw; height: 0.78vw; margin-left: 0.26vw; } }
+
+@media (min-width: 1024px) and (max-width: 1919px) and (max-width: 767px) { .main-v2 .container .main-ctas a svg { width: 0.52vw; height: 0.52vw; } }
+
+@media (min-width: 1024px) and (max-width: 1919px) { .about { padding-top: 9.38vw; padding-bottom: 7.81vw; }
   .about .row { margin-bottom: 10.4vw; }
   .about .row h3 { font: 600 3.12vw/3.91vw "Titillium Web"; }
   .about .row p { font: 300 1.46vw/2.08vw "Titillium Web"; letter-spacing: 0.04vw; margin-top: 0.78vw; }
