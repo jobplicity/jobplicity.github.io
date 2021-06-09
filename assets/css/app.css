@@ -165,11 +165,11 @@ header .header-wrapper .header-cta:hover { background: #000 !important; color: #
 
 @media (max-width: 767px) { .main-v2 .container h2 { font: 400 32px/48px "ColfaxAI"; } }
 
-.main-v2 .container h5 { text-align: left; font: 600 22px/36px "Titillium Web"; margin-top: 0; color: #fff; max-width: 100%; margin-bottom: 20px; }
+.main-v2 .container h5 { text-align: left; font: 400 22px/36px "ColfaxAI"; margin-top: 0; color: #fff; max-width: 100%; margin-bottom: 20px; }
 
 @media (max-width: 1023px) { .main-v2 .container h5 { max-width: 100%; } }
 
-@media (max-width: 767px) { .main-v2 .container h5 { font: 300 16px/30px "Titillium Web"; } }
+@media (max-width: 767px) { .main-v2 .container h5 { font: 400 16px/30px "ColfaxAI"; } }
 
 .main-v2 .container .main-ctas { margin-top: 30px; }
 
@@ -545,7 +545,7 @@ https://mamoyz.com/ */
   .main .col-6 .signup-form input { height: 2.6vw; margin-right: 2.6vw; border-bottom: 0.16vw solid #e0d1f3; font: 200 1.15vw/1.77vw "Titillium Web"; letter-spacing: 1px; }
   .main-v2 .container { padding-bottom: 2.08vw; }
   .main-v2 .container h2 { font: 400 3.12vw/3.64vw "ColfaxAI"; margin-bottom: 1vw; }
-  .main-v2 .container h5 { font: 600 1.15vw/1.88vw "Titillium Web"; margin-bottom: 1.04vw; }
+  .main-v2 .container h5 { font: 400 1.15vw/1.88vw "ColfaxAI"; margin-bottom: 1.04vw; }
   .main-v2 .container .main-ctas { margin-top: 1.56vw; }
   .main-v2 .container .main-ctas a { padding: 0.78vw 2.08vw; border-radius: 2.6vw; letter-spacing: 1px; font-size: 0.94vw; margin-right: 0.52vw; margin-bottom: 0.52vw; }
   .main-v2 .container .main-ctas a svg { width: 0.78vw; height: 0.78vw; margin-left: 0.26vw; }

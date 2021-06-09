@@ -473,7 +473,7 @@ header {
 		}
 		h5 {
 			text-align: left;
-			font: 600 22px/36px "Titillium Web";
+			font: 400 22px/36px "ColfaxAI";
 			margin-top: 0;
 			color: #fff;
 			max-width: 100%;
@@ -484,7 +484,7 @@ header {
 				max-width: 100%;
 			}
 			@include down-sm() {
-				font: 300 16px/30px "Titillium Web";
+				font: 400 16px/30px "ColfaxAI";
 			}
 		}
 		.main-ctas {
@@ -1566,7 +1566,7 @@ https://mamoyz.com/ */
 				margin-bottom: 1vw;
 			}
 			h5 {
-				font: 600 1.15vw/1.88vw "Titillium Web";
+				font: 400 1.15vw/1.88vw "ColfaxAI";
 				margin-bottom: 1.04vw;
 				// text-shadow: 1px 0.26vw 0.63vw #0000002b;
 			}
