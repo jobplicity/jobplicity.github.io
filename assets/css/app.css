@@ -1,5 +1,13 @@
 /* SCSS by Mamo YZ
 https://mamoyz.com/ */
+@font-face { font-family: "ColfaxAI"; src: url(../fonts/ColfaxAIRegular.woff2) format("woff2"), url(../fonts/ColfaxAIRegular.woff) format("woff"); font-weight: normal; font-style: normal; }
+
+@font-face { font-family: "ColfaxAI"; src: url(../fonts/ColfaxAIRegularItalic.woff2) format("woff2"), url(../fonts/ColfaxAIRegularItalic.woff) format("woff"); font-weight: normal; font-style: italic; }
+
+@font-face { font-family: "ColfaxAI"; src: url(../fonts/ColfaxAIBold.woff2) format("woff2"), url(../fonts/ColfaxAIBold.woff) format("woff"); font-weight: bold; font-style: normal; }
+
+@font-face { font-family: "ColfaxAI"; src: url(../fonts/ColfaxAIBoldItalic.woff2) format("woff2"), url(../fonts/ColfaxAIBoldItalic.woff) format("woff"); font-weight: bold; font-style: italic; }
+
 * { -webkit-box-sizing: border-box; box-sizing: border-box; }
 
 html { overflow-x: hidden; }
@@ -151,11 +159,11 @@ header .header-wrapper .header-cta:hover { background: #000 !important; color: #
 
 @media (max-width: 1023px) { .main-v2 .container .col-6 { -webkit-box-flex: 0; -ms-flex: 0 1 100%; flex: 0 1 100%; } }
 
-.main-v2 .container h2 { text-align: left; font: bold 60px/70px "Titillium Web"; color: #fff; margin-top: 0; margin-bottom: 20px; }
+.main-v2 .container h2 { text-align: left; font: 400 60px/70px "ColfaxAI"; color: #fff; margin-top: 0; margin-bottom: 20px; }
 
-@media (max-width: 1023px) { .main-v2 .container h2 { font: bold 55px/68px "Titillium Web"; margin-bottom: 30px; } }
+@media (max-width: 1023px) { .main-v2 .container h2 { font: 400 55px/68px "ColfaxAI"; margin-bottom: 30px; } }
 
-@media (max-width: 767px) { .main-v2 .container h2 { font: bold 32px/48px "Titillium Web"; } }
+@media (max-width: 767px) { .main-v2 .container h2 { font: 400 32px/48px "ColfaxAI"; } }
 
 .main-v2 .container h5 { text-align: left; font: 600 22px/36px "Titillium Web"; margin-top: 0; color: #fff; max-width: 100%; margin-bottom: 20px; }
 
@@ -536,7 +544,7 @@ https://mamoyz.com/ */
   .main .col-6 .signup-form { -webkit-box-shadow: 0.42vw 0.42vw 5.21vw rgba(0, 0, 0, 0.2); box-shadow: 0.42vw 0.42vw 5.21vw rgba(0, 0, 0, 0.2); border-radius: 0.21vw; padding: 1.56vw; }
   .main .col-6 .signup-form input { height: 2.6vw; margin-right: 2.6vw; border-bottom: 0.16vw solid #e0d1f3; font: 200 1.15vw/1.77vw "Titillium Web"; letter-spacing: 1px; }
   .main-v2 .container { padding-bottom: 2.08vw; }
-  .main-v2 .container h2 { font: bold 3.12vw/3.64vw "Titillium Web"; margin-bottom: 1vw; }
+  .main-v2 .container h2 { font: 400 3.12vw/3.64vw "ColfaxAI"; margin-bottom: 1vw; }
   .main-v2 .container h5 { font: 600 1.15vw/1.88vw "Titillium Web"; margin-bottom: 1.04vw; }
   .main-v2 .container .main-ctas { margin-top: 1.56vw; }
   .main-v2 .container .main-ctas a { padding: 0.78vw 2.08vw; border-radius: 2.6vw; letter-spacing: 1px; font-size: 0.94vw; margin-right: 0.52vw; margin-bottom: 0.52vw; }
