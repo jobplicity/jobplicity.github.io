@@ -40,7 +40,7 @@ header .mobile-menu .mobile-nav .header-cta { margin-top: 20px; font-size: 18px;
 
 @media (max-width: 1023px) { header { display: block; height: auto; padding-top: 15px; padding-bottom: 15px; } }
 
-header .header-wrapper { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; text-align: center; max-width: 1600px; width: 100%; margin: auto; height: 100%; }
+header .header-wrapper { padding-left: 15px; padding-right: 15px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; text-align: center; max-width: 1600px; width: 100%; margin: auto; height: 100%; }
 
 @media (max-width: 1023px) { header .header-wrapper { padding-left: 50px; padding-right: 50px; } }
 
@@ -144,19 +144,19 @@ header .header-wrapper .header-cta:hover { background: #000; color: #fff; }
 
 .main-v2 { height: 100vh; }
 
-.main-v2 .container { height: 100%; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: start; -ms-flex-pack: start; justify-content: flex-start; -webkit-box-align: end; -ms-flex-align: end; align-items: flex-end; padding-bottom: 80px; }
+.main-v2 .container { height: 100%; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: start; -ms-flex-pack: start; justify-content: flex-start; -webkit-box-align: end; -ms-flex-align: end; align-items: flex-end; padding-bottom: 40px; }
 
-.main-v2 .container .col-6 { -webkit-box-flex: 0; -ms-flex: 0 1 50%; flex: 0 1 50%; }
+.main-v2 .container .col-6 { -webkit-box-flex: 0; -ms-flex: 0 1 60%; flex: 0 1 60%; }
 
 @media (max-width: 1023px) { .main-v2 .container .col-6 { -webkit-box-flex: 0; -ms-flex: 0 1 100%; flex: 0 1 100%; } }
 
-.main-v2 .container h2 { text-align: left; font: bold 70px/80px "Titillium Web"; color: #fff; margin-top: 0; margin-bottom: 30px; }
+.main-v2 .container h2 { text-align: left; font: bold 60px/70px "Titillium Web"; color: #fff; margin-top: 0; margin-bottom: 20px; }
 
-@media (max-width: 1023px) { .main-v2 .container h2 { font: bold 60px/75px "Titillium Web"; margin-bottom: 30px; } }
+@media (max-width: 1023px) { .main-v2 .container h2 { font: bold 55px/68px "Titillium Web"; margin-bottom: 30px; } }
 
 @media (max-width: 767px) { .main-v2 .container h2 { font: bold 32px/48px "Titillium Web"; } }
 
-.main-v2 .container h5 { text-align: left; font: 300 22px/36px "Titillium Web"; margin-top: 0; color: #fff; font-weight: 500; max-width: 80%; margin-bottom: 20px; }
+.main-v2 .container h5 { text-align: left; font: 600 22px/36px "Titillium Web"; margin-top: 0; color: #fff; max-width: 100%; margin-bottom: 20px; }
 
 @media (max-width: 1023px) { .main-v2 .container h5 { max-width: 100%; } }
 
@@ -512,7 +512,7 @@ https://mamoyz.com/ */
   header .mobile-menu .menu-toggle svg { width: 1.3vw; }
   header .mobile-menu .mobile-nav ul li a { font-size: 1.04vw; padding: 1.04vw !important; }
   header .mobile-menu .mobile-nav .header-cta { margin-top: 1.04vw; font-size: 0.94vw; }
-  header .header-wrapper { max-width: 83.33vw; }
+  header .header-wrapper { max-width: 83.33vw; padding-left: 0.78vw; padding-right: 0.78vw; }
   header .header-wrapper #logo { margin-right: 2.08vw; }
   header .header-wrapper #logo img { width: 2.08vw; margin-right: 0.52vw; }
   header .header-wrapper #logo span { font: 600 1.25vw/1.25vw "Titillium Web"; letter-spacing: 0.1vw; }
@@ -534,27 +534,13 @@ https://mamoyz.com/ */
   .main .col-6 h3 { font: 300 1.3vw/2.66vw "Titillium Web"; letter-spacing: 1px; margin-bottom: 2.08vw; }
   .main .col-6 .signup-form { -webkit-box-shadow: 0.42vw 0.42vw 5.21vw rgba(0, 0, 0, 0.2); box-shadow: 0.42vw 0.42vw 5.21vw rgba(0, 0, 0, 0.2); border-radius: 0.21vw; padding: 1.56vw; }
   .main .col-6 .signup-form input { height: 2.6vw; margin-right: 2.6vw; border-bottom: 0.16vw solid #e0d1f3; font: 200 1.15vw/1.77vw "Titillium Web"; letter-spacing: 1px; }
-  .main-v2 .container { padding-bottom: 4.17vw; }
-  .main-v2 .container h2 { font: bold 3.65vw/4.17vw "Titillium Web"; margin-bottom: 1.56vw; } }
-
-@media (min-width: 1024px) and (max-width: 1919px) and (max-width: 1023px) { .main-v2 .container h2 { font: bold 3.13vw/3.91vw "Titillium Web"; margin-bottom: 1.56vw; } }
-
-@media (min-width: 1024px) and (max-width: 1919px) and (max-width: 767px) { .main-v2 .container h2 { font: bold 1.67vw/2.5vw "Titillium Web"; } }
-
-@media (min-width: 1024px) and (max-width: 1919px) { .main-v2 .container h5 { font: 300 1.15vw/1.88vw "Titillium Web"; margin-bottom: 1.04vw; } }
-
-@media (min-width: 1024px) and (max-width: 1919px) and (max-width: 767px) { .main-v2 .container h5 { font: 300 0.83vw/1.56vw "Titillium Web"; } }
-
-@media (min-width: 1024px) and (max-width: 1919px) { .main-v2 .container .main-ctas { margin-top: 1.56vw; }
-  .main-v2 .container .main-ctas a { padding: 0.78vw 2.08vw; border-radius: 2.6vw; letter-spacing: 1px; font-size: 0.94vw; margin-right: 0.52vw; margin-bottom: 0.52vw; } }
-
-@media (min-width: 1024px) and (max-width: 1919px) and (max-width: 767px) { .main-v2 .container .main-ctas a { font-size: 0.73vw; letter-spacing: 1px; padding: 0.52vw 1.04vw; margin-right: 0.26vw; } }
-
-@media (min-width: 1024px) and (max-width: 1919px) { .main-v2 .container .main-ctas a svg { width: 0.78vw; height: 0.78vw; margin-left: 0.26vw; } }
-
-@media (min-width: 1024px) and (max-width: 1919px) and (max-width: 767px) { .main-v2 .container .main-ctas a svg { width: 0.52vw; height: 0.52vw; } }
-
-@media (min-width: 1024px) and (max-width: 1919px) { .about { padding-top: 9.38vw; padding-bottom: 7.81vw; }
+  .main-v2 .container { padding-bottom: 2.08vw; }
+  .main-v2 .container h2 { font: bold 3.12vw/3.64vw "Titillium Web"; margin-bottom: 1vw; }
+  .main-v2 .container h5 { font: 600 1.15vw/1.88vw "Titillium Web"; margin-bottom: 1.04vw; }
+  .main-v2 .container .main-ctas { margin-top: 1.56vw; }
+  .main-v2 .container .main-ctas a { padding: 0.78vw 2.08vw; border-radius: 2.6vw; letter-spacing: 1px; font-size: 0.94vw; margin-right: 0.52vw; margin-bottom: 0.52vw; }
+  .main-v2 .container .main-ctas a svg { width: 0.78vw; height: 0.78vw; margin-left: 0.26vw; }
+  .about { padding-top: 9.38vw; padding-bottom: 7.81vw; }
   .about .row { margin-bottom: 10.4vw; }
   .about .row h3 { font: 600 3.12vw/3.91vw "Titillium Web"; }
   .about .row p { font: 300 1.46vw/2.08vw "Titillium Web"; letter-spacing: 0.04vw; margin-top: 0.78vw; }
