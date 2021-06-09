@@ -84,13 +84,14 @@ header .header-wrapper ul li:last-child::after { display: none; }
 
 header .header-wrapper .header-cta { background: #ffffff; border: 2px solid #000000; border-radius: 10px; opacity: 1; padding: 15px 35px; font: 600 16px/24px "Titillium Web"; letter-spacing: 1.6px; color: #000000; margin-left: 20px; -webkit-transition: all 0.3s; transition: all 0.3s; }
 
-header .header-wrapper .header-cta:hover { background: #000; color: #fff; }
+header .header-wrapper .header-cta:hover { background: #000 !important; color: #fff !important; }
 
 @media (min-width: 1024px) { header.transparent { background: transparent; border-color: transparent; height: 140px; }
   header.transparent .header-wrapper #logo img { -webkit-filter: invert(1); filter: invert(1); }
   header.transparent .header-wrapper ul li a { color: #fff; }
   header.transparent .header-wrapper ul li:after { color: #fff; }
-  header.transparent .header-wrapper .header-cta { border-color: #fff; color: #fff; background: transparent; } }
+  header.transparent .header-wrapper .header-cta { border-color: #fff; color: #fff; background: transparent; }
+  header.transparent .header-wrapper .header-cta:hover { background: #fff !important; color: #000 !important; } }
 
 @-webkit-keyframes bounce { 0% { -webkit-transform: translate(0, 0); transform: translate(0, 0); }
   40% { -webkit-transform: translate(0, -10px); transform: translate(0, -10px); }
