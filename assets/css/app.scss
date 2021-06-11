@@ -134,11 +134,13 @@ header {
 	}
 	@include down-md() {
 		display: block;
-		height: auto;
+		height: 80px;
 		padding-top: 15px;
 		padding-bottom: 15px;
 	}
-
+	@include down-sm() {
+		height: 56px;
+	}
 	.header-wrapper {
 		padding-left: 15px;
 		padding-right: 15px;

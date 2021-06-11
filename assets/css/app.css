@@ -46,7 +46,9 @@ header .mobile-menu .mobile-nav ul li a { font-size: 20px; padding: 20px !import
 
 header .mobile-menu .mobile-nav .header-cta { margin-top: 20px; font-size: 18px; }
 
-@media (max-width: 1023px) { header { display: block; height: auto; padding-top: 15px; padding-bottom: 15px; } }
+@media (max-width: 1023px) { header { display: block; height: 80px; padding-top: 15px; padding-bottom: 15px; } }
+
+@media (max-width: 767px) { header { height: 56px; } }
 
 header .header-wrapper { padding-left: 15px; padding-right: 15px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; text-align: center; max-width: 1600px; width: 100%; margin: auto; height: 100%; }
 
