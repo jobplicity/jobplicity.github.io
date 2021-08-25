@@ -552,6 +552,79 @@ header .header-wrapper .header-cta:hover {
   }
 }
 
+.cohorts-section {
+  padding: 5rem 0;
+}
+.cohorts-section .up-head h2 {
+  font-weight: 600;
+}
+.cohorts-section .up-head p {
+  color: #aaa;
+  font-weight: 500;
+}
+.cohorts-section .cohort-card {
+  box-shadow: 0 0 30px -4px #00000022;
+}
+.cohorts-section .cohort-card .cohort-poster {
+  height: 250px;
+}
+.cohorts-section .cohort-card .cohort-poster .card-img {
+  height: 100%;
+  object-fit: cover;
+}
+.cohorts-section .cohort-card .cohort-poster .img-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #00000066;
+}
+.cohorts-section .cohort-card .cohort-poster .poster-info {
+  top: initial;
+  bottom: 0;
+}
+.cohorts-section .cohort-card .cohort-poster .poster-info .team-people {
+  padding-bottom: 45px;
+}
+.cohorts-section .cohort-card .cohort-poster .poster-info .team-people .img img {
+  width: 45px;
+  height: 45px;
+}
+.cohorts-section .cohort-card .cohort-poster .poster-info .team-people .img:nth-child(1) {
+  left: 1.25rem;
+}
+.cohorts-section .cohort-card .cohort-poster .poster-info .team-people .img:nth-child(2) {
+  left: 2.5rem;
+}
+.cohorts-section .cohort-card .cohort-poster .poster-info .team-people .img:nth-child(3) {
+  left: 3.75rem;
+}
+.cohorts-section .cohort-card .cohort-poster .poster-info .team-people .img:nth-child(4) {
+  left: 5rem;
+}
+.cohorts-section .cohort-card .cohort-poster .poster-info .team-people .img:nth-child(5) {
+  left: 6.25rem;
+}
+.cohorts-section .cohort-card .cohort-poster .poster-info .team-people .rest-people {
+  width: 45px;
+  height: 45px;
+  left: 7.5rem;
+}
+.cohorts-section .cohort-card .join-details {
+  font-weight: 600;
+}
+.cohorts-section .cohort-card .join-details .date .number {
+  color: #e070ff;
+  letter-spacing: 3px;
+}
+.cohorts-section .cohort-card .join-details .date span {
+  color: #aaa;
+}
+.cohorts-section .cohort-card .join-details .btn {
+  font-weight: 600;
+}
+
 .about {
   padding-top: 180px;
   padding-bottom: 150px;
@@ -2276,75 +2349,6 @@ footer a:hover {
   .advisors .current-advisor .advisor-item .advisor-about {
     padding-left: 7.81vw;
   }
-}
-.cohorts {
-  padding-top: 110px;
-}
-.cohorts .up-head h2 {
-  font-weight: 600;
-}
-.cohorts .up-head p {
-  color: #aaa;
-  font-weight: 500;
-}
-.cohorts .cohort-card .cohort-poster {
-  height: 250px;
-}
-.cohorts .cohort-card .cohort-poster .card-img {
-  height: 100%;
-  object-fit: cover;
-}
-.cohorts .cohort-card .cohort-poster .img-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #00000066;
-}
-.cohorts .cohort-card .cohort-poster .poster-info {
-  top: initial;
-  bottom: 0;
-}
-.cohorts .cohort-card .cohort-poster .poster-info .team-people {
-  padding-bottom: 45px;
-}
-.cohorts .cohort-card .cohort-poster .poster-info .team-people .img img {
-  width: 45px;
-  height: 45px;
-}
-.cohorts .cohort-card .cohort-poster .poster-info .team-people .img:nth-child(1) {
-  left: 1.25rem;
-}
-.cohorts .cohort-card .cohort-poster .poster-info .team-people .img:nth-child(2) {
-  left: 2.5rem;
-}
-.cohorts .cohort-card .cohort-poster .poster-info .team-people .img:nth-child(3) {
-  left: 3.75rem;
-}
-.cohorts .cohort-card .cohort-poster .poster-info .team-people .img:nth-child(4) {
-  left: 5rem;
-}
-.cohorts .cohort-card .cohort-poster .poster-info .team-people .img:nth-child(5) {
-  left: 6.25rem;
-}
-.cohorts .cohort-card .cohort-poster .poster-info .team-people .rest-people {
-  width: 45px;
-  height: 45px;
-  left: 7.5rem;
-}
-.cohorts .cohort-card .join-details {
-  font-weight: 600;
-}
-.cohorts .cohort-card .join-details .date .number {
-  color: #e070ff;
-  letter-spacing: 3px;
-}
-.cohorts .cohort-card .join-details .date span {
-  color: #aaa;
-}
-.cohorts .cohort-card .join-details .btn {
-  font-weight: 600;
 }
 
 /*# sourceMappingURL=app.css.map */

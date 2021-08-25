@@ -528,6 +528,76 @@ header {
 		}
 	}
 }
+
+.cohorts-section {
+	padding: 5rem 0;
+  .up-head {
+    h2 {
+      font-weight: 600;
+    }
+    p {
+      color: #aaa;
+      font-weight: 500;
+    }
+  }
+
+  .cohort-card {
+		box-shadow: 0 0 30px -4px #00000022;
+      .cohort-poster {
+        height: 250px;
+        .card-img {
+          height: 100%;
+          object-fit: cover;
+        }
+        .img-overlay {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-color: #00000066;
+        }
+        .poster-info {
+          top: initial;
+          bottom: 0;
+          .team-people {
+            padding-bottom: 45px;
+            .img {
+              img {
+                width: 45px;
+                height: 45px;
+              }
+              &:nth-child(1) {left: 1.25rem}
+              &:nth-child(2) {left: 2.5rem}
+              &:nth-child(3) {left: 3.75rem}
+              &:nth-child(4) {left: 5rem}
+              &:nth-child(5) {left: 6.25rem}
+            }
+            .rest-people {
+              width: 45px;
+                height: 45px;
+                left: 7.5rem;
+            }
+          }
+        }
+      }
+      .join-details {
+        font-weight: 600;
+        .date {
+          .number {
+            color: #e070ff;
+            letter-spacing: 3px
+          }
+          span {
+            color: #aaa;
+          }
+        }
+        .btn {
+        font-weight: 600;
+        }
+      }
+  }
+}
 .about {
 	padding-top: 180px;
 	padding-bottom: 150px;
@@ -1922,4 +1992,3 @@ https://mamoyz.com/ */
 }
 
 @import "advisors";
-@import "cohorts";

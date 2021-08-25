@@ -119,6 +119,87 @@ const Home = Vue.component("Home", {
         </div>
         
       </section>
+
+			<div class="cohorts-section">
+			<div class="container py-5">
+				<div class="up-head">
+					<h2> Upcoming Cohorts </h2>
+					<p class="w-50 fs-5 mt-3 mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit repudiandae labore cum libero nostrum cumque itaque ad nihil ab ducimus.</p>
+				</div>
+				
+				<div class="row">
+					<div class="col-12 col-md-6 col-lg-4 col-xl-3">
+						<div class="card cohort-card rounded-3 overflow-hidden">
+							<div class="cohort-poster position-relative">
+								<img
+									class="card-img"
+									src="https://images.pexels.com/photos/2334636/pexels-photo-2334636.jpeg?cs=srgb&dl=pexels-suzy-hazelwood-2334636.jpg&fm=jpg"
+								/>
+								<div class="img-overlay"></div>
+								<div class="card-img-overlay poster-info text-white">
+									<h3 class="card-title mb-4">Data Analyst Cohort 1</h3>
+									<p class="card-text mb-4">8 People in the team</p>
+									<div class="team-people d-flex">
+										<div class="img position-absolute" v-for="i in 8" :key="i">
+											<img
+												:src="'https://picsum.photos/id/' + i + 60 + '/200/300'"
+												class="rounded-circle"
+												v-if="i < 6"
+											/>
+										</div>
+										<div
+											class="
+												rest-people
+												bg-black
+												position-absolute
+												d-flex
+												align-items-center
+												justify-content-center
+												rounded-circle
+											"
+										>
+											+{{8 - 5}}
+										</div>
+									</div>
+								</div>
+							</div>
+				
+							<div class="card-body join-details d-flex align-items-center">
+								<div class="start-date flex-grow-1">
+									<p class="text-center mb-1 fs-5">Starts in</p>
+				
+									<div class="date d-flex justify-content-center pb-3">
+										<div class="days">
+											<h3 class="number fw-bold mb-1">01:</h3>
+											<span class="ms-1">day</span>
+										</div>
+										<div class="hours">
+											<h3 class="number fw-bold mb-1">12:</h3>
+											<span class="ms-1">hr</span>
+										</div>
+										<div class="minutes">
+											<h3 class="number fw-bold mb-1">11:</h3>
+											<span class="ms-1">min</span>
+										</div>
+										<div class="seconds">
+											<h3 class="number fw-bold mb-1">44</h3>
+											<span class="ms-1">sec</span>
+										</div>
+									</div>
+								</div>
+								<div class="join-button flex-grow-1 px-2">
+									<button class="btn btn-lg btn-outline-dark w-100 py-3">
+										Join Cohort
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
       <section class="about">
         <div class="container">
           <div class="row row1">
@@ -1019,6 +1100,7 @@ const Home = Vue.component("Home", {
 		},
 	},
 });
+
 const routes = [
 	{ path: "/advisors", component: Advisors, name: "advisors" },
 	{
