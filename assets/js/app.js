@@ -124,11 +124,11 @@ const Home = Vue.component("Home", {
 			<div class="container py-5">
 				<div class="up-head">
 					<h2> Upcoming Cohorts </h2>
-					<p class="w-50 fs-5 mt-3 mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit repudiandae labore cum libero nostrum cumque itaque ad nihil ab ducimus.</p>
+					<p class="fs-5 mt-3 mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit repudiandae labore cum libero nostrum cumque itaque ad nihil ab ducimus.</p>
 				</div>
 				
 				<div class="row">
-					<div class="col-12 col-md-6 col-lg-4 col-xl-3">
+					<div class="col-12 col-md-6 col-xl-5 col-2xl-3">
 						<div class="card cohort-card rounded-3 overflow-hidden">
 							<div class="cohort-poster position-relative">
 								<img
@@ -169,20 +169,20 @@ const Home = Vue.component("Home", {
 									<p class="text-center mb-1 fs-5">Starts in</p>
 				
 									<div class="date d-flex justify-content-center pb-3">
-										<div class="days">
-											<h3 class="number fw-bold mb-1">01:</h3>
+										<div>
+											<h3 id="days" class="number fw-bold mb-1"></h3>
 											<span class="ms-1">day</span>
 										</div>
-										<div class="hours">
-											<h3 class="number fw-bold mb-1">12:</h3>
+										<div>
+											<h3 id="hours" class="number fw-bold mb-1"></h3>
 											<span class="ms-1">hr</span>
 										</div>
-										<div class="minutes">
-											<h3 class="number fw-bold mb-1">11:</h3>
+										<div>
+											<h3 id="minutes" class="number fw-bold mb-1"></h3>
 											<span class="ms-1">min</span>
 										</div>
-										<div class="seconds">
-											<h3 class="number fw-bold mb-1">44</h3>
+										<div>
+											<h3 id="seconds" class="number fw-bold mb-1"></h3>
 											<span class="ms-1">sec</span>
 										</div>
 									</div>
@@ -1078,7 +1078,38 @@ const Home = Vue.component("Home", {
 		var gradient2 = new Gradient();
 		// gradient.initGradient("#gradient-canvas");
 		gradient2.initGradient("#gradient-canvas-bottom");
+
+
+
+		// Countdown timer
+		(function () {
+			const second = 1000,
+						minute = second * 60,
+						hour = minute * 60,
+						day = hour * 24;
+		
+			let cohortDate = "Oct 1, 2021 00:00:00",
+					countDown = new Date(cohortDate).getTime(),
+					x = setInterval(function() {    
+		
+						let now = new Date().getTime(),
+								distance = countDown - now;
+		
+						document.getElementById("days").innerText = Math.floor(distance / (day)) + ':',
+							document.getElementById("hours").innerText = Math.floor((distance % (day)) / (hour)) + ':',
+							document.getElementById("minutes").innerText = Math.floor((distance % (hour)) / (minute)) + ':',
+							document.getElementById("seconds").innerText = Math.floor((distance % (minute)) / second);
+		
+						//do something later when date is reached
+						if (distance < 0) {
+							clearInterval(x);
+						}
+						//seconds
+					}, 0)
+			}());
 	},
+
+
 	beforeDestroy() {
 		$(window).unbind("scroll");
 	},
@@ -1100,6 +1131,7 @@ const Home = Vue.component("Home", {
 		},
 	},
 });
+
 
 const routes = [
 	{ path: "/advisors", component: Advisors, name: "advisors" },

@@ -555,6 +555,43 @@ header .header-wrapper .header-cta:hover {
 .cohorts-section {
   padding: 5rem 0;
 }
+.cohorts-section .container {
+  padding-right: var(--bs-gutter-x, 0.75rem);
+  padding-left: var(--bs-gutter-x, 0.75rem);
+}
+@media (max-width: 576px) {
+  .cohorts-section .container {
+    padding-right: 1.25rem;
+    padding-left: 1.25rem;
+  }
+}
+@media (max-width: 991px) {
+  .cohorts-section .container {
+    padding-right: 2rem;
+    padding-left: 2rem;
+  }
+}
+@media (max-width: 991px) {
+  .cohorts-section .container {
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+  }
+}
+@media (min-width: 992px) {
+  .cohorts-section .container {
+    max-width: 960px;
+  }
+}
+@media (min-width: 1200px) {
+  .cohorts-section .container {
+    max-width: 1140px;
+  }
+}
+@media (min-width: 1400px) {
+  .cohorts-section .container {
+    max-width: 1320px;
+  }
+}
 .cohorts-section .up-head h2 {
   font-weight: 600;
 }
@@ -562,8 +599,14 @@ header .header-wrapper .header-cta:hover {
   color: #aaa;
   font-weight: 500;
 }
+@media (min-width: 1200px) {
+  .cohorts-section .up-head p {
+    width: 50%;
+  }
+}
 .cohorts-section .cohort-card {
   box-shadow: 0 0 30px -4px #00000022;
+  max-width: 400px;
 }
 .cohorts-section .cohort-card .cohort-poster {
   height: 250px;
