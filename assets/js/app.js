@@ -127,8 +127,6 @@ const Home = Vue.component("Home", {
 					<p class="fs-5 mt-3 mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit repudiandae labore cum libero nostrum cumque itaque ad nihil ab ducimus.</p>
 				</div>
 				
-				<div class="row">
-					<div class="col-12 col-md-6 col-xl-5 col-2xl-3">
 						<div class="card cohort-card rounded-3 overflow-hidden">
 							<div class="cohort-poster position-relative">
 								<img
@@ -194,8 +192,6 @@ const Home = Vue.component("Home", {
 								</div>
 							</div>
 						</div>
-					</div>
-				</div>
 			</div>
 		</div>
 
