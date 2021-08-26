@@ -102,11 +102,10 @@ const Home = Vue.component("Home", {
 
           <div class="col-6">
             <div class="h2">
-              <h2>Apply for your dream job. Automatically.</h2>
+              <h2>Learn & Work. Seize your future.</h2>
             </div>
-            <h5>
-             JobLaunch significantly increases your chance of getting an interview by taking the pain out of creating unique job applications.            </h5>
-			 <h5>We highlight the best of your skills & experience, rewrite your cover letter & resume to match the job’s requirements & even submit the application for you!</h5>
+            <h5>A web based app utilising Artificial Intelligence & Blockchain technologies, JobLaunch aims to completely revolutionise the way people go about learning new skills & obtaining work.</h5>
+			 <h5>JobLaunch is the future of work, a web 3.0 platform training cohorts of skilled individuals directly into next generation microtask jobs.</h5>
 			<div class="main-ctas">
 				<a href="https://app.joblaunch.co/sign_up"><span>Get Started</span> <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 256 256" style="enable-background:new 0 0 256 256;" xml:space="preserve">
