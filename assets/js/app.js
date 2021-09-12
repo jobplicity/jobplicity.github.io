@@ -102,7 +102,7 @@ const Home = Vue.component("Home", {
 
           <div class="col-6">
             <div class="h2">
-              <h2>Work whilst you learn.</h2>
+              <h2>Seize your future</h2>
             </div>
             <h5>JobLaunch utilises cohort based learning to wrap online courses. We combine psychological motivators into a coherent online experience to ensure our cohorts of students get to the end of an online course.</h5>
 
@@ -212,19 +212,19 @@ const Home = Vue.component("Home", {
                 We use the best psychological motivators known to humankind to get you to the end.
                 <br />
                 <br />
-                Every job we apply for, we create a custom tailor made CV & cover letter, highlighting the best of your skills to match the job’s specific requirements.
+                We combine psychological motivators including, group projects, gamification, tutoring, guest speakers, paired programming/assignments & tests into a coherent online experience to ensure you get to the end of an online course.
               </p>
             </div>
           </div>
           <div class="row row2">
             <div>
-              <h3>Automate your job application process today.</h3>
+              <h3>Experience gets you the Job. Not your resume.</h3>
               <p>
-                <strong>JobLaunch</strong>
-                is your job application automation agent, automatically applying for jobs on your behalf.
+				Employers value your  work experience. Not what your resume says you can do.
                 <br />
                 <br />
-                We take you through the entire job application journey, from finding jobs for you, & automatically applying, all the way through to coaching you on how to succeed in the interview process.
+				We monitor your progress through a syllabus. When you reach a certain skill proficiency our AI systems automatically begin recommending you beginner level jobs in a given category. Directly providing you experience to launch your next career.
+
               </p>
             </div>
             <div>
