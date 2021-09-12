@@ -128,7 +128,7 @@ const Home = Vue.component("Home", {
 			<div class="container py-5">
 				<div class="up-head">
 					<h2> Upcoming Cohorts </h2>
-					<p class="fs-5 mt-3 mb-5"> Our cohorts are entirely free. Join our latest cohorts below to learn the latest skills, stay motivated and learn enough of a base skill set to land your next
+					<p class="fs-5 mt-3 mb-5"> Our cohorts are entirely free. Join our cohorts below to learn the latest skills, stay motivated and learn enough of a base skill set to land your next
 					dream career.</p>
 				</div>
 
@@ -212,7 +212,7 @@ const Home = Vue.component("Home", {
                 We use the best psychological motivators known to humankind to get you to the end.
                 <br />
                 <br />
-                We combine psychological motivators including, group projects, gamification, tutoring, guest speakers, paired programming/assignments & tests into a coherent online experience to ensure you get to the end of an online course.
+                We combine psychological motivators including, group projects, gamification, tutoring, guest speakers, paired assignments & tests into a coherent online experience to ensure you get to the end of an online course.
               </p>
             </div>
           </div>
