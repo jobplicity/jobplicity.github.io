@@ -104,13 +104,12 @@ const Home = Vue.component("Home", {
             <div class="h2">
               <h2>Work whilst you learn.</h2>
             </div>
-            <h5>JobLaunch utilises cohort based learning to wrap online courses. We combine psychological motivators including, group projects, gamification, tutoring, guest speakers, paired programming/assignments
-			 & tests into a coherent online experience to ensure our cohorts of students get to the end of an online course.</h5>
+            <h5>JobLaunch utilises cohort based learning to wrap online courses. We combine psychological motivators into a coherent online experience to ensure our cohorts of students get to the end of an online course.</h5>
 
-			 <h5>On the backend, we through our chrome extension we monitor your progress through a course syllabus.  Once you unlock a certain level of proficiency, we start automatically recommending
+			 <h5>Through our chrome extension we monitor your progress through a course syllabus.  Once you unlock a certain level of proficiency, we start automatically recommending
 			  beginner jobs for you to complete.</h5>
 
-			 <h5>JobLaunch provides encouragement & incentives to get you through an online course created by another party.  You learn & work. Enabling you to use your newly minted skills on real world projects,
+			 <h5>JobLaunch provides encouragement & incentives to get you through an online course created by another party.  You work & learn. Enabling you to use your newly minted skills on real world projects,
 			 earning money, whilst gaining experience you can add directly to your resume.</h5>
 			<div class="main-ctas">
 				<a href="https://app.joblaunch.co/sign_up"><span>Get Started</span> <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -206,11 +205,11 @@ const Home = Vue.component("Home", {
         <div class="container">
           <div class="row row1">
             <div>
-              <h3>Tired of Applying for jobs Yourself?</h3>
+              <h3>Tired of not completing online courses?</h3>
             </div>
             <div>
               <p>
-                We use the best of human & artificial intelligence to apply for jobs for you.
+                We use the best psychological motivators known to humankind to get you to the end.
                 <br />
                 <br />
                 Every job we apply for, we create a custom tailor made CV & cover letter, highlighting the best of your skills to match the job’s specific requirements.
