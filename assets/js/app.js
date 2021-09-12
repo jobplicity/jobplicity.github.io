@@ -102,13 +102,13 @@ const Home = Vue.component("Home", {
 
           <div class="col-6">
             <div class="h2">
-              <h2>Work whilst you learn. Seize your future.</h2>
+              <h2>Work whilst you learn.</h2>
             </div>
             <h5>JobLaunch utilises cohort based learning to wrap online courses. We combine psychological motivators including, group projects, gamification, tutoring, guest speakers, paired programming/assignments
-			 & tests into a coherent online experience to ensure our cohorts of students get to the end of an online course.
+			 & tests into a coherent online experience to ensure our cohorts of students get to the end of an online course.</h5>
 
-			 On the backend, we through our chrome extension we monitor your progress through a course syllabus.  Once you unlock a certain level of proficiency, we start automatically recommending
-			  beginner jobs for you to complete. </h5>
+			 <h5>On the backend, we through our chrome extension we monitor your progress through a course syllabus.  Once you unlock a certain level of proficiency, we start automatically recommending
+			  beginner jobs for you to complete.</h5>
 
 			 <h5>JobLaunch provides encouragement & incentives to get you through an online course created by another party.  You learn & work. Enabling you to use your newly minted skills on real world projects,
 			 earning money, whilst gaining experience you can add directly to your resume.</h5>
@@ -129,7 +129,8 @@ const Home = Vue.component("Home", {
 			<div class="container py-5">
 				<div class="up-head">
 					<h2> Upcoming Cohorts </h2>
-					<p class="fs-5 mt-3 mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit repudiandae labore cum libero nostrum cumque itaque ad nihil ab ducimus.</p>
+					<p class="fs-5 mt-3 mb-5"> Our cohorts are entirely free. Join our latest cohorts below to learn the latest skills, stay motivated and learn enough of a base skill set to land your next
+					dream career.</p>
 				</div>
 
 						<div class="card cohort-card rounded-3 overflow-hidden">
@@ -1117,7 +1118,7 @@ const Home = Vue.component("Home", {
 	data() {
 		return {
 			videoID: "",
-			originalVideoID: "W-Fc6gFwoms",
+			originalVideoID: "65JrtwtTOdc",
 			showPopup: false,
 		};
 	},
