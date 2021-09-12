@@ -94,7 +94,7 @@ const Home = Vue.component("Home", {
 
       <section class="main-v2">
 
-       
+
   <div id="gradient" class="position-absolute w-100 h-100 d-flex justify-content-center align-items-center overflow-hidden trbl-0 observablehq--running" style="z-index:-1;pointer-events:none"></div>
 
 
@@ -102,10 +102,16 @@ const Home = Vue.component("Home", {
 
           <div class="col-6">
             <div class="h2">
-              <h2>Learn & Work. Seize your future.</h2>
+              <h2>Work whilst you learn. Seize your future.</h2>
             </div>
-            <h5>A web based app utilising Artificial Intelligence & Blockchain technologies, JobLaunch aims to completely revolutionise the way people go about learning new skills & obtaining work.</h5>
-			 <h5>JobLaunch is the future of work, a web 3.0 platform training cohorts of skilled individuals directly into next generation microtask jobs.</h5>
+            <h5>JobLaunch utilises cohort based learning to wrap online courses. We combine psychological motivators including, group projects, gamification, tutoring, guest speakers, paired programming/assignments
+			 & tests into a coherent online experience to ensure our cohorts of students get to the end of an online course.
+
+			 On the backend, we through our chrome extension we monitor your progress through a course syllabus.  Once you unlock a certain level of proficiency, we start automatically recommending
+			  beginner jobs for you to complete. </h5>
+
+			 <h5>JobLaunch provides encouragement & incentives to get you through an online course created by another party.  You learn & work. Enabling you to use your newly minted skills on real world projects,
+			 earning money, whilst gaining experience you can add directly to your resume.</h5>
 			<div class="main-ctas">
 				<a href="https://app.joblaunch.co/sign_up"><span>Get Started</span> <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 256 256" style="enable-background:new 0 0 256 256;" xml:space="preserve">
@@ -116,7 +122,7 @@ const Home = Vue.component("Home", {
 			</div>
 
         </div>
-        
+
       </section>
 
 			<div class="cohorts-section">
@@ -125,7 +131,7 @@ const Home = Vue.component("Home", {
 					<h2> Upcoming Cohorts </h2>
 					<p class="fs-5 mt-3 mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit repudiandae labore cum libero nostrum cumque itaque ad nihil ab ducimus.</p>
 				</div>
-				
+
 						<div class="card cohort-card rounded-3 overflow-hidden">
 							<div class="cohort-poster position-relative">
 								<img
@@ -160,11 +166,11 @@ const Home = Vue.component("Home", {
 									</div>
 								</div>
 							</div>
-				
+
 							<div class="card-body join-details d-flex align-items-center">
 								<div class="start-date flex-grow-1">
 									<p class="text-center mb-1 fs-5">Starts in</p>
-				
+
 									<div class="date d-flex justify-content-center pb-3">
 										<div>
 											<h3 id="days" class="number fw-bold mb-1"></h3>
@@ -1082,19 +1088,19 @@ const Home = Vue.component("Home", {
 						minute = second * 60,
 						hour = minute * 60,
 						day = hour * 24;
-		
+
 			let cohortDate = "Oct 1, 2021 00:00:00",
 					countDown = new Date(cohortDate).getTime(),
-					x = setInterval(function() {    
-		
+					x = setInterval(function() {
+
 						let now = new Date().getTime(),
 								distance = countDown - now;
-		
+
 						document.getElementById("days").innerText = Math.floor(distance / (day)) + ':',
 							document.getElementById("hours").innerText = Math.floor((distance % (day)) / (hour)) + ':',
 							document.getElementById("minutes").innerText = Math.floor((distance % (hour)) / (minute)) + ':',
 							document.getElementById("seconds").innerText = Math.floor((distance % (minute)) / second);
-		
+
 						//do something later when date is reached
 						if (distance < 0) {
 							clearInterval(x);
