@@ -102,7 +102,7 @@ const Home = Vue.component("Home", {
 
           <div class="col-6">
             <div class="h2">
-              <h2>Seize your future</h2>
+              <h2>Seize your future.</h2>
             </div>
             <h5>JobLaunch utilises cohort based learning to wrap online courses. We combine psychological motivators into a coherent online experience to ensure our cohorts of students get to the end of an online course.</h5>
 
