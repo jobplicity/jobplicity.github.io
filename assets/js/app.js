@@ -106,7 +106,7 @@ const Home = Vue.component("Home", {
             </div>
             <h5>JobLaunch utilises cohort based learning to wrap online courses. Through our app, we combine psychological motivators into a coherent online experience to ensure you get to the end of an online course.</h5>
 
-			 <h5>Through our chrome extension we monitor your progress through a course syllabus.  Once you unlock a certain level of proficiency, we start automatically recommending
+			 <h5>Through our chrome extension we monitor your progress through a course syllabus.  Once you unlock a certain level of proficiency, we automatically start recommending
 			  beginner jobs for you to complete.</h5>
 
 			 <h5>JobLaunch provides encouragement & incentives to get you through an online course created by another party.  You work & learn. Enabling you to use your newly minted skills on real world projects,
