@@ -104,7 +104,7 @@ const Home = Vue.component("Home", {
             <div class="h2">
               <h2>Seize your future.</h2>
             </div>
-            <h5>JobLaunch utilises cohort based learning to wrap online courses. We combine psychological motivators into a coherent online experience to ensure our cohorts of students get to the end of an online course.</h5>
+            <h5>JobLaunch utilises cohort based learning to wrap online courses. Through our app, We combine psychological motivators into a coherent online experience to ensure our cohorts of students get to the end of an online course.</h5>
 
 			 <h5>Through our chrome extension we monitor your progress through a course syllabus.  Once you unlock a certain level of proficiency, we start automatically recommending
 			  beginner jobs for you to complete.</h5>
@@ -117,7 +117,7 @@ const Home = Vue.component("Home", {
 		<polygon points="79.093,0 48.907,30.187 146.72,128 48.907,225.813 79.093,256 207.093,128 		" fill="#FFF"/>
 </svg>
 </a>
-				<a href="#"  @click.prevent="showPopupHandler('W-Fc6gFwoms')">Learn More</a>
+				<a href="#"  @click.prevent="showPopupHandler('W-65JrtwtTOdc')">Learn More</a>
 			</div>
 
         </div>
@@ -128,7 +128,7 @@ const Home = Vue.component("Home", {
 			<div class="container py-5">
 				<div class="up-head">
 					<h2> Upcoming Cohorts </h2>
-					<p class="fs-5 mt-3 mb-5"> Our cohorts are entirely free. Join our cohorts below to learn the latest skills, stay motivated and learn enough of a base skill set to land your next
+					<p class="fs-5 mt-3 mb-5"> Our cohorts are entirely free. Join below to learn the latest skills, stay motivated and learn enough of a base skill set to land your next
 					dream career.</p>
 				</div>
 
@@ -244,8 +244,8 @@ const Home = Vue.component("Home", {
                 <img src="assets/img/icons/001-information.svg" alt="" />
               </div>
               <div class="content">
-                <h3>1. Collect Information.</h3>
-                <p>We personally reach out to you to discuss your career aspiration goals & see where you are currently at in your job search.</p>
+                <h3>1. Sign up!</h3>
+                <p> Tell us a little bit about yourself. We use this information to match you with the right group of people to keep you motivated.</p>
               </div>
             </div>
             </div>
@@ -255,8 +255,8 @@ const Home = Vue.component("Home", {
                 <img src="assets/img/icons/002-search.svg" alt="" />
               </div>
               <div class="content">
-                <h3>2. Search Job Space.</h3>
-                <p>After we have formed an idea of the career you would like to pursue, we search Job Space, adding jobs to the list that you may not have considered.</p>
+                <h3>2. Find a Cohort</h3>
+                <p>Search our catalogue of running & upcohorts to kick start your next career.</p>
               </div>
             </div>
             </div>
@@ -266,8 +266,8 @@ const Home = Vue.component("Home", {
                 <img src="assets/img/icons/003-login.svg" alt="" />
               </div>
               <div class="content">
-                <h3>3. Your Permission.</h3>
-                <p>Before applying, to ensure that we are on the right track we confirm our job shortlist with you to check that the jobs we are applying for on your behalf are a good match to your skillset.</p>
+                <h3>3. Meet your group. Unlock your potential.</h3>
+                <p> Our system automatically places you into a group. Regularly schedule meetings to discuss topics & work through course content together.</p>
               </div>
             </div>
             </div>
@@ -277,8 +277,8 @@ const Home = Vue.component("Home", {
                 <img src="assets/img/icons/005-ai.svg" alt="" />
               </div>
               <div class="content">
-                <h3>4. Job Application Automation.</h3>
-                <p>We use the best of Human & Artificial Intelligence to create a custom Resume & Cover Letter for every application we create on your behalf. Ensuring that we highlight the best of your transferable to skills to match a job’s specific requirements.</p>
+                <h3>4. Stay Motivated.</h3>
+                <p>Through our chrome extension, we gamify your study experience. Ensuring your stay focussed & on track to get you to the end of the course content.</p>
               </div>
             </div>
             </div>
@@ -289,7 +289,7 @@ const Home = Vue.component("Home", {
               </div>
               <div class="content">
                 <h3>5. Feedback.</h3>
-                <p>Track the applications we create for you in real time via the JobLaunch dashboard or app on your phone. If an employer calls, use the app to get the right information, to answer the right questions, right away.</p>
+                <p> JobLaunch completes the feedback loop. Through your cohort, group, instructor & other mechanisms gain feedback on your work.</p>
               </div>
             </div>
           </div>
@@ -302,8 +302,8 @@ const Home = Vue.component("Home", {
               <div class="avatar"><img src="assets/img/tinacraigen.jpg" alt="" /></div>
             </div>
             <div class="col">
-              <h4>“I spend the better part of a year applying for over 100 jobs with little to no success. Then I found JobLaunch. After only 1 months subscription I had 2 job offers in my field! Success!”</h4>
-              <a href="#" class="btn-submit" @click.prevent="showPopupHandler('W-Fc6gFwoms')">Hear Tina’s Story</a>
+              <h4>“I would loose motivation all the time trying to teach myself new things online. Then I found JobLaunch. After only 1 months subscription I got 2 job offers. Success!”</h4>
+              <a href="#" class="btn-submit" @click.prevent="showPopupHandler('W-65JrtwtTOdc')">Hear Tina’s Story</a>
             </div>
           </div>
         </div>
@@ -317,8 +317,8 @@ const Home = Vue.component("Home", {
                 <div class="item-img">
                   <img src="assets/img/001-api.svg" alt="" />
                 </div>
-                <h3>For Job Searchers</h3>
-                <p>Free up your time to study or learn a skill & leave searching for a job up to us.</p>
+                <h3>For Course Instructors</h3>
+                <p>Would you like to get paid to run a study group? We would love to hear from you!</p>
               </div>
             </div>
             <div class="item">
@@ -350,16 +350,16 @@ const Home = Vue.component("Home", {
         </canvas>
 
         <div class="container">
-          <h2>Automate applying for jobs today!</h2>
+          <h2>Stay motivated. Gain new skills. Get the experience. Get the job</h2>
           <h3>
-            Free up the time spent searching for Jobs.
+            Stop wasting time.
             <br />
-            Sign up for a free demo account below
+            Stay motivated whilst learning new skills online, gain real-world experience for your resume & get the job today!
           </h3>
           <div class="signup-form">
             <form>
               <input type="email" name="email" id="email" placeholder="Enter your email & Get JobLaunch for free" />
-              <a class="btn-submit" href="https://app.joblaunch.co/sign_up">create an account</a>
+              <a class="btn-submit" href="https://joblaunchcohort.bubbleapps.io/">create an account</a>
             </form>
           </div>
         </div>
