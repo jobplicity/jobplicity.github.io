@@ -223,7 +223,7 @@ const Home = Vue.component("Home", {
 				Employers value your  work experience. Not what your resume says you can do.
                 <br />
                 <br />
-				We monitor your progress through a syllabus. When you reach a certain skill proficiency our AI systems automatically begin recommending you beginner level jobs in a given category. Directly providing you experience to launch your next career.
+				We monitor your progress through a syllabus. When you reach a certain skill proficiency our AI systems automatically recommend you beginner level jobs in a given category. Directly providing you experience to launch your next career.
 
               </p>
             </div>
