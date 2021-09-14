@@ -128,7 +128,7 @@ const Home = Vue.component("Home", {
 			<div class="container py-5">
 				<div class="up-head">
 					<h2> Upcoming Cohorts </h2>
-					<p class="fs-5 mt-3 mb-5"> Our cohorts are entirely free. Join below to learn the latest skills, stay motivated and learn enough of a base skill set to land your next
+					<p class="fs-5 mt-3 mb-5"> Our cohorts are entirely free. Join below to learn the latest skills, stay motivated and learn a base skill set to land your
 					dream career.</p>
 				</div>
 
