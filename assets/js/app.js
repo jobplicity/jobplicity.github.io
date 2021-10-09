@@ -1089,7 +1089,7 @@ const Home = Vue.component("Home", {
 						hour = minute * 60,
 						day = hour * 24;
 
-			let cohortDate = "Oct 1, 2021 00:00:00",
+			let cohortDate = "Oct 12, 2021 18:00:00",
 					countDown = new Date(cohortDate).getTime(),
 					x = setInterval(function() {
 
