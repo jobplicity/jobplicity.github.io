@@ -191,9 +191,9 @@ const Home = Vue.component("Home", {
 									</div>
 								</div>
 								<div class="join-button flex-grow-1 px-2">
-									<button class="btn btn-lg btn-outline-dark w-100 py-3">
+									<a href="https://forms.gle/nmMad4qbUtdZahNx7" class="btn btn-lg btn-outline-dark w-100 py-3" target="_blank">
 										Join Cohort
-									</button>
+									</a>
 								</div>
 							</div>
 						</div>
