@@ -460,7 +460,8 @@ header .header-wrapper .header-cta:hover {
   height: 100vh;
 }
 .main-v2 .container {
-  height: 100%;
+  /* height: 100%; */
+  height: 70%;
   display: flex;
   justify-content: flex-start;
   align-items: flex-end;
@@ -511,8 +512,66 @@ header .header-wrapper .header-cta:hover {
   }
 }
 .main-v2 .container .main-ctas {
-  margin-top: 30px;
+  margin-top: 40px;
 }
+
+.main-v2 .container .main-ctas h5 {
+  font-weight: bold;
+}
+
+.main-v2 .container .main-ctas .signup-form {
+  width: 460px;
+  padding: 20px;
+  display: flex;
+  box-shadow: rgba(0, 35, 64, 0.2) 0px 8px 10px 0px;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  text-align: left;
+  background: rgb(255, 255, 255);
+  border-radius: 10px;
+  margin: 15px 0px 0px;
+}
+
+@media (max-width: 600px) {
+  .main-v2 .container .main-ctas .signup-form {
+    width: 80%;
+  }
+}
+
+
+
+.main-v2 .container .main-ctas .signup-form .email-field {
+  padding: 1px 2px;
+  box-shadow: none;
+  display: inline;
+  flex-grow: 1;
+  height: auto;
+  background: 0px 0px;
+  border-radius: 3px;
+  border-width: 0px;
+  border-style: solid;
+  border-color: rgb(255, 255, 255);
+  border-image: initial;
+  margin: 0px;
+  padding: 10px;
+  transition: none 0s ease 0s;
+  outline: none;
+}
+
+.main-v2 .container .main-ctas .signup-form .submit-button {
+  color: rgb(255, 255, 255);
+  letter-spacing: 1.08px;
+  text-align: center;
+  text-transform: uppercase;
+  background: rgb(77, 37, 252);
+  border-radius: 3px;
+  border-width: 0px;
+  font: bold 14px / 14px proxima-nova, avenir-book, Helvetica, sans-serif;
+  margin: 0px;
+  padding: 18px;
+}
+
+
 .main-v2 .container .main-ctas a {
   padding: 15px 40px;
   color: #fff;
@@ -529,6 +588,7 @@ header .header-wrapper .header-cta:hover {
   transition: all 0.3s;
   margin-bottom: 10px;
 }
+
 @media (max-width: 767px) {
   .main-v2 .container .main-ctas a {
     font-size: 14px;
