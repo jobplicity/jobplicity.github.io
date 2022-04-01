@@ -51,155 +51,143 @@ const Advisors = Vue.component("Advisors", {
 		},
 	},
 	template: `
-  <section class="advisors">
-    <div class="container">
-	<div class="advisors-top">
-	  <h1>JobLaunch Advisors</h1>
-  <p>Our panel of advisors consists of Australian leaders in their fields.</p>
-	</div>
-    <div class="advisor-item"  v-for="(advisor,index) in advisors" :key="index">
-      <div class="advisor-img">
-        <div class="img" :style="'background-image: url('+advisor.image+');'"></div>
-        <div class="img shadow" :style="'background-image: url('+advisor.image+');'"></div>
-      </div>
-      <div class="advisor-about">
-        <h3>{{advisor.name}}</h3>
-        <h4>{{advisor.role}}</h4>
-       <div v-html="getExcerpt(advisor.description)"></div>
-        <a class="read-more" href="#" @click.prevent="showAbout(advisor.name)">READ MORE <span>></span></a>
-      </div>
-    </div>
-    <div class="current-advisor" :class="{'show':showCurrentAdvisor}" @click="hideAbout()">
-       <div class="advisor-item" @click.prevent.stop="">
-           <div class="img" :style="'background-image: url('+currentAdvisor.image+');'"></div>
-
-        <div class="advisor-about">
-         <h3>{{currentAdvisor.name}}</h3>
-        <h4>{{currentAdvisor.role}}</h4>
-       <div v-html="currentAdvisor.description"></div>
-        <a class="read-more" href="#" @click.prevent="hideAbout()">< BACK</a>
+    <section class="advisors">
+      <div class="container">
+        <div class="advisors-top">
+          <h1>JobLaunch Advisors</h1>
+          <p>Our panel of advisors consists of Australian leaders in their fields.</p>
         </div>
-       </div>
-    </div>
-    </div>
-  </section>
+        
+        <div class="advisor-item"  v-for="(advisor,index) in advisors" :key="index">
+          <div class="advisor-img">
+            <div class="img" :style="'background-image: url('+advisor.image+');'"></div>
+            <div class="img shadow" :style="'background-image: url('+advisor.image+');'"></div>
+          </div>
+          <div class="advisor-about">
+            <h3>{{advisor.name}}</h3>
+            <h4>{{advisor.role}}</h4>
+            <div v-html="getExcerpt(advisor.description)"></div>
+            <a class="read-more" href="#" @click.prevent="showAbout(advisor.name)">READ MORE <span>></span></a>
+          </div>
+        </div>
+
+        <div class="current-advisor" :class="{'show':showCurrentAdvisor}" @click="hideAbout()">
+          <div class="advisor-item" @click.prevent.stop="">
+            <div class="img" :style="'background-image: url('+currentAdvisor.image+');'"></div>
+            <div class="advisor-about">
+              <h3>{{currentAdvisor.name}}</h3>
+              <h4>{{currentAdvisor.role}}</h4>
+              <div v-html="currentAdvisor.description"></div>
+              <a class="read-more" href="#" @click.prevent="hideAbout()">< BACK</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   `,
 	mounted() {
 		$(window).scrollTop(0, 0);
 		$("header").removeClass("transparent");
 	},
 });
+
 const Home = Vue.component("Home", {
-	template: `<div>
-
+	template: `
+    <div>
       <section class="main-v2">
-
-
-  <div id="gradient" class="position-absolute w-100 h-100 d-flex justify-content-center align-items-center overflow-hidden trbl-0 observablehq--running" style="z-index:-1;pointer-events:none"></div>
-
-
+        <div id="gradient" class="position-absolute w-100 h-100 d-flex justify-content-center align-items-center overflow-hidden trbl-0 observablehq--running" style="z-index:-1;pointer-events:none"></div>
         <div class="container" >
-
           <div class="col-6">
             <div class="h2">
               <h2>Seize your future.</h2>
             </div>
-            <h5>JobLaunch utilises cohort based learning to wrap online courses. Through our app, we combine psychological motivators into a coherent online experience to ensure you get to the end of an online course.</h5>
-
-			 <h5>Through our chrome extension we monitor your progress through a course syllabus.  Once you unlock a certain level of proficiency, we automatically start recommending
-			  beginner jobs for you to complete.</h5>
-
-			 <h5>JobLaunch provides encouragement & incentives to get you through an online course created by another party.  You work & learn. Enabling you to use your newly minted skills on real world projects,
-			 earning money, whilst gaining experience you can add directly to your resume.</h5>
-			<div class="main-ctas">
-				<a href="https://app.joblaunch.co/sign_up"><span>Get Started</span> <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 256 256" style="enable-background:new 0 0 256 256;" xml:space="preserve">
-		<polygon points="79.093,0 48.907,30.187 146.72,128 48.907,225.813 79.093,256 207.093,128 		" fill="#FFF"/>
-</svg>
-</a>
-				<a href="#"  @click.prevent="showPopupHandler('W-65JrtwtTOdc')">Learn More</a>
-			</div>
-
+            <h5>Get paid to learn. With a cohort of other students, JobLaunch keeps you motivated to work through online courses whilst earning money. You earn and learn!</h5>
+            <div class="main-ctas">
+              <a href="https://app.joblaunch.co/sign_up">
+                <span>Get Started</span> 
+                <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 256 256" style="enable-background:new 0 0 256 256;" xml:space="preserve">
+                  <polygon points="79.093,0 48.907,30.187 146.72,128 48.907,225.813 79.093,256 207.093,128 		" fill="#FFF"/>
+                </svg>
+              </a>
+              <a href="#"  @click.prevent="showPopupHandler('W-65JrtwtTOdc')">Learn More</a>
+            </div>
+          </div>
         </div>
-
       </section>
 
-			<div class="cohorts-section">
-			<div class="container py-5">
-				<div class="up-head">
-					<h2> Upcoming Cohorts </h2>
-					<p class="fs-5 mt-3 mb-5"> Our cohorts are entirely free. Join below to learn the latest skills, stay motivated and learn a base skill set to land your
-					dream career.</p>
-				</div>
+      <div class="cohorts-section">
+        <div class="container py-5">
+          <div class="up-head">
+            <h2> Upcoming Cohorts </h2>
+            <p class="fs-5 mt-3 mb-5">Our cohorts are entirely free. Join below to learn the latest skills, stay motivated and learn a base skill set to land your dream career.</p>
+          </div>
+          <div class="card cohort-card rounded-3 overflow-hidden">
+            <div class="cohort-poster position-relative">
+              <img
+                class="card-img"
+                src="https://images.pexels.com/photos/2334636/pexels-photo-2334636.jpeg?cs=srgb&dl=pexels-suzy-hazelwood-2334636.jpg&fm=jpg"
+              />
+              <div class="img-overlay"></div>
+              <div class="card-img-overlay poster-info text-white">
+                <h3 class="card-title mb-4">Data Analyst Cohort 1</h3>
+                <p class="card-text mb-4">8 People in the team</p>
+                <div class="team-people d-flex">
+                  <div class="img position-absolute" v-for="i in 8" :key="i">
+                    <img
+                      :src="'https://picsum.photos/id/' + i + 60 + '/200/300'"
+                      class="rounded-circle"
+                      v-if="i < 6"
+                    />
+                  </div>
+                  <div
+                    class="
+                      rest-people
+                      bg-black
+                      position-absolute
+                      d-flex
+                      align-items-center
+                      justify-content-center
+                      rounded-circle
+                    "
+                  >
+                    +{{8 - 5}}
+                  </div>
+                </div>
+              </div>
+            </div>
 
-						<div class="card cohort-card rounded-3 overflow-hidden">
-							<div class="cohort-poster position-relative">
-								<img
-									class="card-img"
-									src="https://images.pexels.com/photos/2334636/pexels-photo-2334636.jpeg?cs=srgb&dl=pexels-suzy-hazelwood-2334636.jpg&fm=jpg"
-								/>
-								<div class="img-overlay"></div>
-								<div class="card-img-overlay poster-info text-white">
-									<h3 class="card-title mb-4">Data Analyst Cohort 1</h3>
-									<p class="card-text mb-4">8 People in the team</p>
-									<div class="team-people d-flex">
-										<div class="img position-absolute" v-for="i in 8" :key="i">
-											<img
-												:src="'https://picsum.photos/id/' + i + 60 + '/200/300'"
-												class="rounded-circle"
-												v-if="i < 6"
-											/>
-										</div>
-										<div
-											class="
-												rest-people
-												bg-black
-												position-absolute
-												d-flex
-												align-items-center
-												justify-content-center
-												rounded-circle
-											"
-										>
-											+{{8 - 5}}
-										</div>
-									</div>
-								</div>
-							</div>
+            <div class="card-body join-details d-flex align-items-center">
+              <div class="start-date flex-grow-1">
+                <p class="text-center mb-1 fs-5">Starts in</p>
 
-							<div class="card-body join-details d-flex align-items-center">
-								<div class="start-date flex-grow-1">
-									<p class="text-center mb-1 fs-5">Starts in</p>
-
-									<div class="date d-flex justify-content-center pb-3">
-										<div>
-											<h3 id="days" class="number fw-bold mb-1"></h3>
-											<span class="ms-1">day</span>
-										</div>
-										<div>
-											<h3 id="hours" class="number fw-bold mb-1"></h3>
-											<span class="ms-1">hr</span>
-										</div>
-										<div>
-											<h3 id="minutes" class="number fw-bold mb-1"></h3>
-											<span class="ms-1">min</span>
-										</div>
-										<div>
-											<h3 id="seconds" class="number fw-bold mb-1"></h3>
-											<span class="ms-1">sec</span>
-										</div>
-									</div>
-								</div>
-								<div class="join-button flex-grow-1 px-2">
-									<a href="https://forms.gle/nmMad4qbUtdZahNx7" class="btn btn-lg btn-outline-dark w-100 py-3" target="_blank">
-										Join Cohort
-									</a>
-								</div>
-							</div>
-						</div>
-			</div>
-		</div>
-
+                <div class="date d-flex justify-content-center pb-3">
+                  <div>
+                    <h3 id="days" class="number fw-bold mb-1"></h3>
+                    <span class="ms-1">day</span>
+                  </div>
+                  <div>
+                    <h3 id="hours" class="number fw-bold mb-1"></h3>
+                    <span class="ms-1">hr</span>
+                  </div>
+                  <div>
+                    <h3 id="minutes" class="number fw-bold mb-1"></h3>
+                    <span class="ms-1">min</span>
+                  </div>
+                  <div>
+                    <h3 id="seconds" class="number fw-bold mb-1"></h3>
+                    <span class="ms-1">sec</span>
+                  </div>
+                </div>
+              </div>
+              <div class="join-button flex-grow-1 px-2">
+                <a href="https://forms.gle/nmMad4qbUtdZahNx7" class="btn btn-lg btn-outline-dark w-100 py-3" target="_blank">
+                  Join Cohort
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
       <section class="about">
         <div class="container">
@@ -220,11 +208,10 @@ const Home = Vue.component("Home", {
             <div>
               <h3>Experience gets you the Job. Not your resume.</h3>
               <p>
-				Employers value your  work experience. Not what your resume says you can do.
+                Employers value your  work experience. Not what your resume says you can do.
                 <br />
                 <br />
-				We monitor your progress through a syllabus. When you reach a certain skill proficiency our AI systems automatically recommend you beginner level jobs in a given category. Directly providing you experience to launch your next career.
-
+                We monitor your progress through a syllabus. When you reach a certain skill proficiency our AI systems automatically recommend you beginner level jobs in a given category. Directly providing you experience to launch your next career.
               </p>
             </div>
             <div>
@@ -233,68 +220,70 @@ const Home = Vue.component("Home", {
           </div>
         </div>
       </section>
+
       <section class="sec-how-it-works">
         <div class="container">
           <h2 class="sect-title">How It Works</h2>
-
           <div class="how-items-container">
             <div class="how-item"><span class="border"></span>
               <div>
-              <div class="icon">
-                <img src="assets/img/icons/001-information.svg" alt="" />
+                <div class="icon">
+                  <img src="assets/img/icons/001-information.svg" alt="" />
+                </div>
+                <div class="content">
+                  <h3>1. Sign up!</h3>
+                  <p> Tell us a little bit about yourself. We use this information to match you with the right group of people to keep you motivated.</p>
+                </div>
               </div>
-              <div class="content">
-                <h3>1. Sign up!</h3>
-                <p> Tell us a little bit about yourself. We use this information to match you with the right group of people to keep you motivated.</p>
-              </div>
-            </div>
             </div>
             <div class="how-item"><span class="border"></span>
               <div>
-              <div class="icon">
-                <img src="assets/img/icons/002-search.svg" alt="" />
+                <div class="icon">
+                  <img src="assets/img/icons/002-search.svg" alt="" />
+                </div>
+                <div class="content">
+                  <h3>2. Find a Cohort</h3>
+                  <p>Search our catalogue of running & upcohorts to kick start your next career.</p>
+                </div>
               </div>
-              <div class="content">
-                <h3>2. Find a Cohort</h3>
-                <p>Search our catalogue of running & upcohorts to kick start your next career.</p>
-              </div>
-            </div>
             </div>
             <div class="how-item"><span class="border"></span>
               <div>
-              <div class="icon">
-                <img src="assets/img/icons/003-login.svg" alt="" />
+                <div class="icon">
+                  <img src="assets/img/icons/003-login.svg" alt="" />
+                </div>
+                <div class="content">
+                  <h3>3. Meet your group. Unlock your potential.</h3>
+                  <p> Our system automatically places you into a group. Regularly schedule meetings to discuss topics & work through course content together.</p>
+                </div>
               </div>
-              <div class="content">
-                <h3>3. Meet your group. Unlock your potential.</h3>
-                <p> Our system automatically places you into a group. Regularly schedule meetings to discuss topics & work through course content together.</p>
-              </div>
-            </div>
             </div>
             <div class="how-item"><span class="border"></span>
               <div>
-              <div class="icon">
-                <img src="assets/img/icons/005-ai.svg" alt="" />
+                <div class="icon">
+                  <img src="assets/img/icons/005-ai.svg" alt="" />
+                </div>
+                <div class="content">
+                  <h3>4. Stay Motivated.</h3>
+                  <p>Through our chrome extension, we gamify your study experience. Ensuring your stay focussed & on track to get you to the end of the course content.</p>
+                </div>
               </div>
-              <div class="content">
-                <h3>4. Stay Motivated.</h3>
-                <p>Through our chrome extension, we gamify your study experience. Ensuring your stay focussed & on track to get you to the end of the course content.</p>
-              </div>
-            </div>
             </div>
             <div class="how-item"><span class="border"></span>
-              <div>
-              <div class="icon">
-                <img src="assets/img/icons/004-feedback.svg" alt="" />
-              </div>
-              <div class="content">
-                <h3>5. Feedback.</h3>
-                <p> JobLaunch completes the feedback loop. Through your cohort, group, instructor & other mechanisms gain feedback on your work.</p>
+                <div>
+                <div class="icon">
+                  <img src="assets/img/icons/004-feedback.svg" alt="" />
+                </div>
+                <div class="content">
+                  <h3>5. Feedback.</h3>
+                  <p> JobLaunch completes the feedback loop. Through your cohort, group, instructor & other mechanisms gain feedback on your work.</p>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </section>
+
       <section class="testimonial">
         <div class="container">
           <div class="row">
@@ -308,6 +297,7 @@ const Home = Vue.component("Home", {
           </div>
         </div>
       </section>
+
       <section class="how-it-works">
         <div class="container">
           <h2 class="sect-title">JobLaunch Your Way.</h2>
@@ -342,6 +332,7 @@ const Home = Vue.component("Home", {
           </div>
         </div>
       </section>
+
       <section class="signup" id="create-an-account">
         <canvas id="gradient-canvas-bottom"  data-transition-in>
           <!--
@@ -364,13 +355,15 @@ const Home = Vue.component("Home", {
           </div>
         </div>
       </section>
-	  <div class="video-player" :class="{showPopup}" @click.prevent="hidePopupHandler()">
-				<div class="video-player-container">
-					<a class="close-popup" href="#" @click.prevent="hidePopupHandler()"><img src="assets/img/close.svg" alt="" /></a>
-					<iframe @click.stop="" ref="video" width="560" height="315" :src="'https://www.youtube-nocookie.com/embed/'+videoID+'?controls=0'" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-				</div>
-			</div>
-  </div > `,
+
+      <div class="video-player" :class="{showPopup}" @click.prevent="hidePopupHandler()">
+        <div class="video-player-container">
+          <a class="close-popup" href="#" @click.prevent="hidePopupHandler()"><img src="assets/img/close.svg" alt="" /></a>
+          <iframe @click.stop="" ref="video" width="560" height="315" :src="'https://www.youtube-nocookie.com/embed/'+videoID+'?controls=0'" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div > 
+  `,
 	mounted() {
 		$("header").addClass("transparent");
 
@@ -1135,7 +1128,10 @@ const Home = Vue.component("Home", {
 
 
 const routes = [
-	{ path: "/advisors", component: Advisors, name: "advisors" },
+	{ 
+    path: "/advisors", 
+    component: Advisors, 
+    name: "advisors" },
 	{
 		path: "/",
 		component: Home,
