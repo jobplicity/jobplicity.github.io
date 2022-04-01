@@ -129,8 +129,8 @@ const Home = Vue.component("Home", {
               />
               <div class="img-overlay"></div>
               <div class="card-img-overlay poster-info text-white">
-                <h3 class="card-title mb-4">Data Analyst Cohort 1</h3>
-                <p class="card-text mb-4">8 People in the team</p>
+                <h3 class="card-title mb-4">Python Cohort 1</h3>
+                <p class="card-text mb-4">64 people in the cohort</p>
                 <div class="team-people d-flex">
                   <div class="img position-absolute" v-for="i in 8" :key="i">
                     <img
@@ -180,7 +180,7 @@ const Home = Vue.component("Home", {
                 </div>
               </div>
               <div class="join-button flex-grow-1 px-2">
-                <a href="https://forms.gle/nmMad4qbUtdZahNx7" class="btn btn-lg btn-outline-dark w-100 py-3" target="_blank">
+                <a href="https://forms.gle/NRRpyyheaxgNxZEe7" class="btn btn-lg btn-outline-dark w-100 py-3" target="_blank">
                   Join Cohort
                 </a>
               </div>
@@ -1082,7 +1082,7 @@ const Home = Vue.component("Home", {
 						hour = minute * 60,
 						day = hour * 24;
 
-			let cohortDate = "Oct 12, 2021 18:00:00",
+			let cohortDate = "Apr 13, 2022 18:00:00",
 					countDown = new Date(cohortDate).getTime(),
 					x = setInterval(function() {
 
