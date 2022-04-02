@@ -1827,6 +1827,11 @@ footer a:hover {
     border-radius: 0.42vw;
   }
 
+  .earn-learn{
+    text-align: center !important;
+  }
+
+
   .sec-title, .how-it-works h2, .sec-how-it-works h2, .signup h2 {
     font: 600 3.91vw/4.69vw "Titillium Web";
   }

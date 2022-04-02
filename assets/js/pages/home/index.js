@@ -26,6 +26,20 @@ export const Home = Vue.component("Home", {
         </div>
       </section>
 
+      <section class="about">
+        <div class="container">
+          <div class="row">      
+                <h2 class="earn-learn">Earn & Learn</h2> 
+                <p class="earn-learn">
+                  Tired of your student debt growing like there's no tomorrow? We've got you covered. You can finally GET PAID for doing online courses! Sign up to JobLaunch and complete online courses with people around the world and unlock paid micro-jobs which you can add to your resume.    
+                </p>
+                <p class="earn-learn">Create your free account today!</p>
+          </div>
+        </div>
+      </section>
+
+
+
       <div class="cohorts-section">
         <div class="container py-5">
           <div class="up-head">
