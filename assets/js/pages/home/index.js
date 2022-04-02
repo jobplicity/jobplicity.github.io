@@ -2,11 +2,13 @@ import { Runtime, Inspector, Library } from "https://unpkg.com/@observablehq/run
 import notebook from "https://cdn.openai.com/website/scripts/20200901/gradient.3.2.js";
 import {EarnLearn} from "../../components/earn-learn.js"
 import {MainHome} from "../../components/main-home.js"
+import {AsUsedBy} from "../../components/as-used-by.js"
 
 export const Home = Vue.component("Home", {
   components : {
     'earn-learn' : EarnLearn,
     'main-home' : MainHome,
+    'as-used-by' : AsUsedBy,
   },
 	template: `
     <div>
@@ -87,6 +89,8 @@ export const Home = Vue.component("Home", {
           </div>
         </div>
       </div>
+
+      <as-used-by></as-used-by>
 
       <section class="about">
         <div class="container">
