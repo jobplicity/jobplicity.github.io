@@ -17,7 +17,7 @@ export const Home = Vue.component("Home", {
               <form class="signup-form">
                 <input type="email" class="email-field" autocomplete="username" autofocus="autofocus" placeholder="Enter your email">
                 <label>
-                  <input type="submit" value="Get Started" class="submit-button rounded-pill">
+                  <input type="submit" value="Get Started" class="submit-button">
 
                 </labl>
               </form>
