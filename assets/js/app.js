@@ -8,6 +8,8 @@ const baseFrontendUrl = "http://main.hypergraph.so/editor/node";
 
 import { Home } from "./pages/home/index.js"
 import { Advisors } from "./pages/advisors/index.js"
+import { Header } from "./components/header.js"
+import { Footer } from "./components/footer.js"
 // const baseApiUrl = "http://localhost:8080/api";
 // const baseFrontendUrl = "http://localhost:3001/editor/node";
 
@@ -33,9 +35,19 @@ const router = new VueRouter({
 // });
 var app = new Vue({
 	el: "#app",
+  components : {
+    'header-component' : Header,
+    'footer-component' : Footer
+  },
+  template: `
+    <div>
+      <header-component></header-component>
+      <router-view></router-view>
+      <footer-component></footer-component>
+    </div>
+  `,
 	router,
 	data: {
-		showMenu: false,
 		currentItem: 0,
 		keyword: null,
 		results: null,
