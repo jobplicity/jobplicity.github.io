@@ -727,6 +727,107 @@ header .header-wrapper .header-cta:hover {
   font-weight: 600;
 }
 
+/* earn-learn */
+
+.earn-learn {
+  padding-top: 180px;
+  padding-bottom: 150px;
+  background: #f5f5f5;
+}
+@media (max-width: 1023px) {
+  .earn-learn {
+    padding-top: 60vw;
+    padding-bottom: 80px;
+  }
+}
+.earn-learn .row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 150px;
+}
+@media (max-width: 1023px) {
+  .earn-learn .row {
+    flex-direction: column;
+    margin-bottom: 30px;
+    align-items: flex-start;
+  }
+}
+.earn-learn .row:last-child {
+  margin-bottom: 0;
+}
+.earn-learn .row h3 {
+  text-align: center;
+  font: 600 60px/75px "Titillium Web";
+  letter-spacing: 0;
+  color: #000000;
+  opacity: 1;
+  margin: 0;
+}
+@media (max-width: 767px) {
+  .earn-learn .row h3 {
+    font: 600 32px/48px "Titillium Web";
+  }
+}
+.earn-learn .row p {
+  text-align: center;
+  font: 300 28px/40px "Titillium Web";
+  letter-spacing: 0.84px;
+  color: #000000;
+  opacity: 1;
+  margin-top: 15px;
+  margin-bottom: 0;
+}
+@media (max-width: 767px) {
+  .earn-learn .row p {
+    font: 300 20px/36px "Titillium Web";
+  }
+}
+.earn-learn .row li::marker {
+  font-size: 28px;
+}
+.earn-learn .row > div:nth-child(1) {
+  flex: 0 1 42%;
+}
+@media (max-width: 1023px) {
+  .earn-learn .row > div:nth-child(1) {
+    flex: auto;
+  }
+}
+.earn-learn .row > div:nth-child(2) {
+  flex: 0 1 50%;
+}
+@media (max-width: 1023px) {
+  .earn-learn .row > div:nth-child(2) {
+    flex: auto;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1919px) {
+  .earn-learn {
+    padding-top: 9.38vw;
+    padding-bottom: 7.81vw;
+  }
+  .earn-learn .row {
+    margin-bottom: 10.4vw;
+  }
+  .earn-learn .row h3 {
+    font: 600 3.12vw/3.91vw "Titillium Web";
+  }
+  .earn-learn .row p {
+    font: 300 1.46vw/2.08vw "Titillium Web";
+    letter-spacing: 0.04vw;
+    margin-top: 0.78vw;
+  }
+  .earn-learn .row li::marker {
+    font-size: 1.46vw;
+  }
+ 
+}
+
+
+/* about */
+
 .about {
   padding-top: 180px;
   padding-bottom: 150px;
@@ -822,6 +923,8 @@ header .header-wrapper .header-cta:hover {
     margin-bottom: 50px;
   }
 }
+
+
 
 .sec-title, .signup h2, .sec-how-it-works h2, .how-it-works h2 {
   text-align: center;
@@ -1827,15 +1930,7 @@ footer a:hover {
     border-radius: 0.42vw;
   }
 
-  .earn-learn{
-    text-align: center !important;
-  }
-
-  .about-earn-learn{
-    background-color: grey !important;
-  }
-
-
+  
   .sec-title, .how-it-works h2, .sec-how-it-works h2, .signup h2 {
     font: 600 3.91vw/4.69vw "Titillium Web";
   }

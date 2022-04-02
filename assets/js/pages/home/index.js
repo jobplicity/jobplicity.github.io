@@ -1,45 +1,19 @@
 import { Runtime, Inspector, Library } from "https://unpkg.com/@observablehq/runtime@4.7.1/dist/runtime.js";
 import notebook from "https://cdn.openai.com/website/scripts/20200901/gradient.3.2.js";
+import {EarnLearn} from "../../components/earn-learn.js"
+import {MainHome} from "../../components/main-home.js"
 
 export const Home = Vue.component("Home", {
+  components : {
+    'earn-learn' : EarnLearn,
+    'main-home' : MainHome,
+  },
 	template: `
     <div>
-      <section class="main-v2">
-        <div id="gradient" class="position-absolute w-100 h-100 d-flex justify-content-center align-items-center overflow-hidden trbl-0 observablehq--running" style="z-index:-1;pointer-events:none"></div>
-        <div class="container" >
-          <div class="col-6">
-            <div class="h2">
-              <h2>Seize your future.</h2>
-            </div>
-            <h5>Get paid to learn. With a cohort of other students, JobLaunch keeps you motivated to work through online courses whilst earning money. You earn and learn!</h5>
-            <div class="main-ctas">
-              <h5>Get started for free – no credit card required</h5>
-              <form class="signup-form">
-                <input type="email" class="email-field" autocomplete="username" autofocus="autofocus" placeholder="Enter your email">
-                <label>
-                  <input type="submit" value="Get Started" class="submit-button">
-
-                </labl>
-              </form>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="about about-earn-learn">
-        <div class="container">
-          <div class="row">      
-                <h2 class="earn-learn">Earn & Learn</h2> 
-                <p class="earn-learn">
-                  Tired of your student debt growing like there's no tomorrow? We've got you covered. You can finally GET PAID for doing online courses! Sign up to JobLaunch and complete online courses with people around the world and unlock paid micro-jobs which you can add to your resume.    
-                </p>
-                <p class="earn-learn">Create your free account today!</p>
-          </div>
-        </div>
-      </section>
-
-
-
+      
+      <main-home></main-home>
+      <earn-learn></earn-learn>
+      
       <div class="cohorts-section">
         <div class="container py-5">
           <div class="up-head">
