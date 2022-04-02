@@ -1831,6 +1831,10 @@ footer a:hover {
     text-align: center !important;
   }
 
+  .about-earn-learn{
+    background-color: grey !important;
+  }
+
 
   .sec-title, .how-it-works h2, .sec-how-it-works h2, .signup h2 {
     font: 600 3.91vw/4.69vw "Titillium Web";

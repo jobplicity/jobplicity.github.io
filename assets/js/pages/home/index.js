@@ -26,7 +26,7 @@ export const Home = Vue.component("Home", {
         </div>
       </section>
 
-      <section class="about">
+      <section class="about about-earn-learn">
         <div class="container">
           <div class="row">      
                 <h2 class="earn-learn">Earn & Learn</h2> 
