@@ -814,8 +814,18 @@ header .header-wrapper .header-cta:hover {
 .as-used-by p {
   color : darkgrey;
   font-size : 16px;
+  letter-spacing: 0.84px;
+  margin-bottom: 25px;
+
 }
 
+
+
+@media (max-width: 767px){
+  .as-used-by img {
+    max-width : 80%;
+  }
+}
 
 
 /* .as-used-by .row {
@@ -976,6 +986,94 @@ header .header-wrapper .header-cta:hover {
   .about .row.row2 > div:nth-child(2) img {
     margin-bottom: 50px;
   }
+}
+
+/* why */
+
+.why {
+  padding-top: 110px;
+  padding-bottom: 100px;
+}
+
+.why .container {
+  padding-top: 100px;
+}
+
+@media (max-width: 1023px) {
+  .why .container {
+    padding-top: 70px;
+  }  
+}
+
+.why-top {
+  margin-bottom: 50px;
+}
+
+.why-top h1 {
+  line-height: 3;
+  font-size: 34px;
+  font-weight:400;
+  letter-spacing:1px;
+  color : #808184;
+}
+
+.why-top p {
+  line-height: 1.6;
+  font-size: 16px;
+  font-weight:400;
+  color : #808184;
+}
+
+.why-list {
+  margin-bottom : 50px;
+}
+
+.why-list p {
+  line-height: 1.6;
+  font-size: 16px;
+  font-weight:400;
+  color : #808184;
+}
+
+.why-list .why-list-item {
+  margin-top : 50px;
+  margin-bottom : 50px;
+}
+
+.why-bottom h1 {
+  font-size: 34px;
+  font-weight:400;
+  letter-spacing:1px;
+  color : #808184;
+  margin-bottom: 30px;
+}
+
+.why-bottom button {
+  color: white;
+  letter-spacing: 1.08px;
+  text-align: center;
+  text-transform: uppercase;
+  background: black;
+  border-radius: 3px;
+  border-width: 0px;
+  font-weight: bold ;
+  /* font-size: 30px; */
+  margin: 0px;
+  padding: 18px;
+  border-radius: 0.52vw;
+}
+
+
+/* @media (max-width: 1104px){
+  .why-bottom button {
+    padding-right: 3px;
+    padding-left: 3px;
+  }
+} */
+
+.why-bottom button:hover {
+  background: lightgrey;
+  color : black;
 }
 
 

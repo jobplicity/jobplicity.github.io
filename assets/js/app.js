@@ -8,6 +8,7 @@ const baseFrontendUrl = "http://main.hypergraph.so/editor/node";
 
 import { Home } from "./pages/home/index.js"
 import { Advisors } from "./pages/advisors/index.js"
+import { Why } from "./pages/why/index.js"
 import { Header } from "./components/header.js"
 import { Footer } from "./components/footer.js"
 // const baseApiUrl = "http://localhost:8080/api";
@@ -19,7 +20,13 @@ const routes = [
 	{ 
     path: "/advisors", 
     component: Advisors, 
-    name: "advisors" },
+    name: "advisors" 
+  },
+  { 
+    path: "/why", 
+    component: Why, 
+    name: "why" 
+  },
 	{
 		path: "/",
 		component: Home,

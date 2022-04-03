@@ -61,7 +61,7 @@ export const Header = {
               <a @click.prevent="slideToSection(0)" href="#home">HOME</a>
             </li>
             <li>
-              <a @click.prevent="slideToSection(1)" href="#why-job-launch">Why JobLaunch?</a>
+              <router-link to="/why">Why JobLaunch?</router-link>
             </li>
             <li>
               <a @click.prevent="slideToSection(2)" href="#how-it-works">HOW IT WORKS</a>
@@ -86,5 +86,33 @@ export const Header = {
     return {
       showMenu: false,
     }
+  },
+  methods: {
+    slideToSection(index) {
+			if (this.$router.currentRoute.path != "/") {
+				this.$router.push("/");
+				setTimeout(() => {
+					$("body,html")
+						.stop()
+						.animate(
+							// Slide to next section
+							{
+								scrollTop: $("section").eq(index).offset().top,
+							},
+							1500
+						);
+				}, 500);
+			} else {
+				$("body,html")
+					.stop()
+					.animate(
+						// Slide to next section
+						{
+							scrollTop: $("section").eq(index).offset().top,
+						},
+						1500
+					);
+			}
+		},
   }
 }
