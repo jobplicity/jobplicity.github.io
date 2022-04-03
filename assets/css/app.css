@@ -589,11 +589,11 @@ header .header-wrapper .header-cta:hover {
 }
 
 .main-v2 .container .main-ctas .signup-form .submit-button {
-  color: black;
+  color: white;
   letter-spacing: 1.08px;
   text-align: center;
   text-transform: uppercase;
-  background: rgb(77, 37, 252);
+  background: black;
   border-radius: 3px;
   border-width: 0px;
   font-weight: bold ;
@@ -604,8 +604,8 @@ header .header-wrapper .header-cta:hover {
 }
 
 .main-v2 .container .main-ctas .signup-form .submit-button:hover {
-  color : lightgrey;
-  background: rgb(77, 37, 252 , 0.9);
+  background: lightgrey;
+  color : black;
 }
 
 .main-v2 .container .main-ctas a {
@@ -730,16 +730,18 @@ header .header-wrapper .header-cta:hover {
 /* earn-learn */
 
 .earn-learn {
-  padding-top: 180px;
-  padding-bottom: 150px;
+  padding-top: 60px;
+  padding-bottom: 60px;
   background: #f5f5f5;
 }
 @media (max-width: 1023px) {
   .earn-learn {
-    padding-top: 60vw;
-    padding-bottom: 80px;
+    padding-top: 50px;
+    padding-bottom: 50px;
   }
 }
+
+
 .earn-learn .row {
   display: flex;
   justify-content: space-between;
@@ -756,33 +758,25 @@ header .header-wrapper .header-cta:hover {
 .earn-learn .row:last-child {
   margin-bottom: 0;
 }
-.earn-learn .row h3 {
+.earn-learn .row h2 {
   text-align: center;
-  font: 600 60px/75px "Titillium Web";
-  letter-spacing: 0;
+  font: 700 32px/32px "Titillium Web";
+  letter-spacing: 0.23px;
   color: #000000;
   opacity: 1;
   margin: 0;
 }
-@media (max-width: 767px) {
-  .earn-learn .row h3 {
-    font: 600 32px/48px "Titillium Web";
-  }
-}
+
 .earn-learn .row p {
   text-align: center;
-  font: 300 28px/40px "Titillium Web";
+  font: 400 20px/28px "Titillium Web";
   letter-spacing: 0.84px;
   color: #000000;
   opacity: 1;
-  margin-top: 15px;
+  margin-top: 25px;
   margin-bottom: 0;
 }
-@media (max-width: 767px) {
-  .earn-learn .row p {
-    font: 300 20px/36px "Titillium Web";
-  }
-}
+
 .earn-learn .row li::marker {
   font-size: 28px;
 }
@@ -803,45 +797,31 @@ header .header-wrapper .header-cta:hover {
   }
 }
 
-@media (min-width: 1024px) and (max-width: 1919px) {
-  .earn-learn {
-    padding-top: 9.38vw;
-    padding-bottom: 7.81vw;
-  }
-  .earn-learn .row {
-    margin-bottom: 10.4vw;
-  }
-  .earn-learn .row h3 {
-    font: 600 3.12vw/3.91vw "Titillium Web";
-  }
-  .earn-learn .row p {
-    font: 300 1.46vw/2.08vw "Titillium Web";
-    letter-spacing: 0.04vw;
-    margin-top: 0.78vw;
-  }
-  .earn-learn .row li::marker {
-    font-size: 1.46vw;
-  }
- 
-}
-
 /* as used by */
 
 .as-used-by {
-  padding-top: 180px;
-  padding-bottom: 150px;
+  padding-top: 60px;
+  padding-bottom: 60px;
   background: RGB(245, 245, 245);
 }
 @media (max-width: 1023px) {
   .as-used-by {
-    padding-top: 60vw;
-    padding-bottom: 80px;
+    padding-top: 50px;
+    padding-bottom: 50px;
   }
 }
-.as-used-by .row {
+
+.as-used-by p {
+  color : darkgrey;
+  font-size : 16px;
+}
+
+
+
+/* .as-used-by .row {
   display: flex;
   justify-content: space-around;
-  align-items: center;
+  align-items: center; 
   margin-bottom: 150px;
   flex-direction: row;
 
@@ -854,49 +834,37 @@ header .header-wrapper .header-cta:hover {
 .as-used-by .row:last-child {
   margin-bottom: 0;
 }
-.as-used-by .row h3 {
+
+.as-used-by .row h2 {
   text-align: center;
-  font: 600 60px/75px "Titillium Web";
-  letter-spacing: 0;
+  font: 700 32px/32px "Titillium Web";
+  letter-spacing: 0.23px;
   color: #000000;
   opacity: 1;
   margin: 0;
 }
-@media (max-width: 767px) {
-  .as-used-by .row h3 {
-    font: 600 32px/48px "Titillium Web";
-  }
-}
+
 .as-used-by .row p {
   text-align: center;
-  font: 300 28px/40px "Titillium Web";
+  font: 400 20px/28px "Titillium Web";
   letter-spacing: 0.84px;
-  color: RGB(170, 170, 170);
+  color: #000000;
   opacity: 1;
-  margin-top: 15px;
   margin-bottom: 0;
 }
-@media (max-width: 767px) {
-  .as-used-by .row p {
-    font: 300 20px/36px "Titillium Web";
-  }
-}
-.as-used-by .row li::marker {
-  font-size: 28px;
-}
-.as-used-by .row > div:nth-child(1) {
-  flex: 0 1 42%;
-}
+
 @media (max-width: 1023px) {
   .as-used-by .row > div:nth-child(1) {
     flex: auto;
   }
 }
-.as-used-by .row > div:nth-child(2) {
-  flex: 0 1 50%;
+
+
+.as-used-by .container .row .log-list {
+  display: flex;
 }
 
-.as-used-by .row img {
+.as-used-by .row .logo-list img {
   filter: invert(81%) sepia(0%) saturate(108%) hue-rotate(214deg) brightness(87%) contrast(79%);
   max-width: 300px;
   margin-top : 50px;
@@ -906,29 +874,9 @@ header .header-wrapper .header-cta:hover {
   .as-used-by .row > div:nth-child(2) {
     flex: auto;
   }
-}
+} */
 
-@media (min-width: 1024px) and (max-width: 1919px) {
-  .as-used-by {
-    padding-top: 9.38vw;
-    padding-bottom: 7.81vw;
-  }
-  .as-used-by .row {
-    margin-bottom: 10.4vw;
-  }
-  .as-used-by .row h3 {
-    font: 600 3.12vw/3.91vw "Titillium Web";
-  }
-  .as-used-by .row p {
-    font: 300 1.46vw/2.08vw "Titillium Web";
-    letter-spacing: 0.04vw;
-    margin-top: 0.78vw;
-  }
-  .as-used-by .row li::marker {
-    font-size: 1.46vw;
-  }
- 
-}
+
 
 
 
