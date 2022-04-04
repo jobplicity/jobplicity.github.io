@@ -31,7 +31,7 @@ export const Why = Vue.component("Why", {
                     <img class="d-block mx-auto" src="assets/img/scholarship.png">
                   </div>
                   <div class="col-md-7 col-sm-12">
-                    <h2>Earn & Learn</h2>
+                    <h1>Earn & Learn</h1>
                     <p>Ever felt like a university should be paying you to study at it? As you progress through a course, JobLaunch allows you to unlock badges that give access to real world jobs paying real world money. This is a far better incentive to finish a course than a certification piece of paper. This time the paper is real world dollars.</p>
                   </div>
                 </div>
@@ -40,7 +40,7 @@ export const Why = Vue.component("Why", {
 
                 <div class="row why-list-item justify-content-sm-center">
                   <div class="col-md-7 col-sm-12 order-md-first">
-                    <h2>Stay Motivated.</h2>
+                    <h1>Stay Motivated.</h1>
                     <p>We use the best psychological motivators known to humankind to get you to the end of a course.</p>
 
                     <p>We combine psychological motivators including, group projects, gamification, tutoring, guest speakers, paired assignments & tests into a coherent online experience to ensure you get to the end of an online course.</p>
@@ -57,7 +57,7 @@ export const Why = Vue.component("Why", {
                     <img class="d-block mx-auto" src="assets/img/search.png">
                   </div>
                   <div class="col-md-7 col-sm-12">
-                    <h2>Curated Content.</h2>
+                    <h1>Curated Content.</h1>
                     <p>JobLaunch works with industry experts to ensure the content included in our syllabuses is world class. In addition we are constantly searching to ensure our courses are relevant to the needs of current tech trends.</p>
                   </div>
                 </div>

@@ -1029,12 +1029,21 @@ header .header-wrapper .header-cta:hover {
   margin-bottom : 50px;
 }
 
+.why-list h1 {
+  font-size: 40px;
+  font-weight:400;
+  letter-spacing:1px;
+  margin-bottom: 20px;
+}
+
 .why-list p {
   line-height: 1.6;
   font-size: 18px;
   font-weight:200;
   color : #808184;
 }
+
+
 
 .why-list .why-list-item {
   margin-top : 50px;
