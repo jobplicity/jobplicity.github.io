@@ -45,7 +45,7 @@ export const Why = Vue.component("Why", {
 
                     <p>We combine psychological motivators including, group projects, gamification, tutoring, guest speakers, paired assignments & tests into a coherent online experience to ensure you get to the end of an online course.</p>
                   </div>
-                  <div class="col-md-5 col-sm-12 mx-auto order-sm-first">
+                  <div class="col-md-5 col-sm-12 mx-auto order-sm-first order-1">
                     <img class="d-block mx-auto" src="assets/img/motivation.png">
                   </div>
                 </div>
