@@ -512,6 +512,7 @@ header .header-wrapper .header-cta:hover {
   margin-top: 0;
   margin-bottom: 20px;
 }
+
 @media (max-width: 1023px) {
   .main-v2 .container h2 {
     font: 400 55px/68px "ColfaxAI";
@@ -585,10 +586,38 @@ header .header-wrapper .header-cta:hover {
   background: black;
   border-width: 0px;
   font-weight: bold ;
-  fonnt-size: 14px;
+  font-size: 14px;
   margin: 0px;
   padding: 18px;
   border-radius: 9.3184px !important;
+}
+
+@media(min-width:1024px) and (max-width: 1400px){
+  .home-signup-form {
+    padding: 10px;
+  }
+
+  .home-signup-form-email{
+    padding: 1px;
+    margin-right: 5px;
+    margin-left : 5px;
+    font : 400 1.15vw/1.88vw "ColfaxAI";
+  }
+
+  .home-signup-form-button {
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    background: black;
+    border-width: 0px;
+    font-weight: bold ;
+    font : 700 1.15vw/1.88vw "ColfaxAI";
+    margin: 0px;
+    padding: 1vw;
+    border-radius: 9.3184px !important;
+  }
+
+
 }
 
 .home-signup-form-button:hover {

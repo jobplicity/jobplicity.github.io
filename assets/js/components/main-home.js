@@ -11,7 +11,7 @@ export const MainHome = {
             <div class="main-ctas">
               <h5>Get started for free – no credit card required</h5>
               <div class="row">
-                <div class="col-lg-6 col-md-8 col-sm-10 col-xs-12">
+                <div class="col-lg-7 col-md-10 col-sm-10 col-xs-12">
                   <div class="input-group mb-3 home-signup-form">
                     <input type="text" class="form-control home-signup-form-email" placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon1">
                     <button class="btn btn-outline-secondary home-signup-form-button" type="button" id="button-addon1">GET STARTED</button>
