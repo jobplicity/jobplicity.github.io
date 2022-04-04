@@ -801,68 +801,6 @@ header .header-wrapper .header-cta:hover {
 }
 
 
-/* .as-used-by .row {
-  display: flex;
-  justify-content: space-around;
-  align-items: center; 
-  margin-bottom: 150px;
-  flex-direction: row;
-
-}
-@media (max-width: 1023px) {
-  .as-used-by .row {
-    margin-bottom: 30px;
-  }
-}
-.as-used-by .row:last-child {
-  margin-bottom: 0;
-}
-
-.as-used-by .row h2 {
-  text-align: center;
-  font: 700 32px/32px "Titillium Web";
-  letter-spacing: 0.23px;
-  color: #000000;
-  opacity: 1;
-  margin: 0;
-}
-
-.as-used-by .row p {
-  text-align: center;
-  font: 400 20px/28px "Titillium Web";
-  letter-spacing: 0.84px;
-  color: #000000;
-  opacity: 1;
-  margin-bottom: 0;
-}
-
-@media (max-width: 1023px) {
-  .as-used-by .row > div:nth-child(1) {
-    flex: auto;
-  }
-}
-
-
-.as-used-by .container .row .log-list {
-  display: flex;
-}
-
-.as-used-by .row .logo-list img {
-  filter: invert(81%) sepia(0%) saturate(108%) hue-rotate(214deg) brightness(87%) contrast(79%);
-  max-width: 300px;
-  margin-top : 50px;
-}
-
-@media (max-width: 1023px) {
-  .as-used-by .row > div:nth-child(2) {
-    flex: auto;
-  }
-} */
-
-
-
-
-
 /* about */
 
 .about {
@@ -992,7 +930,7 @@ header .header-wrapper .header-cta:hover {
 
 .why-top p {
   line-height: 1.6;
-  font-size: 18px;
+  font-size: 19px;
   font-weight:200;
   color : #808184;
   /* letter-spacing : 0.1px; */
@@ -1011,7 +949,7 @@ header .header-wrapper .header-cta:hover {
 
 .why-list p {
   line-height: 1.6;
-  font-size: 18px;
+  font-size: 19px;
   font-weight:200;
   color : #808184;
 }
