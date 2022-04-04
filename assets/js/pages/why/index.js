@@ -28,7 +28,7 @@ export const Why = Vue.component("Why", {
               <div class="why-list">
                 <div class="row why-list-item">
                   <div class="col-md-5 col-sm-12">
-                    <img class="d-block mx-auto" src="assets/img/toga.png">
+                    <img class="d-block mx-auto" src="assets/img/scholarship.png">
                   </div>
                   <div class="col-md-7 col-sm-12">
                     <h2>Earn & Learn</h2>
@@ -46,7 +46,7 @@ export const Why = Vue.component("Why", {
                     <p>We combine psychological motivators including, group projects, gamification, tutoring, guest speakers, paired assignments & tests into a coherent online experience to ensure you get to the end of an online course.</p>
                   </div>
                   <div class="col-md-5 col-sm-12 mx-auto order-sm-first">
-                    <img class="d-block mx-auto" src="assets/img/motivated.png">
+                    <img class="d-block mx-auto" src="assets/img/motivation.png">
                   </div>
                 </div>
 
@@ -54,7 +54,7 @@ export const Why = Vue.component("Why", {
 
                 <div class="row why-list-item justify-content-sm-center">
                   <div class="col-md-5 col-sm-12 mx-auto">
-                    <img class="d-block mx-auto" src="assets/img/book.png">
+                    <img class="d-block mx-auto" src="assets/img/search.png">
                   </div>
                   <div class="col-md-7 col-sm-12">
                     <h2>Curated Content.</h2>
