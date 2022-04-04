@@ -39,7 +39,7 @@ export const Header = {
                   <a @click.prevent="slideToSection(0)" href="#home">HOME</a>
                 </li>
                 <li @click="showMenu = false">
-                  <a @click.prevent="slideToSection(2)" href="#why-job-launch">Why JobLaunch?</a>
+                 <router-link to="/why">Why JobLaunch?</router-link>
                 </li>
                 <li @click="showMenu = false">
                   <a @click.prevent="slideToSection(3)" href="#how-it-works">HOW IT WORKS</a>

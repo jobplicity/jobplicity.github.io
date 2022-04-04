@@ -549,8 +549,56 @@ header .header-wrapper .header-cta:hover {
   font-weight: bold;
 }
 
-.main-v2 .container .main-ctas .signup-form {
-  width: 460px;
+.home-signup-form {
+  padding: 10px;
+  box-shadow: rgba(0, 35, 64, 0.2) 0px 8px 10px 0px;
+  text-align: left;
+  background: rgb(255, 255, 255);
+  border-radius: 10px;
+  margin: 15px 0px 0px;
+}
+
+.home-signup-form-email{
+  padding: 1px 2px;
+  box-shadow: none;
+  background: 0px 0px;
+  border-radius: 3px;
+  border-width: 0px;
+  border-style: solid;
+  border-color: rgb(255, 255, 255);
+  border-image: initial;
+  transition: none 0s ease 0s;
+  outline:none !important;
+  margin-right: 10px;
+  margin-left : 10px;
+}
+
+.home-signup-form-email:focus {
+  box-shadow: none !important;
+}
+
+.home-signup-form-button {
+  color: white;
+  letter-spacing: 1.08px;
+  text-align: center;
+  text-transform: uppercase;
+  background: black;
+  border-width: 0px;
+  font-weight: bold ;
+  fonnt-size: 14px;
+  margin: 0px;
+  padding: 18px;
+  border-radius: 9.3184px !important;
+}
+
+.home-signup-form-button:hover {
+  background: lightgrey;
+  color : black;
+}
+
+
+/* .main-v2 .container .main-ctas .signup-form {
+  width: 100%;
   padding: 10px;
   display: flex;
   box-shadow: rgba(0, 35, 64, 0.2) 0px 8px 10px 0px;
@@ -560,13 +608,9 @@ header .header-wrapper .header-cta:hover {
   background: rgb(255, 255, 255);
   border-radius: 10px;
   margin: 15px 0px 0px;
-}
+} */
 
-@media (max-width: 600px) {
-  .main-v2 .container .main-ctas .signup-form {
-    width: 80%;
-  }
-}
+
 
 
 
@@ -588,7 +632,7 @@ header .header-wrapper .header-cta:hover {
   outline: none;
 }
 
-.main-v2 .container .main-ctas .signup-form .submit-button {
+/* .main-v2 .container .main-ctas .signup-form .submit-button {
   color: white;
   letter-spacing: 1.08px;
   text-align: center;
@@ -606,7 +650,7 @@ header .header-wrapper .header-cta:hover {
 .main-v2 .container .main-ctas .signup-form .submit-button:hover {
   background: lightgrey;
   color : black;
-}
+} */
 
 .main-v2 .container .main-ctas a {
   padding: 15px 40px;
