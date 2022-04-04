@@ -42,7 +42,7 @@ export const Header = {
                  <router-link to="/why">Why JobLaunch?</router-link>
                 </li>
                 <li @click="showMenu = false">
-                  <a @click.prevent="slideToSection(3)" href="#how-it-works">HOW IT WORKS</a>
+                  <a @click.prevent="slideToSection(4)" href="#how-it-works">HOW IT WORKS</a>
                 </li>
                 <li @click="showMenu = false">
                   <router-link to="/advisors">Advisors</router-link>
@@ -64,7 +64,7 @@ export const Header = {
               <router-link to="/why">Why JobLaunch?</router-link>
             </li>
             <li>
-              <a @click.prevent="slideToSection(2)" href="#how-it-works">HOW IT WORKS</a>
+              <a @click.prevent="slideToSection(4)" href="#how-it-works">HOW IT WORKS</a>
             </li>
             <li>
               <router-link to="/advisors">Advisors</router-link>
