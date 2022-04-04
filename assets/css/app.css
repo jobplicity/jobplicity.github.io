@@ -746,18 +746,9 @@ header .header-wrapper .header-cta:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 150px;
 }
-@media (max-width: 1023px) {
-  .earn-learn .row {
-    flex-direction: column;
-    margin-bottom: 30px;
-    align-items: flex-start;
-  }
-}
-.earn-learn .row:last-child {
-  margin-bottom: 0;
-}
+
+
 .earn-learn .row h2 {
   text-align: center;
   font: 700 32px/32px "Titillium Web";
@@ -777,25 +768,7 @@ header .header-wrapper .header-cta:hover {
   margin-bottom: 0;
 }
 
-.earn-learn .row li::marker {
-  font-size: 28px;
-}
-.earn-learn .row > div:nth-child(1) {
-  flex: 0 1 42%;
-}
-@media (max-width: 1023px) {
-  .earn-learn .row > div:nth-child(1) {
-    flex: auto;
-  }
-}
-.earn-learn .row > div:nth-child(2) {
-  flex: 0 1 50%;
-}
-@media (max-width: 1023px) {
-  .earn-learn .row > div:nth-child(2) {
-    flex: auto;
-  }
-}
+
 
 /* as used by */
 
