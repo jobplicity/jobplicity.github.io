@@ -1011,7 +1011,7 @@ header .header-wrapper .header-cta:hover {
 
 .why-top h1 {
   line-height: 3;
-  font-size: 34px;
+  font-size: 40px;
   font-weight:400;
   letter-spacing:1px;
   color : #808184;
@@ -1019,9 +1019,10 @@ header .header-wrapper .header-cta:hover {
 
 .why-top p {
   line-height: 1.6;
-  font-size: 16px;
-  font-weight:400;
+  font-size: 18px;
+  font-weight:200;
   color : #808184;
+  /* letter-spacing : 0.1px; */
 }
 
 .why-list {

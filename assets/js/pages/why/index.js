@@ -17,7 +17,7 @@ export const Why = Vue.component("Why", {
       <section class="why">
         <div class="container">
           <div class="row">
-            <div class="col-md-6 col-sm-8 col-xs-10 mx-auto">
+            <div class="col-md-5 col-sm-8 col-xs-10 mx-auto">
               <div class="why-top">
                 <h1>Why use JobLaunch?</h1>
                 <p>Have you ever signed up for an online course, hoping to learn something new, but after a while end up forgetting about it & never complete the syllabus? You’re definitely not alone. On average, students only complete 30% of the content in online courses they pay for, while 96% never look at them again after signing up. JobLaunch solves the problem of staying motivated whilst studying online course content.</p>
