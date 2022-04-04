@@ -5,7 +5,7 @@ export const AsUsedBy = {
         <div class="row">  
           <div class="col-md-8 col-sm-10 mx-auto">
             <p class="text-center">used by</p>
-            <img class="rounded mx-auto d-block" src="assets/img/logos/Reactor-Microsoft.png">
+            <img class="img-fluid mx-auto d-block" src="assets/img/logos/Reactor-Microsoft.png">
           </div>   
         </div>
       </div>
