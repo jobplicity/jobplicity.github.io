@@ -68,15 +68,15 @@ export const Home = Vue.component("Home", {
                   </div>
                   <div>
                     <h3 id="hours" class="number fw-bold mb-1"></h3>
-                    <span class="ms-1">hr</span>
+                    <span class="ms-2">hr</span>
                   </div>
                   <div>
                     <h3 id="minutes" class="number fw-bold mb-1"></h3>
-                    <span class="ms-1">min</span>
+                    <span class="ms-3">min</span>
                   </div>
                   <div>
                     <h3 id="seconds" class="number fw-bold mb-1"></h3>
-                    <span class="ms-1">sec</span>
+                    <span class="ms-3">sec</span>
                   </div>
                 </div>
               </div>
