@@ -162,13 +162,6 @@ header {
 		}
 		> div {
 			display: flex;
-
-			/** safari only */
-			@media not all and (min-resolution:.001dpcm){
-				@supports (-webkit-appearance:none) {
-					max-height: 25px;
-				}
-			}
 			&:first-child {
 				@include down-md() {
 					width: 100%;
@@ -1997,21 +1990,6 @@ https://mamoyz.com/ */
 				top: 2.6vw;
 				width: 2.6vw;
 				height: 2.6vw;
-			}
-		}
-	}
-}
-
-@media (min-width: 1024px) {
-	header {
-		.header-wrapper {
-			> div {
-				/** safari only */
-				@media not all and (min-resolution:.001dpcm){
-					@supports (-webkit-appearance:none) {
-						max-height: 100%;
-					}
-				}
 			}
 		}
 	}
