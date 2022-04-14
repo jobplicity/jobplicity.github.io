@@ -988,11 +988,11 @@ export const Home = Vue.component("Home", {
 						hour = minute * 60,
 						day = hour * 24;
 
-			let cohortDate = "Apr 13, 2022 18:00:00",
-					countDown = new Date(cohortDate).getTime(),
+			let cohortUTCDate = Date.UTC(2022,3,20,8,0,0,0),
+					countDown = cohortUTCDate,
 					x = setInterval(function() {
 
-						let now = new Date().getTime(),
+						let now = Date.now(),
 								distance = countDown - now;
 
 						document.getElementById("days").innerText = Math.floor(distance / (day)) + ':',
