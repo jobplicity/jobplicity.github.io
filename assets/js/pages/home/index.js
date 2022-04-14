@@ -976,10 +976,7 @@ export const Home = Vue.component("Home", {
 		// gradient.initGradient("#gradient-canvas");
 		gradient2.initGradient("#gradient-canvas-bottom");
 
-		$("#button-addon1").click(() => {
-			const email = $("#started-email").val()
-			window.open(`https://app.joblaunch.co/signup?email=${email}`)
-		})
+
 
 		// Countdown timer
 		(function () {
