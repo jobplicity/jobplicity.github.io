@@ -49,7 +49,7 @@ export const Header = {
                 </li>
 
                 <li @click="showMenu = false">
-                  <a href="https://app.job-launch.co/sign_up" class="header-cta">CREATE AN ACCOUNT</a>
+                  <a href="https://app.joblaunch.co/signup" class="header-cta">CREATE AN ACCOUNT</a>
                 </li>
               </ul>
             </nav>
@@ -70,14 +70,14 @@ export const Header = {
               <router-link to="/advisors">Advisors</router-link>
             </li>
             <!-- <li>
-              <a href="https://app.joblaunch.co/sign_in" id="login">
+              <a href="https://app.joblaunch.co/login" id="login">
                 <img src="assets/img/login.svg" alt="" />
                 <span>LOGIN</span>
               </a>
             </li> -->
           </ul>
-          <a href="https://joblaunchcohort.bubbleapps.io" class="header-cta hidden-xs">LOGIN</a>
-          <a href="https://joblaunchcohort.bubbleapps.io" class="header-cta hidden-xs">CREATE AN ACCOUNT</a>
+          <a href="https://app.joblaunch.co/login" class="header-cta hidden-xs">LOGIN</a>
+          <a href="https://app.joblaunch.co/signup" class="header-cta hidden-xs">CREATE AN ACCOUNT</a>
         </div>
       </div>
     </header>
