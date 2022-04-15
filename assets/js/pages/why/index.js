@@ -70,7 +70,9 @@ export const Why = Vue.component("Why", {
                 <h1>Earn money whilst studying today!</h1>
 
                 <div class="d-grid gap-2 col-md-5 col-xs-10 mx-auto">
-                  <button class="btn btn-lg btn-dark" type="button">Get Started Now</button>
+                  <a href="https://app.joblaunch.co/signup">
+                    <button class="btn btn-lg btn-dark" type="button">Get Started Now</button>
+                  </a>
                 </div>
 
               </div>

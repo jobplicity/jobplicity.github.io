@@ -68,7 +68,7 @@ export const Home = Vue.component("Home", {
                   </div>
                   <div>
                     <h3 id="hours" class="number fw-bold mb-1"></h3>
-                    <span class="ms-3">hr</span>
+                    <span class="ms-2">hr</span>
                   </div>
                   <div>
                     <h3 id="minutes" class="number fw-bold mb-1"></h3>
@@ -81,7 +81,7 @@ export const Home = Vue.component("Home", {
                 </div>
               </div>
               <div class="join-button flex-grow-1 px-2">
-                <a href="https://forms.gle/NRRpyyheaxgNxZEe7" class="btn btn-lg btn-outline-dark w-100 py-3" target="_blank">
+                <a href="https://app.joblaunch.co/signup" class="btn btn-lg btn-outline-dark w-100 py-3" target="_blank" rel="noreferrer">
                   Join Cohort
                 </a>
               </div>
@@ -252,8 +252,8 @@ export const Home = Vue.component("Home", {
           </h3>
           <div class="signup-form">
             <form>
-              <input type="email" name="email" id="email" placeholder="Enter your email & Get JobLaunch for free" />
-              <a class="btn-submit" href="https://joblaunchcohort.bubbleapps.io/">create an account</a>
+              <input type="email" name="email" id="started-email2" placeholder="Enter your email & Get JobLaunch for free" />
+              <a id="button-addon2" class="btn-submit"">create an account</a>
             </form>
           </div>
         </div>
@@ -978,6 +978,11 @@ export const Home = Vue.component("Home", {
 
 		$("#button-addon1").click(() => {
 			const email = $("#started-email").val()
+			window.open(`https://app.joblaunch.co/signup?email=${email}`)
+		})
+
+		$("#button-addon2").click(() => {
+			const email = $("#started-email2").val()
 			window.open(`https://app.joblaunch.co/signup?email=${email}`)
 		})
 
