@@ -993,7 +993,7 @@ export const Home = Vue.component("Home", {
 						hour = minute * 60,
 						day = hour * 24;
 
-			let cohortUTCDate = Date.UTC(2022,3,20,8,0,0,0),
+			let cohortUTCDate = Date.UTC(2022,3,27,8,0,0,0),
 					countDown = cohortUTCDate,
 					x = setInterval(function() {
 
