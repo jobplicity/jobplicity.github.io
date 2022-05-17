@@ -10,7 +10,7 @@ export const Header = {
           <div class="xs-only mobile-menu">
             <ul>
               <li>
-                <a href="https://app.job-launch.co/sign_in" id="login">
+                <a href="https://app.joblaunch.co/login" id="login">
                   <img src="assets/img/login.svg" alt="" />
                   <span>LOGIN</span>
                 </a>
