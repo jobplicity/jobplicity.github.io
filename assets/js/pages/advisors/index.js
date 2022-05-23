@@ -4,14 +4,14 @@ export const Advisors = Vue.component("Advisors", {
 			currentAdvisor: "",
 			showCurrentAdvisor: false,
 			advisors: [
-				{
-					name: "Michael Watson",
-					role: "Regional Director for Australia Pacific for the Microsoft Reactor",
-					image: "assets/img/michael.jpg",
-					description: `
-						<p>Michael Watson is Regional Lead for Microsoft Reactors in the APAC Region, where he oversees the operations and programming for sites in Australia, China and India. The program focuses on supporting Startups and Developers, learn, connect and build in a community of like-minded individuals.</p><p>Previously Michael was the Founder and Director of the Sydney Startup Hub (the Hub), where he was responsible for formation of the Hub from its inception with industry leaders, through to the finalisation of the construction prior to its opening in February 2018.</p><p>Michael brings a wealth of experience in both the public and private sector from his twelve years in the New South Wales Government, working on a number of major projects such as the Sydney Telstra V8 Supercars where Michael was the Head of Operations and Logistics for the Governments Motor Racing Authority to his time leading the Startup team within Jobs for New South Wales.</p><p>Michael is a keen sportsman, having played first grade cricket for North Sydney. Michael is currently coaching his sons’ cricket and working on his golf handicap when he has spare time.</p><p>Michael holds a Bachelor of Sports Studies (Business) degree which has given his a broad range of skills that has assisted his career to date.</p>
-						`,
-				},
+				// {
+				// 	name: "Michael Watson",
+				// 	role: "Regional Director for Australia Pacific for the Microsoft Reactor",
+				// 	image: "assets/img/michael.jpg",
+				// 	description: `
+				// 		<p>Michael Watson is Regional Lead for Microsoft Reactors in the APAC Region, where he oversees the operations and programming for sites in Australia, China and India. The program focuses on supporting Startups and Developers, learn, connect and build in a community of like-minded individuals.</p><p>Previously Michael was the Founder and Director of the Sydney Startup Hub (the Hub), where he was responsible for formation of the Hub from its inception with industry leaders, through to the finalisation of the construction prior to its opening in February 2018.</p><p>Michael brings a wealth of experience in both the public and private sector from his twelve years in the New South Wales Government, working on a number of major projects such as the Sydney Telstra V8 Supercars where Michael was the Head of Operations and Logistics for the Governments Motor Racing Authority to his time leading the Startup team within Jobs for New South Wales.</p><p>Michael is a keen sportsman, having played first grade cricket for North Sydney. Michael is currently coaching his sons’ cricket and working on his golf handicap when he has spare time.</p><p>Michael holds a Bachelor of Sports Studies (Business) degree which has given his a broad range of skills that has assisted his career to date.</p>
+				// 		`,
+				// },
 				{
 					name: "Maxine Sherin",
 					role: "Festival Director at Spark Festival",
