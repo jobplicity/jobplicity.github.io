@@ -13,8 +13,7 @@ import { Header } from "./components/header.js"
 import { Footer } from "./components/footer.js"
 // const baseApiUrl = "http://localhost:8080/api";
 // const baseFrontendUrl = "http://localhost:3001/editor/node";
-
-
+// import VueAnalytics from 'vue-analytics';
 
 const routes = [
 	{ 
@@ -40,6 +39,12 @@ const router = new VueRouter({
 // router.beforeEach((to, from, next) => {
 // 	console.log(from);
 // });
+// console.log("VueAnalytics", VueAnalytics)
+// Vue.use(VueAnalytics, {
+// 	id: 'G-W35FGCJNS9',
+// 	router
+// })
+
 var app = new Vue({
 	el: "#app",
   components : {
