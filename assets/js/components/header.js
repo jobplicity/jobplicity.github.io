@@ -47,6 +47,9 @@ export const Header = {
                 <li @click="showMenu = false">
                   <router-link to="/advisors">Advisors</router-link>
                 </li>
+                <li @click="showMenu = false">
+                  <router-link to="/">For Business</router-link>
+                </li>
 
                 <li @click="showMenu = false">
                   <a href="https://app.joblaunch.co/signup" class="header-cta">CREATE AN ACCOUNT</a>
@@ -69,6 +72,14 @@ export const Header = {
             <li>
               <router-link to="/advisors">Advisors</router-link>
             </li>
+            <li @click="showMenu = false">
+              <router-link to="/">For Business</router-link>
+            </li>
+            <li @click="showMenu = false">
+              <a href="https://docs.google.com/forms/d/e/1FAIpQLSf9ZMAglg8A6Kk2hW9AXWiyXt4CxoiBWvRqBxmlInUJxlsrcA/viewform?usp=sf_link">
+                Feedback
+              </a>
+            </li>
             <!-- <li>
               <a href="https://app.joblaunch.co/login" id="login">
                 <img src="assets/img/login.svg" alt="" />
@@ -76,7 +87,6 @@ export const Header = {
               </a>
             </li> -->
           </ul>
-          <a href="https://app.joblaunch.co/login" class="header-cta hidden-xs">For Business</a>
           <a href="https://app.joblaunch.co/login" class="header-cta hidden-xs">LOGIN</a>
           <a href="https://app.joblaunch.co/signup" class="header-cta hidden-xs">CREATE AN ACCOUNT</a>
         </div>

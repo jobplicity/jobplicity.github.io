@@ -417,11 +417,10 @@ header {
 		}
 		h2 {
 			text-align: left;
-			font: 400 60px/70px "ColfaxAI";
 			color: #fff;
 			margin-top: 0;
 			margin-bottom: 20px;
-			font: 400 5vw/7vw "ColfaxAI";
+			font: 400 50px/74px "ColfaxAI";
 			margin-bottom: 1vw;
 		}
 		h5 {
@@ -431,7 +430,8 @@ header {
 			color: #fff;
 			max-width: 100%;
 			margin-bottom: 20px;
-			font: 400 1.15vw/1.88vw "ColfaxAI";
+			font: 400 18px/27px "ColfaxAI";
+			// font: 400 1.15vw/1.88vw "ColfaxAI";
 			margin-bottom: 1.04vw;
 		}
 		.main-ctas {
@@ -1747,7 +1747,7 @@ footer {
 				flex: 0 1 100%;
 			}
 			h2 {
-				font: 400 55px/68px "ColfaxAI";
+				font: 400 50px/74px "ColfaxAI";
 				margin-bottom: 30px;
 			}
 			h5 {
@@ -1997,10 +1997,10 @@ footer {
 			margin-left: 30px;
 			margin-right: 30px;
 			h2 {
-				font: 400 32px/48px "ColfaxAI";
+				font: 400 48px/66px "ColfaxAI"; // main title
 			}
 			h5 {
-				font: 400 16px/30px "ColfaxAI";
+				font: 400 15px/22.5px "ColfaxAI";
 			}
 			.main-ctas {
 				a {
