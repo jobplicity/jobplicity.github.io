@@ -76,6 +76,7 @@ export const Header = {
               </a>
             </li> -->
           </ul>
+          <a href="https://app.joblaunch.co/login" class="header-cta hidden-xs">For Business</a>
           <a href="https://app.joblaunch.co/login" class="header-cta hidden-xs">LOGIN</a>
           <a href="https://app.joblaunch.co/signup" class="header-cta hidden-xs">CREATE AN ACCOUNT</a>
         </div>

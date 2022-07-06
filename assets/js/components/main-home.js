@@ -5,9 +5,9 @@ export const MainHome = {
         <div class="container" >
           <div class="col-6">
             <div class="h2">
-              <h2>Seize your future.</h2>
+              <h2 class="main-title">Studying Online?<br/>Stay Motivated.</h2>
             </div>
-            <h5>Get paid to learn. With a cohort of other students, JobLaunch keeps you motivated to work through online courses whilst earning money. You earn and learn!</h5>
+            <h5>JobLaunch is a SaaS platform that enables you to finally get to the end of an online course. We use cohort based learning, gamification, certification & pay you! - to keep you motivated whilst studying through online content.</h5>
             <div class="main-ctas">
               <h5>Get started for free – no credit card required</h5>
               <div class="row">

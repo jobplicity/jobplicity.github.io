@@ -9,6 +9,8 @@ const baseFrontendUrl = "http://main.hypergraph.so/editor/node";
 import { Home } from "./pages/home/index.js"
 import { Advisors } from "./pages/advisors/index.js"
 import { Why } from "./pages/why/index.js"
+import { Terms } from "./pages/terms/index.js"
+import { Privacy } from "./pages/privacy/index.js"
 import { Header } from "./components/header.js"
 import { Footer } from "./components/footer.js"
 // const baseApiUrl = "http://localhost:8080/api";
@@ -17,19 +19,29 @@ import { Footer } from "./components/footer.js"
 
 const routes = [
 	{ 
-    path: "/advisors", 
-    component: Advisors, 
-    name: "advisors" 
-  },
-  { 
-    path: "/why", 
-    component: Why, 
-    name: "why" 
-  },
+		path: "/advisors", 
+		component: Advisors, 
+		name: "advisors" 
+	},
+	{ 
+		path: "/why", 
+		component: Why, 
+		name: "why" 
+	},
+	{
+		path: '/termsandconditions',
+		component: Terms,
+		name: 'tos'
+	},
+	{
+		path: '/privacypolicy',
+		component: Privacy,
+		name: 'privacy'
+	},
 	{
 		path: "/",
 		component: Home,
-	},
+	}
 ];
 
 const router = new VueRouter({

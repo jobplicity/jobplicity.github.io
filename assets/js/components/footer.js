@@ -4,10 +4,14 @@ export const Footer = {
       <div class="container">
         <p>JobLaunch Technologies Pty Ltd 2020 All Rights Reserved.</p>
         <p>4/23 O'Connell St, Sydney NSW 2000</p>
-        <a href="https://sites.google.com/joblaunch.co/terms-conditions-and-privacy/terms-conditions">Terms & Conditions</a>
+        <router-link to="/termsandconditions">Terms & Conditions</router-link>
         |
-        <a href="https://sites.google.com/joblaunch.co/terms-conditions-and-privacy/privacy-policy">Privacy Policy</a>
-      </div>
-    </footer>
-  `
+        <router-link to="/privacypolicy">Privacy Policy</router-link>
+
+        </div>
+        </footer>
+        `
 }
+// <a href="https://sites.google.com/joblaunch.co/terms-conditions-and-privacy/terms-conditions">Terms & Conditions</a>
+// |
+// <a href="https://sites.google.com/joblaunch.co/terms-conditions-and-privacy/privacy-policy">Privacy Policy</a>

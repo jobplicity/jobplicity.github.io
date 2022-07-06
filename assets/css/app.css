@@ -415,7 +415,7 @@ header .header-wrapper .header-cta:hover {
   color: #fff;
   margin-top: 0;
   margin-bottom: 20px;
-  font: 400 3.12vw/3.64vw "ColfaxAI";
+  font: 400 5vw/7vw "ColfaxAI";
   margin-bottom: 1vw;
 }
 .main-v2 .container h5 {
@@ -1651,6 +1651,10 @@ footer a:hover {
 .advisors .current-advisor.show .advisor-item {
   opacity: 1;
   transform: translate(0, 0);
+}
+
+.full-length {
+  height: 100% !important;
 }
 
 @media (max-width: 1023px) {
