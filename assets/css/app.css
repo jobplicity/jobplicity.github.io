@@ -419,12 +419,11 @@ header .header-wrapper .header-cta:hover {
 }
 .main-v2 .container h5 {
   text-align: left;
-  font: 400 22px/36px "ColfaxAI";
+  font: 400 16px/28px "ColfaxAI";
   margin-top: 0;
   color: #fff;
   max-width: 100%;
   margin-bottom: 20px;
-  font: 400 12px/26px "ColfaxAI";
   margin-bottom: 1.04vw;
 }
 .main-v2 .container .main-ctas {
@@ -1948,10 +1947,10 @@ footer a:hover {
     margin-right: 30px;
   }
   .main-v2 .container h2 {
-    font: 400 44px/64px "ColfaxAI";
+    font: 400 40px/64px "ColfaxAI";
   }
   .main-v2 .container h5 {
-    font: 400 12px/26px "ColfaxAI";
+    font: 400 14px/26px "ColfaxAI";
   }
   .main-v2 .container .main-ctas a {
     font-size: 14px;
