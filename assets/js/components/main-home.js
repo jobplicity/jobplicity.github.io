@@ -12,10 +12,13 @@ export const MainHome = {
               <h5>Get started for free – no credit card required</h5>
               <div class="row">
                 <div class="col-lg-7 col-md-10 col-sm-10 col-xs-12">
-                  <div class="input-group mb-3 home-signup-form">
-                    <input id="started-email" type="text" class="form-control home-signup-form-email" placeholder="Enter your email" aria-label="Example text with button addon" aria-describedby="button-addon1" autofocus>
-                    <button class="btn btn-outline-secondary home-signup-form-button" type="button" id="button-addon1">GET STARTED</button>
-                  </div>
+                <button
+                  id="button-addon1"
+                  class="btn btn-outline-secondary my-4 home-signup-form-button"
+                  type="button"
+                >
+                  ADD TO CHROME — IT'S FREE
+                </button>
                 </div>
               </div>
           
@@ -25,3 +28,7 @@ export const MainHome = {
       </section>
   `
 }
+
+// <div class="input-group mb-3 home-signup-form">
+//   <input id="started-email" type="text" class="form-control home-signup-form-email" placeholder="Enter your email" aria-label="Example text with button addon" aria-describedby="button-addon1" autofocus>
+// </div>

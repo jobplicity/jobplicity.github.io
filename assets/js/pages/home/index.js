@@ -252,8 +252,8 @@ export const Home = Vue.component("Home", {
           </h3>
           <div class="signup-form">
             <form>
-              <input type="email" name="email" id="started-email2" placeholder="Enter your email & Get JobLaunch for free" />
-              <a id="button-addon2" class="btn-submit"">create an account</a>
+              <!-- <input type="email" name="email" id="started-email2" placeholder="Enter your email & Get JobLaunch for free" /> -->
+              <a id="button-addon2" class="btn-submit"">GET STARTED NOW</a>
             </form>
           </div>
         </div>
@@ -978,12 +978,14 @@ export const Home = Vue.component("Home", {
 
 		$("#button-addon1").click(() => {
 			const email = $("#started-email").val()
-			window.open(`https://app.joblaunch.co/signup?email=${email}`)
+			window.open(`https://chrome.google.com/webstore/detail/joblaunch-extension-0113/albjjckfkpinhgdmpijpkhfemccjcdbo`)
+			// window.open(`https://app.joblaunch.co/signup?email=${email}`)
 		})
 
 		$("#button-addon2").click(() => {
 			const email = $("#started-email2").val()
-			window.open(`https://app.joblaunch.co/signup?email=${email}`)
+			window.open(`https://chrome.google.com/webstore/detail/joblaunch-extension-0113/albjjckfkpinhgdmpijpkhfemccjcdbo`)
+			// window.open(`https://app.joblaunch.co/signup?email=${email}`)
 		})
 
 		// Countdown timer

@@ -70,7 +70,11 @@ export const Why = Vue.component("Why", {
                 <h1>Earn money whilst studying today!</h1>
 
                 <div class="d-grid gap-2 col-md-5 col-xs-10 mx-auto">
-                  <a href="https://app.joblaunch.co/signup">
+                  <a
+                    href="https://chrome.google.com/webstore/detail/joblaunch-extension-0113/albjjckfkpinhgdmpijpkhfemccjcdbo"
+                    target="_blank"
+                    ref="noreferrer"
+                  >
                     <button class="btn btn-lg btn-dark" type="button">Get Started Now</button>
                   </a>
                 </div>
