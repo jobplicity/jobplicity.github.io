@@ -52,7 +52,7 @@ export const Header = {
                 </li>
 
                 <li @click="showMenu = false">
-                  <a href="https://app.joblaunch.co/signup" class="header-cta">CREATE AN ACCOUNT</a>
+                  <a href="https://chrome.google.com/webstore/detail/joblaunch-extension-0113/albjjckfkpinhgdmpijpkhfemccjcdbo" class="header-cta">GET STARTED</a>
                 </li>
               </ul>
             </nav>
@@ -83,7 +83,7 @@ export const Header = {
             </li> -->
           </ul>
           <a href="https://app.joblaunch.co/login" class="header-cta hidden-xs">LOGIN</a>
-          <a href="https://app.joblaunch.co/signup" class="header-cta hidden-xs">CREATE AN ACCOUNT</a>
+          <a href="https://chrome.google.com/webstore/detail/joblaunch-extension-0113/albjjckfkpinhgdmpijpkhfemccjcdbo" class="header-cta hidden-xs">GET STARTED</a>
         </div>
       </div>
     </header>
