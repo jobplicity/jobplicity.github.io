@@ -282,7 +282,7 @@ header .header-wrapper .header-cta:hover {
   transition: all 300ms;
   padding: 1.04vw 1.56vw;
   border-radius: 0.42vw;
-  font: 400 0.83vw/1.25vw "Titillium Web";
+  font: 400 13pt/24pt "Titillium Web";
   letter-spacing: 0.08vw;
   border-radius: 0.52vw;
 }
@@ -1918,6 +1918,11 @@ footer a:hover {
   }
   .advisors .current-advisor .advisor-item .advisor-about {
     padding-left: 120px;
+  }
+
+  .btn-submit {
+    font: 400 14px/22px "Titillium Web";
+    padding: 8px;
   }
 }
 @media (max-width: 767px) {
