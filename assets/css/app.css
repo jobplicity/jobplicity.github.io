@@ -1656,9 +1656,9 @@ footer a:hover {
   height: 100% !important;
 }
 
-@media (min-width: 1600px) {
+@media (min-width: 1700px) {
   .main-v2 .container h2 {
-    font: 400 4.4vw/5vw "ColfaxAI";
+    font: 400 4.3vw/4.8vw "ColfaxAI";
   }
   .main-v2 .container h5 {
     font: 400 24px/34px "ColfaxAI";
