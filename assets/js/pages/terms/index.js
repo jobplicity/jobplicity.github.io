@@ -13,7 +13,7 @@ export const Terms = Vue.component("Terms", {
 					
 					<h4>Copyright and trademarks</h4>
 					<p>
-					Copyright in the material and trademarks on this Site are owned by Launch Technologies Pty Ltd. ABN 36 648 581 551 (“Launch”) unless otherwise indicated and you agree not to infringe any intellectual property rights owned by Launch.
+					Copyright in the material and trademarks on this Site are owned by JobLaunch Technologies Pty Ltd. ABN 36 648 581 551 (“Launch”) unless otherwise indicated and you agree not to infringe any intellectual property rights owned by Launch.
 					</p>
 					
 					<h4>Our rights to act as your micro-job & cohort facilitator.</h4>
@@ -91,7 +91,7 @@ export const Terms = Vue.component("Terms", {
 					The laws governing this agreement will be the laws in NSW, Australia and you irrevocably submit to the exclusive jurisdiction of its Courts and its Appellate Courts and the jurisdiction of the Federal Court of Australia sitting in NSW.
 					</p>
 					<p>
-					For the purposes of this agreement the words “Launch”, “We”, “Our” and “Us” refer to Launch Technologies Pty Ltd and “Site” to materials delivered on www.joblaunch.co and other co-branded versions of the site.
+					For the purposes of this agreement the words “Launch”, “We”, “Our” and “Us” refer to JobLaunch Technologies Pty Ltd and “Site” to materials delivered on www.joblaunch.co and other co-branded versions of the site.
 					</p>
 
 
