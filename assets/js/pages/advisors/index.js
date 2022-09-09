@@ -46,7 +46,7 @@ export const Advisors = Vue.component("Advisors", {
     <section class="advisors">
       <div class="container">
         <div class="advisors-top">
-          <h1>JobLaunch Advisors</h1>
+          <h1>Launch Advisors</h1>
           <p>Our panel of advisors consists of Australian leaders in their fields.</p>
         </div>
         
