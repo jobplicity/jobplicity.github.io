@@ -14,7 +14,7 @@ export const Privacy = Vue.component("Privacy", {
 					Launch collects Personal Information and Personal Data from Site visitors for the purposes of providing services to our users, and (as described below) for the purposes of better customising our services to you. Any Personal Information and Personal Data collected from you will be used by us in accordance with and as described in this Privacy Statement.
 					</p>
 					<p>
-					This Privacy Statement has been prepared by Launch. Launch Technologies Pty Ltd owns and operates the website located at www.joblaunch.co (“the Site”) across desktop, mobile, tablet and apps and including any subdomains eg “https://app.joblaunch.co/uts_sign_up” 
+					This Privacy Statement has been prepared by Launch. JobLaunch Technologies Pty Ltd owns and operates the website located at www.joblaunch.co (“the Site”) across desktop, mobile, tablet and apps and including any subdomains eg “https://app.joblaunch.co/uts_sign_up” 
 					</p>
 					
 					<h4>Definitions</h4>
@@ -25,7 +25,7 @@ export const Privacy = Vue.component("Privacy", {
 					<ul>
 						<li>
 							<p>
-							any reference to “Launch”, “we”, “us” and “our” includes a reference to Launch Technologies Pty Ltd. and each of Launch's related bodies corporate (as that term is defined in the Corporations Act 2001 (Cth)).
+							any reference to “Launch”, “we”, “us” and “our” includes a reference to JobLaunch Technologies Pty Ltd. and each of Launch's related bodies corporate (as that term is defined in the Corporations Act 2001 (Cth)).
 							</p>
 						</li>
 						<li>
