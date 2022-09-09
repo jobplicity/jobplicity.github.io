@@ -5,7 +5,7 @@ export const Header = {
         <div>
           <router-link @click.prevent="slideToSection(0)" to="/" id="logo">
             <img src="assets/img/jl-logo.png" alt="" />
-            <!-- <span>JobLaunch</span> -->
+            <!-- <span>Launch</span> -->
           </router-link>
           <div class="xs-only mobile-menu">
             <ul>
@@ -39,7 +39,7 @@ export const Header = {
                   <a @click.prevent="slideToSection(0)" href="#home">HOME</a>
                 </li>
                 <li @click="showMenu = false">
-                 <router-link to="/why">Why JobLaunch?</router-link>
+                 <router-link to="/why">Why Launch?</router-link>
                 </li>
                 <li @click="showMenu = false">
                   <a @click.prevent="slideToSection(4)" href="#how-it-works">HOW IT WORKS</a>
@@ -64,7 +64,7 @@ export const Header = {
               <a @click.prevent="slideToSection(0)" href="#home">HOME</a>
             </li>
             <li>
-              <router-link to="/why">Why JobLaunch?</router-link>
+              <router-link to="/why">Why Launch?</router-link>
             </li>
             <li>
               <a @click.prevent="slideToSection(4)" href="#how-it-works">HOW IT WORKS</a>

@@ -19,8 +19,8 @@ export const Why = Vue.component("Why", {
           <div class="row">
             <div class="col-md-5 col-sm-8 col-xs-10 mx-auto">
               <div class="why-top">
-                <h1>Why use JobLaunch?</h1>
-                <p>Have you ever signed up for an online course, hoping to learn something new, but after a while end up forgetting about it & never complete the syllabus? You’re definitely not alone. On average, students only complete 30% of the content in online courses they pay for, while 96% never look at them again after signing up. JobLaunch solves the problem of staying motivated whilst studying online course content.</p>
+                <h1>Why use Launch?</h1>
+                <p>Have you ever signed up for an online course, hoping to learn something new, but after a while end up forgetting about it & never complete the syllabus? You’re definitely not alone. On average, students only complete 30% of the content in online courses they pay for, while 96% never look at them again after signing up. Launch solves the problem of staying motivated whilst studying online course content.</p>
               </div>
 
 
@@ -32,7 +32,7 @@ export const Why = Vue.component("Why", {
                   </div>
                   <div class="col-md-7 col-sm-12">
                     <h1>Earn & Learn</h1>
-                    <p>Ever felt like a university should be paying you to study at it? As you progress through a course, JobLaunch allows you to unlock badges that give access to real world jobs paying real world money. This is a far better incentive to finish a course than a certification piece of paper. This time the paper is real world dollars.</p>
+                    <p>Ever felt like a university should be paying you to study at it? As you progress through a course, Launch allows you to unlock badges that give access to real world jobs paying real world money. This is a far better incentive to finish a course than a certification piece of paper. This time the paper is real world dollars.</p>
                   </div>
                 </div>
 
@@ -58,7 +58,7 @@ export const Why = Vue.component("Why", {
                   </div>
                   <div class="col-md-7 col-sm-12">
                     <h1>Curated Content.</h1>
-                    <p>JobLaunch works with industry experts to ensure the content included in our syllabuses is world class. In addition we are constantly searching to ensure our courses are relevant to the needs of current tech trends.</p>
+                    <p>Launch works with industry experts to ensure the content included in our syllabuses is world class. In addition we are constantly searching to ensure our courses are relevant to the needs of current tech trends.</p>
                   </div>
                 </div>
 

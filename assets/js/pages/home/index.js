@@ -14,9 +14,10 @@ export const Home = Vue.component("Home", {
     <div>
       
       <main-home></main-home>
-      <earn-learn></earn-learn>
+      <!-- <earn-learn></earn-learn> -->
       
       <div class="cohorts-section">
+  		<!--
         <div class="container py-5">
           <div class="up-head">
             <h2> Upcoming Cohorts </h2>
@@ -88,6 +89,7 @@ export const Home = Vue.component("Home", {
             </div>
           </div>
         </div>
+		-->
       </div>
 
       <as-used-by></as-used-by>
@@ -100,10 +102,7 @@ export const Home = Vue.component("Home", {
             </div>
             <div>
               <p>
-                We use the best psychological motivators known to humankind to get you to the end.
-                <br />
-                <br />
-                We combine psychological motivators including, group projects, gamification, tutoring, guest speakers, paired assignments & tests into a coherent online experience to ensure you get to the end of an online course.
+                The Launch browser extension adds psychological motivators including, group projects, gamification, tutoring, guest speakers, paired assignments, tests & paying you directly! into a coherent online experience to ensure you get to the end of any online course.
               </p>
             </div>
           </div>
@@ -145,8 +144,8 @@ export const Home = Vue.component("Home", {
                   <img src="assets/img/icons/002-search.svg" alt="" />
                 </div>
                 <div class="content">
-                  <h3>2. Find a Cohort</h3>
-                  <p>Search our catalogue of running & upcohorts to kick start your next career.</p>
+                  <h3>2. Find the right badge for you</h3>
+                  <p>Search through our catalogue of badges to kick start your next career.</p>
                 </div>
               </div>
             </div>
@@ -157,7 +156,7 @@ export const Home = Vue.component("Home", {
                 </div>
                 <div class="content">
                   <h3>3. Meet your group. Unlock your potential.</h3>
-                  <p> Our system automatically places you into a group. Regularly schedule meetings to discuss topics & work through course content together.</p>
+                  <p>Find the right group for you & stay motivated. Our system automatically schedules meetings for you to discuss topics & work through course content together.</p>
                 </div>
               </div>
             </div>
@@ -178,8 +177,8 @@ export const Home = Vue.component("Home", {
                   <img src="assets/img/icons/004-feedback.svg" alt="" />
                 </div>
                 <div class="content">
-                  <h3>5. Feedback.</h3>
-                  <p> JobLaunch completes the feedback loop. Through your cohort, group, instructor & other mechanisms gain feedback on your work.</p>
+                  <h3>5. Find you match.</h3>
+                  <p>Launch automatically matches you with friends studying the same content as you. Work through problems together and accelerate your learning.</p>
                 </div>
               </div>
             </div>
@@ -194,7 +193,7 @@ export const Home = Vue.component("Home", {
               <div class="avatar"><img src="assets/img/tinacraigen.jpg" alt="" /></div>
             </div>
             <div class="col">
-              <h4>“I would loose motivation all the time trying to teach myself new things online. Then I found JobLaunch. After only 1 months subscription I got 2 job offers. Success!”</h4>
+              <h4>“I would loose motivation all the time trying to teach myself new things online. Then I found JobLaunch. After only 1 months subscription I completed my python course. Success!”</h4>
               <a href="#" class="btn-submit" @click.prevent="showPopupHandler('W-65JrtwtTOdc')">Hear Tina’s Story</a>
             </div>
           </div>
@@ -203,7 +202,7 @@ export const Home = Vue.component("Home", {
 
       <section class="how-it-works">
         <div class="container">
-          <h2 class="sect-title">JobLaunch Your Way.</h2>
+          <h2 class="sect-title">Launch Your Way.</h2>
           <div class="items-container">
             <div class="item">
               <div>
@@ -220,7 +219,7 @@ export const Home = Vue.component("Home", {
                   <img src="assets/img/002-handshake.svg" alt="" />
                 </div>
                 <h3>For Recruiters</h3>
-                <p>JobLaunch Pro is the enterprise edition of our software. Reach out via email to learn about extensive additional features available to Enterprise customers.</p>
+                <p>Launch Pro is the enterprise edition of our software. Reach out via email to learn about extensive additional features available to Enterprise customers.</p>
               </div>
             </div>
             <div class="item">
@@ -229,7 +228,7 @@ export const Home = Vue.component("Home", {
                   <img src="assets/img/003-secure.svg" alt="" />
                 </div>
                 <h3>Safe & Secure</h3>
-                <p>JobLaunch utilises the latest end-to-end transport layer security to ensure that your data, remains safe whilst in transit. Once on our servers the data remains encrypted. Only you possess the key to unlock it.</p>
+                <p>Launch utilises the latest end-to-end transport layer security to ensure that your data, remains safe whilst in transit. Once on our servers the data remains encrypted. Only you possess the key to unlock it.</p>
               </div>
             </div>
           </div>
@@ -252,7 +251,7 @@ export const Home = Vue.component("Home", {
           </h3>
           <div class="signup-form">
             <form>
-              <!-- <input type="email" name="email" id="started-email2" placeholder="Enter your email & Get JobLaunch for free" /> -->
+              <!-- <input type="email" name="email" id="started-email2" placeholder="Enter your email & Get Launch for free" /> -->
               <a id="button-addon2" class="btn-submit"">GET STARTED NOW</a>
             </form>
           </div>
