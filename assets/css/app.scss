@@ -1,5 +1,7 @@
 /* SCSS by Mamo YZ
 https://mamoyz.com/ */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
 @font-face {
 	font-family: "ColfaxAI";
 	src: url(../fonts/ColfaxAIRegular.woff2) format("woff2"), url(../fonts/ColfaxAIRegular.woff) format("woff");
@@ -47,6 +49,15 @@ $purp: #e0d1f3;
 	100% {
 		transform: translate(0, 0);
 	}
+}
+
+.logo-font {
+	font-family: 'Montserrat', sans-serif !important;
+	font-weight: 600 !important;
+}
+
+.text-white {
+	color: white;
 }
 /* .main-v2 .container .main-ctas .signup-form {
   width: 100%;
