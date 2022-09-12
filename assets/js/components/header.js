@@ -4,8 +4,8 @@ export const Header = {
       <div class="header-wrapper">
         <div>
           <router-link @click.prevent="slideToSection(0)" to="/" id="logo">
-            <img src="assets/img/jl-logo.png" alt="" />
-            <!-- <span>Launch</span> -->
+            <!-- <img src="assets/img/jl-logo.png" alt="" /> -->
+            <span class="logo-font text-white">Launch</span>
           </router-link>
           <div class="xs-only mobile-menu">
             <ul>
