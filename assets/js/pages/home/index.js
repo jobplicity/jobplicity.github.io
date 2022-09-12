@@ -145,7 +145,7 @@ export const Home = Vue.component("Home", {
                 </div>
                 <div class="content">
                   <h3>2. Find the right badge for you</h3>
-                  <p>Search through our catalogue of badges to kick start your next career.</p>
+                  <p>Search through our catalogue of badges, or create your own to kick start your next career.</p>
                 </div>
               </div>
             </div>
@@ -177,7 +177,7 @@ export const Home = Vue.component("Home", {
                   <img src="assets/img/icons/004-feedback.svg" alt="" />
                 </div>
                 <div class="content">
-                  <h3>5. Find you match.</h3>
+                  <h3>5. Find your match.</h3>
                   <p>Launch automatically matches you with friends studying the same content as you. Work through problems together and accelerate your learning.</p>
                 </div>
               </div>
@@ -193,7 +193,7 @@ export const Home = Vue.component("Home", {
               <div class="avatar"><img src="assets/img/tinacraigen.jpg" alt="" /></div>
             </div>
             <div class="col">
-              <h4>“I would loose motivation all the time trying to teach myself new things online. Then I found JobLaunch. After only 1 months subscription I completed my python course. Success!”</h4>
+              <h4>“I would loose motivation all the time trying to teach myself new things online. Then I found Launch. After only 1 months subscription I completed my python course. Success!”</h4>
               <a href="#" class="btn-submit" @click.prevent="showPopupHandler('W-65JrtwtTOdc')">Hear Tina’s Story</a>
             </div>
           </div>
