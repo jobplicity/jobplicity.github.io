@@ -82,7 +82,7 @@ export const Home = Vue.component("Home", {
                 </div>
               </div>
               <div class="join-button flex-grow-1 px-2">
-                <a href="https://app.launch.us.co/signup" class="btn btn-lg btn-outline-dark w-100 py-3" target="_blank" rel="noreferrer">
+                <a href="https://app.launch.us.com/signup" class="btn btn-lg btn-outline-dark w-100 py-3" target="_blank" rel="noreferrer">
                   Join Cohort
                 </a>
               </div>
@@ -978,13 +978,13 @@ export const Home = Vue.component("Home", {
 		$("#button-addon1").click(() => {
 			const email = $("#started-email").val()
 			window.open(`https://chrome.google.com/webstore/detail/joblaunch-extension-0113/albjjckfkpinhgdmpijpkhfemccjcdbo`)
-			// window.open(`https://app.launch.us.co/signup?email=${email}`)
+			// window.open(`https://app.launch.us.com/signup?email=${email}`)
 		})
 
 		$("#button-addon2").click(() => {
 			const email = $("#started-email2").val()
 			window.open(`https://chrome.google.com/webstore/detail/joblaunch-extension-0113/albjjckfkpinhgdmpijpkhfemccjcdbo`)
-			// window.open(`https://app.launch.us.co/signup?email=${email}`)
+			// window.open(`https://app.launch.us.com/signup?email=${email}`)
 		})
 
 		// Countdown timer

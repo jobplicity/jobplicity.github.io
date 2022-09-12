@@ -10,7 +10,7 @@ export const Header = {
           <div class="xs-only mobile-menu">
             <ul>
               <li>
-                <a href="https://app.launch.us.co/login" id="login">
+                <a href="https://app.launch.us.com/login" id="login">
                   <img src="assets/img/login.svg" alt="" />
                   <span>LOGIN</span>
                 </a>
@@ -76,13 +76,13 @@ export const Header = {
               <router-link to="/">For Business</router-link>
             </li>
             <!-- <li>
-              <a href="https://app.launch.us.co/login" id="login">
+              <a href="https://app.launch.us.com/login" id="login">
                 <img src="assets/img/login.svg" alt="" />
                 <span>LOGIN</span>
               </a>
             </li> -->
           </ul>
-          <a href="https://app.launch.us.co/login" class="header-cta hidden-xs">LOGIN</a>
+          <a href="https://app.launch.us.com/login" class="header-cta hidden-xs">LOGIN</a>
           <a href="https://chrome.google.com/webstore/detail/joblaunch-extension-0113/albjjckfkpinhgdmpijpkhfemccjcdbo" class="header-cta hidden-xs">GET STARTED</a>
         </div>
       </div>
