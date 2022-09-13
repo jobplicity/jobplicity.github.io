@@ -230,6 +230,7 @@ header .header-wrapper #logo span {
   font-style: italic;
   letter-spacing: 2px;
   color: #333;
+  font-style: normal !important;
 }
 header .header-wrapper ul {
   list-style: none;
