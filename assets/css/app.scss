@@ -1741,6 +1741,7 @@ footer {
 			padding-left: 50px;
 			padding-right: 50px;
 			flex-direction: column;
+			margin: 10px 0;
 			>div {
 				&:first-child {
 					width: 100%;
@@ -2254,6 +2255,7 @@ footer {
 		.header-wrapper {
 			margin-left: 10px;
 			margin-right: 10px;
+			margin: 0;
 		}
 	}
 	.main-v2 {
