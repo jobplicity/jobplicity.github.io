@@ -5,9 +5,9 @@ export const MainHome = {
         <div class="container" >
           <div class="col-6">
             <div class="h2">
-              <h2 class="main-title">Studying Online?<br/>Stay Motivated.</h2>
+              <h2 class="main-title">Skill Up.<br/>Faster.</h2>
             </div>
-            <h5>Launch is a SaaS platform that enables you to finally get to the end of an online course. We use cohort based learning, gamification, certification & pay you! - to keep you motivated whilst studying through online content.</h5>
+            <h5>Launch significantly reduces the amount of time required to get you skilled for a new job. We use social learning, gamification, certification & pay you! - to build the skills & experience you need to get your job in a new career.</h5>
             <div class="main-ctas">
               <h5>Get started for free – no credit card required</h5>
               <div class="row">
