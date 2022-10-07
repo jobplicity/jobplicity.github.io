@@ -7,7 +7,7 @@ export const MainHome = {
             <div class="h2">
               <h2 class="main-title">Skill Up.<br/>Faster.</h2>
             </div>
-            <h5>Launch significantly reduces the amount of time required to get you skilled for a new job. We use social learning, gamification, certification & pay you! - to build the skills & experience you need to get your job in a new career.</h5>
+            <h5>Launch significantly reduces the amount of time required to get you skilled for a new job. We use social learning, gamification, certification & pay you! - to build the skills & experience you need to get your first job in a new career.</h5>
             <div class="main-ctas">
               <h5>Get started for free – no credit card required</h5>
               <div class="row">
