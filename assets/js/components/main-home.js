@@ -5,7 +5,7 @@ export const MainHome = {
         <div class="container" >
           <div class="col-6">
             <div class="h2">
-              <h2 class="main-title">Learn<br/>Faster.</h2>
+              <h2 class="main-title">Studying Online? <br/>Complete your course faster ⚡⚡.</h2>
             </div>
             <h5>Launch significantly reduces the amount of time required to get you skilled for a new job. We use social learning, gamification, certification & pay you! - to build the skills & experience you need to get your first job in a new career.</h5>
             <div class="main-ctas">
