@@ -7,7 +7,7 @@ export const MainHome = {
             <div class="h2">
               <h2 class="main-title">Studying Online?<br/>Learn Faster.</h2>
             </div>
-            <h5>Launch finds the best content on the web, pairs you with friends to study with & provides real world paid projects to get you ready for your next permanent job at lightning speed ⚡</h5>
+            <h5>Launch finds the best content on the web, pairs you with friends to study with & provides real world paid projects to get you ready for your next job at lightning speed ⚡</h5>
             <div class="main-ctas">
               <h5>Get started for free – no credit card required</h5>
               <div class="row">
