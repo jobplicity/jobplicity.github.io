@@ -5,7 +5,7 @@ export const MainHome = {
         <div class="container" >
           <div class="col-6">
             <div class="h2">
-              <h2 class="main-title">Studying Online?<br/>Learn Faster ⚡⚡.</h2>
+              <h2 class="main-title">Studying Online?<br/>Learn Faster ⚡</h2>
             </div>
             <h5>Launch find the best content on the web, pairs you with friends to study together & provides real world paid projects to get you ready for your next permanent job at lightning speed.</h5>
             <div class="main-ctas">
