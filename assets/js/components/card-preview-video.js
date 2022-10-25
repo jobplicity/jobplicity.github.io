@@ -4,8 +4,8 @@ export const CardPreviewVideo = {
             image: 0,
             imageSrc: [
                 "url('../assets/img/confused-girl.jpeg')",
-                "url('../assets/img/freedom-man.jpeg')",
                 "url('../assets/img/taryn-elliot.jpeg')",
+                "url('../assets/img/freedom-man.jpeg')",
             ],
             opacity: 1
         }

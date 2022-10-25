@@ -481,6 +481,10 @@ header {
 		margin-top: 0;
 	}
 
+	@media (min-width: 2559px) {
+		top: 55%;
+	}
+
 	@media (max-width: 1200px) {
 		width: 100%;
 		max-width: 400px;
@@ -523,7 +527,8 @@ header {
 	top: 0;
 	left: 0;
 	width: 100%;
-	height: 100%;
+	// height: 90%;
+	height: 726px;
 	svg {
 		width: 100%;
 		height: 100%;
@@ -537,6 +542,10 @@ header {
 			height: 120%;
 		}
 	}
+
+	@media (min-width: 2559px) {
+		height: 1190px;
+	}
 }
 
 .jl-flex-wrap {
@@ -547,7 +556,10 @@ header {
 }
 
 .main-v2 {
+	// height: 100vh;
 	height: 100vh;
+	max-height: 876px;
+
 	.container {
 		height: 100%;
 		display: flex;
@@ -558,6 +570,7 @@ header {
 		margin-right: 80px;
 		width: auto;
 		max-width: 92%;
+		max-height: 866px;
 		padding-bottom: 2.08vw;
 
 		.col-6 {
@@ -644,6 +657,14 @@ header {
 			}
 		}
 	}
+
+	@media (min-width: 2559px) {
+		max-height: 1360px;
+
+		.container {
+			max-height: 1360px;
+		}
+	}
 }
 .home-signup-form {
 	padding: 10px;
@@ -690,6 +711,8 @@ header {
 }
 .cohorts-section {
 	padding: 5rem 0;
+	display: none;
+
 	.up-head {
 		h2 {
 			font-weight: 600;
@@ -2502,7 +2525,7 @@ footer {
 			}
 		}
 		.header-wrapper {
-			max-width: 83.33vw;
+			max-width: 84.5vw;
 			padding-left: 0.78vw;
 			padding-right: 0.78vw;
 			#logo {
