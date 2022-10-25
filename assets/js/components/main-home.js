@@ -10,9 +10,9 @@ export const MainHome = {
         <div class="container jl-flex-wrap" >
           <div class="col-6">
             <div class="h2">
-              <h2 class="main-title">Skill Up.<br/>Faster.</h2>
+              <h2 class="main-title">Studying Online?<br/>Learn Faster.</h2>
             </div>
-            <h5>Launch significantly reduces the amount of time required to get you skilled for a new job. We use social learning, gamification, certification & pay you! - to build the skills & experience you need to get your first job in a new career.</h5>
+            <h5>Launch finds the best content on the web, pairs you with friends to study with & provides real world paid projects to get you ready for your next job at lightning speed ⚡</h5>
             <div class="main-ctas">
               <h5>Get started for free – no credit card required</h5>
               <div class="row">
