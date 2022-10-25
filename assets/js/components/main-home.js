@@ -1,8 +1,13 @@
+import { CardPreviewVideo } from "./card-preview-video.js";
+
 export const MainHome = {
+  components: {
+    'card-preview-video': CardPreviewVideo
+  },
   template : `
       <section class="main-v2">
         <div id="gradient" class="position-absolute w-100 h-100 d-flex justify-content-center align-items-center overflow-hidden trbl-0 observablehq--running" style="z-index:-1;pointer-events:none"></div>
-        <div class="container" >
+        <div class="container jl-flex-wrap" >
           <div class="col-6">
             <div class="h2">
               <h2 class="main-title">Skill Up.<br/>Faster.</h2>
@@ -24,6 +29,7 @@ export const MainHome = {
           
             </div>
           </div>
+          <card-preview-video class="col-6"/>
         </div>
       </section>
   `
