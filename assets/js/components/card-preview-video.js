@@ -7,11 +7,14 @@ export const CardPreviewVideo = {
                 "url('../assets/img/freedom-man.jpeg')",
                 "url('../assets/img/taryn-elliot.jpeg')",
             ],
-            opacity: 0
+            opacity: 1
         }
     },
     created: function() {
 		let self = this;
+        setTimeout(() => {
+            self.opacity = .7
+        }, 2800)
 		setInterval(function() {
             if (self.image<2) {
                 self.image++;
@@ -20,7 +23,7 @@ export const CardPreviewVideo = {
             }
             self.opacity = 1
             setTimeout(() => {
-                self.opacity = 0
+                self.opacity = .7
             }, 2800)
         }, 3000);
 	},
@@ -35,7 +38,7 @@ export const CardPreviewVideo = {
             class="card-preview-video"
             :style="{'background-image': imageSrc[image], opacity: opacity}"
         >
-        <div>
+        <div style="{opacity: 1}">
             <img alt="play" src="/assets/img/logos/youtube.svg" class="card-play-button" @click="openVideo">  
             <div class="card-content">
                 <div class="card-desc">
