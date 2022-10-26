@@ -391,7 +391,7 @@ header .header-wrapper .header-cta:hover {
 }
 
 .card-preview {
-  height: 100%;
+  height: fit-content;
   display: flex;
   justify-content: flex-end;
 }
@@ -414,9 +414,10 @@ header .header-wrapper .header-cta:hover {
 }
 
 .card-preview-video {
-  position: relative;
-  top: 270px;
+  position: absolute;
+  bottom: 0;
   margin: 10px 0;
+  margin-bottom: 3.5vh;
   background-color: white;
   border-radius: 24px;
   box-shadow: 0 14px 15px -12px #767575;
@@ -465,18 +466,12 @@ header .header-wrapper .header-cta:hover {
   -webkit-box-direction: normal;
   margin-top: 0;
 }
-@media (min-width: 2559px) {
-  .card-preview-video {
-    top: 760px;
-  }
-}
 @media (max-width: 1440px) {
   .card-preview-video {
     width: 100%;
     max-width: 400px;
     height: 420px;
-    position: relative;
-    top: 227px;
+    margin-bottom: 3vh;
   }
   .card-preview-video .card-play-button {
     top: 160px;
@@ -493,7 +488,6 @@ header .header-wrapper .header-cta:hover {
 @media (max-width: 1023px) {
   .card-preview-video {
     position: relative;
-    top: 0;
   }
   .card-preview-video .card-content {
     top: 200px;
@@ -512,31 +506,11 @@ header .header-wrapper .header-cta:hover {
   top: 0;
   left: 0;
   width: 100%;
-  height: 576px;
+  height: 88vh;
 }
 #gradient svg {
   width: 100%;
   height: 100%;
-}
-@media (max-width: 1023px) {
-  #gradient {
-    width: 120%;
-    height: 120%;
-  }
-  #gradient svg {
-    width: 120%;
-    height: 120%;
-  }
-}
-@media (min-width: 1441px) {
-  #gradient {
-    height: 720px;
-  }
-}
-@media (min-width: 2559px) {
-  #gradient {
-    height: 1210px;
-  }
 }
 
 .jl-flex-wrap {
@@ -549,8 +523,7 @@ header .header-wrapper .header-cta:hover {
 }
 
 .main-v2 {
-  height: 100vh;
-  max-height: 576px;
+  height: 88vh;
 }
 .main-v2 .container {
   height: 100%;
@@ -562,7 +535,6 @@ header .header-wrapper .header-cta:hover {
   margin-right: 80px;
   width: auto;
   max-width: 92%;
-  max-height: 866px;
   padding-bottom: 1.4vw;
 }
 .main-v2 .container .col-6 {
@@ -643,30 +615,18 @@ header .header-wrapper .header-cta:hover {
   height: 0.78vw;
   margin-left: 0.26vw;
 }
-@media (min-width: 1441px) {
-  .main-v2 {
-    max-height: 720px;
-  }
-}
-@media (min-width: 2559px) {
-  .main-v2 {
-    max-height: 1210px;
-  }
-  .main-v2 .container {
-    max-height: 1210px;
-  }
-}
 
 .chrome-main-btn {
   margin-left: 80px;
-  height: 105px;
+  height: 12vh;
 }
-.chrome-main-btn button {
-  font-size: 14px !important;
-  max-height: 57px !important;
-  padding: 18px !important;
-  margin-top: 24px !important;
-  margin-bottom: 24px !important;
+.chrome-main-btn > div {
+  display: flex;
+  align-items: center;
+}
+.chrome-main-btn > div button {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
 }
 
 .home-signup-form {

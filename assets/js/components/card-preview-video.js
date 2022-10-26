@@ -19,7 +19,7 @@ export const CardPreviewVideo = {
 		let self = this;
         setTimeout(() => {
             self.opacity = .7
-        }, 2800)
+        }, 4300)
 		setInterval(function() {
             if (self.index<2) {
                 self.index++;
@@ -29,8 +29,8 @@ export const CardPreviewVideo = {
             self.opacity = 1
             setTimeout(() => {
                 self.opacity = .7
-            }, 2800)
-        }, 3000);
+            }, 4300)
+        }, 4500);
 	},
     methods: {
         openVideo() {

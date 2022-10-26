@@ -405,7 +405,7 @@ header {
 }
 
 .card-preview {
-	height: 100%;
+	height: fit-content;
 	display: flex;
 	justify-content: flex-end;
 
@@ -427,9 +427,12 @@ header {
 }
 
 .card-preview-video {
-	position: relative;
-	top: 270px;
+	position: absolute;
+	bottom: 0;
+	// top: 40vh;
+	// top: 270px;
 	margin: 10px 0;
+	margin-bottom: 3.5vh;
 	background-color: white;
 	border-radius: 24px;
 	box-shadow: 0 14px 15px -12px #767575;
@@ -483,16 +486,17 @@ header {
 		margin-top: 0;
 	}
 
-	@media (min-width: 2559px) {
-		top: 760px;
-	}
+	// @media (min-width: 2559px) {
+	// 	top: 760px;
+	// }
 
 	@media (max-width: 1440px) {
 		width: 100%;
 		max-width: 400px;
 		height: 420px;
-		position: relative;
-		top: 227px;
+		margin-bottom: 3vh;
+		// position: relative;
+		// top: 20.5vh;
 
 		.card-play-button {
 			top: 160px;
@@ -511,7 +515,7 @@ header {
 
 	@media (max-width: 1023px) {
 		position: relative;
-		top: 0;
+		// top: 0;
 
 		.card-content {
 			top: 200px;
@@ -531,30 +535,30 @@ header {
 	top: 0;
 	left: 0;
 	width: 100%;
-	// height: 90%;
-	height: 576px;
+	height: 88vh;
+	// height: 576px;
 	
 	svg {
 		width: 100%;
 		height: 100%;
 	}
 
-	@media (max-width: 1023px) {
-		width: 120%;
-		height: 120%;
-		svg {
-			width: 120%;
-			height: 120%;
-		}
-	}
+	// @media (max-width: 1023px) {
+	// 	width: 120%;
+	// 	height: 120%;
+	// 	svg {
+	// 		width: 120%;
+	// 		height: 120%;
+	// 	}
+	// }
 
-	@media (min-width: 1441px) {
-		height: 720px
-	}
+	// @media (min-width: 1441px) {
+	// 	height: 720px
+	// }
 
-	@media (min-width: 2559px) {
-		height: 1210px;
-	}
+	// @media (min-width: 2559px) {
+	// 	height: 1210px;
+	// }
 }
 
 .jl-flex-wrap {
@@ -565,9 +569,8 @@ header {
 }
 
 .main-v2 {
-	// height: 100vh;
-	height: 100vh;
-	max-height: 576px;
+	height: 88vh;
+	// max-height: 576px;
 
 	.container {
 		height: 100%;
@@ -579,7 +582,7 @@ header {
 		margin-right: 80px;
 		width: auto;
 		max-width: 92%;
-		max-height: 866px;
+		// max-height: 866px;
 		padding-bottom: 1.4vw;
 		// padding-bottom: 2.08vw;
 
@@ -668,30 +671,36 @@ header {
 		}
 	}
 
-	@media (min-width: 1441px) {
-		max-height: 720px
-	}
+	// @media (min-width: 1441px) {
+	// 	max-height: 720px
+	// }
 
-	@media (min-width: 2559px) {
-		max-height: 1210px;
+	// @media (min-width: 2559px) {
+	// 	max-height: 1210px;
 
-		.container {
-			max-height: 1210px;
-		}
-	}
+	// 	.container {
+	// 		max-height: 1210px;
+	// 	}
+	// }
 }
 
 .chrome-main-btn {
 	margin-left: 80px;
-	height: 105px;
+	height: 12vh;
 
-	button {
-		font-size: 14px !important;
-		max-height: 57px !important;
-		padding: 18px !important;
-		margin-top: 24px !important;
-		margin-bottom: 24px !important;
+	> div {
+		display: flex;
+		align-items: center;
+
+		button {
+			// font-size: 14px !important;
+			// max-height: 57px !important;
+			// padding: 18px !important;
+			margin-top: 0 !important;
+			margin-bottom: 0 !important;
+		}
 	}
+
 }
 
 .home-signup-form {
