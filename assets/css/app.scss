@@ -406,6 +406,8 @@ header {
 
 .card-preview {
 	height: 100%;
+	display: flex;
+	justify-content: flex-end;
 
 	@media (max-width: 1023px) {
 		display: none;
@@ -426,8 +428,8 @@ header {
 
 .card-preview-video {
 	position: relative;
-	top: 30%;
-	margin: 10px auto;
+	top: 500px;
+	margin: 10px 0;
 	background-color: white;
 	border-radius: 24px;
 	box-shadow: 0 14px 15px -12px #767575;
@@ -482,13 +484,15 @@ header {
 	}
 
 	@media (min-width: 2559px) {
-		top: 55%;
+		top: 910px;
 	}
 
-	@media (max-width: 1200px) {
+	@media (max-width: 1440px) {
 		width: 100%;
 		max-width: 400px;
 		height: 420px;
+		position: relative;
+		top: 377px;
 
 		.card-play-button {
 			top: 200px;
@@ -529,6 +533,7 @@ header {
 	width: 100%;
 	// height: 90%;
 	height: 726px;
+	
 	svg {
 		width: 100%;
 		height: 100%;
@@ -543,8 +548,12 @@ header {
 		}
 	}
 
+	@media (min-width: 1441px) {
+		height: 950px
+	}
+
 	@media (min-width: 2559px) {
-		height: 1190px;
+		height: 1360px;
 	}
 }
 
@@ -558,7 +567,7 @@ header {
 .main-v2 {
 	// height: 100vh;
 	height: 100vh;
-	max-height: 876px;
+	max-height: 726px;
 
 	.container {
 		height: 100%;
@@ -571,7 +580,8 @@ header {
 		width: auto;
 		max-width: 92%;
 		max-height: 866px;
-		padding-bottom: 2.08vw;
+		padding-bottom: 1.4vw;
+		// padding-bottom: 2.08vw;
 
 		.col-6 {
 			flex: 0 1 50%;
@@ -658,6 +668,10 @@ header {
 		}
 	}
 
+	@media (min-width: 1441px) {
+		max-height: 950px
+	}
+
 	@media (min-width: 2559px) {
 		max-height: 1360px;
 
@@ -666,6 +680,20 @@ header {
 		}
 	}
 }
+
+.chrome-main-btn {
+	margin-left: 80px;
+	height: 105px;
+
+	button {
+		font-size: 14px !important;
+		max-height: 57px !important;
+		padding: 18px !important;
+		margin-top: 24px !important;
+		margin-bottom: 24px !important;
+	}
+}
+
 .home-signup-form {
 	padding: 10px;
 	box-shadow: rgba(0, 35, 64, 0.2) 0px 8px 10px 0px;
@@ -2525,9 +2553,11 @@ footer {
 			}
 		}
 		.header-wrapper {
-			max-width: 84.5vw;
-			padding-left: 0.78vw;
-			padding-right: 0.78vw;
+			width: auto;
+			margin: 0 80px;
+			// max-width: 84vw;
+			// padding-left: 0.78vw;
+			// padding-right: 0.78vw;
 			#logo {
 				margin-right: 2.08vw;
 				img {

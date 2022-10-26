@@ -392,6 +392,8 @@ header .header-wrapper .header-cta:hover {
 
 .card-preview {
   height: 100%;
+  display: flex;
+  justify-content: flex-end;
 }
 @media (max-width: 1023px) {
   .card-preview {
@@ -413,8 +415,8 @@ header .header-wrapper .header-cta:hover {
 
 .card-preview-video {
   position: relative;
-  top: 30%;
-  margin: 10px auto;
+  top: 500px;
+  margin: 10px 0;
   background-color: white;
   border-radius: 24px;
   box-shadow: 0 14px 15px -12px #767575;
@@ -465,14 +467,16 @@ header .header-wrapper .header-cta:hover {
 }
 @media (min-width: 2559px) {
   .card-preview-video {
-    top: 55%;
+    top: 910px;
   }
 }
-@media (max-width: 1200px) {
+@media (max-width: 1440px) {
   .card-preview-video {
     width: 100%;
     max-width: 400px;
     height: 420px;
+    position: relative;
+    top: 377px;
   }
   .card-preview-video .card-play-button {
     top: 200px;
@@ -524,9 +528,14 @@ header .header-wrapper .header-cta:hover {
     height: 120%;
   }
 }
+@media (min-width: 1441px) {
+  #gradient {
+    height: 950px;
+  }
+}
 @media (min-width: 2559px) {
   #gradient {
-    height: 1190px;
+    height: 1360px;
   }
 }
 
@@ -541,7 +550,7 @@ header .header-wrapper .header-cta:hover {
 
 .main-v2 {
   height: 100vh;
-  max-height: 876px;
+  max-height: 726px;
 }
 .main-v2 .container {
   height: 100%;
@@ -554,7 +563,7 @@ header .header-wrapper .header-cta:hover {
   width: auto;
   max-width: 92%;
   max-height: 866px;
-  padding-bottom: 2.08vw;
+  padding-bottom: 1.4vw;
 }
 .main-v2 .container .col-6 {
   flex: 0 1 50%;
@@ -634,6 +643,11 @@ header .header-wrapper .header-cta:hover {
   height: 0.78vw;
   margin-left: 0.26vw;
 }
+@media (min-width: 1441px) {
+  .main-v2 {
+    max-height: 950px;
+  }
+}
 @media (min-width: 2559px) {
   .main-v2 {
     max-height: 1360px;
@@ -641,6 +655,18 @@ header .header-wrapper .header-cta:hover {
   .main-v2 .container {
     max-height: 1360px;
   }
+}
+
+.chrome-main-btn {
+  margin-left: 80px;
+  height: 105px;
+}
+.chrome-main-btn button {
+  font-size: 14px !important;
+  max-height: 57px !important;
+  padding: 18px !important;
+  margin-top: 24px !important;
+  margin-bottom: 24px !important;
 }
 
 .home-signup-form {
@@ -2371,9 +2397,8 @@ footer a:hover {
     font-size: 0.94vw;
   }
   header .header-wrapper {
-    max-width: 84.5vw;
-    padding-left: 0.78vw;
-    padding-right: 0.78vw;
+    width: auto;
+    margin: 0 80px;
   }
   header .header-wrapper #logo {
     margin-right: 2.08vw;

@@ -14,6 +14,17 @@ export const Home = Vue.component("Home", {
     <div>
       
       <main-home></main-home>
+	  <div class="chrome-main-btn row">
+		<div class="col-lg-7 col-md-10 col-sm-10 col-xs-12">
+			<button
+				id="button-addon1"
+				class="btn btn-outline-secondary my-4 home-signup-form-button"
+				type="button"
+			>
+				ADD TO CHROME — IT'S FREE
+			</button>
+		</div>
+	  </div>
       <!-- <earn-learn></earn-learn> -->
       
       <div class="cohorts-section">
