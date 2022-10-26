@@ -428,7 +428,7 @@ header {
 
 .card-preview-video {
 	position: relative;
-	top: 350px;
+	top: 270px;
 	margin: 10px 0;
 	background-color: white;
 	border-radius: 24px;
@@ -549,7 +549,7 @@ header {
 	}
 
 	@media (min-width: 1441px) {
-		height: 800px
+		height: 720px
 	}
 
 	@media (min-width: 2559px) {
@@ -669,7 +669,7 @@ header {
 	}
 
 	@media (min-width: 1441px) {
-		max-height: 800px
+		max-height: 720px
 	}
 
 	@media (min-width: 2559px) {
@@ -1919,7 +1919,7 @@ footer {
 		display: block;
 		height: 80px;
 		padding-top: 15px;
-		padding-bottom: 15px;
+		padding-bottom: 20px;
 		.header-wrapper {
 			padding-left: 50px;
 			padding-right: 50px;
@@ -2556,7 +2556,7 @@ footer {
 			width: auto;
 			margin: 0 80px;
 			// max-width: 84vw;
-			// padding-left: 0.78vw;
+			padding-left: 0.78vw;
 			// padding-right: 0.78vw;
 			#logo {
 				margin-right: 2.08vw;
