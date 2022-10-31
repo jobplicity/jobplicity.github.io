@@ -5,12 +5,12 @@ export const Header = {
         <div>
           <router-link @click.prevent="slideToSection(0)" to="/" id="logo">
             <!-- <img src="assets/img/jl-logo.png" alt="" /> -->
-            <span>Launch</span>
+            <span>Bearing</span>
           </router-link>
           <div class="xs-only mobile-menu">
             <ul>
               <li>
-                <a href="https://app.launch.us.com/login" id="login">
+                <a href="https://app.bearing.io/login" id="login">
                   <img src="assets/img/login.svg" alt="" />
                   <span>LOGIN</span>
                 </a>
@@ -39,7 +39,7 @@ export const Header = {
                   <a @click.prevent="slideToSection(0)" href="#home">HOME</a>
                 </li>
                 <li @click="showMenu = false">
-                 <router-link to="/why">Why Launch?</router-link>
+                 <router-link to="/why">Why Bearing?</router-link>
                 </li>
                 <li @click="showMenu = false">
                   <a @click.prevent="slideToSection(4)" href="#how-it-works">HOW IT WORKS</a>
@@ -64,7 +64,7 @@ export const Header = {
               <a @click.prevent="slideToSection(0)" href="#home">HOME</a>
             </li>
             <li>
-              <router-link to="/why">Why Launch?</router-link>
+              <router-link to="/why">Why Bearing?</router-link>
             </li>
             <li>
               <a @click.prevent="slideToSection(4)" href="#how-it-works">HOW IT WORKS</a>
@@ -76,13 +76,13 @@ export const Header = {
               <router-link to="/">For Business</router-link>
             </li>
             <!-- <li>
-              <a href="https://app.launch.us.com/login" id="login">
+              <a href="https://app.bearing.io/login" id="login">
                 <img src="assets/img/login.svg" alt="" />
                 <span>LOGIN</span>
               </a>
             </li> -->
           </ul>
-          <a href="https://app.launch.us.com/login" class="header-cta hidden-xs">LOGIN</a>
+          <a href="https://app.bearing.io/login" class="header-cta hidden-xs">LOGIN</a>
           <a href="https://chrome.google.com/webstore/detail/joblaunch-extension-0113/albjjckfkpinhgdmpijpkhfemccjcdbo" class="header-cta hidden-xs">GET STARTED</a>
         </div>
       </div>

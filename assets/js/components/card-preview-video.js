@@ -8,7 +8,7 @@ export const CardPreviewVideo = {
                 "url('../assets/img/freedom-man.jpeg')",
             ],
             textSrc: [
-                'Not sure where to start upskilling for a new career ? Let us map and Launch your journey. Launch finds the best content in the world for you on a given topic. 🔎',
+                'Not sure where to start upskilling for a new career ? Let us map and Launch your journey. Bearing finds the best content in the world for you on a given topic. 🔎',
                 'Stay motivated whilst learning online 🦾. Join a team or study with a friend to keep yourself accountable 🤝.',
                 'Earn badges to display on Linkedin™ 🏆.  Grow your portfolio of experience for your resume through small freelancing gigs and land your first permanent full time job.💰'
             ],

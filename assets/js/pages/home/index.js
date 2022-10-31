@@ -93,7 +93,7 @@ export const Home = Vue.component("Home", {
                 </div>
               </div>
               <div class="join-button flex-grow-1 px-2">
-                <a href="https://app.launch.us.com/signup" class="btn btn-lg btn-outline-dark w-100 py-3" target="_blank" rel="noreferrer">
+                <a href="https://app.bearing.io/signup" class="btn btn-lg btn-outline-dark w-100 py-3" target="_blank" rel="noreferrer">
                   Join Cohort
                 </a>
               </div>
@@ -113,7 +113,7 @@ export const Home = Vue.component("Home", {
             </div>
             <div>
               <p>
-                The Launch browser extension adds psychological motivators including, group projects, gamification, tutoring, guest speakers, paired assignments, tests & paying you directly! into a coherent online experience to ensure you get to the end of any online course.
+                The Bearing browser extension adds psychological motivators including, group projects, gamification, tutoring, guest speakers, paired assignments, tests & paying you directly! into a coherent online experience to ensure you get to the end of any online course.
               </p>
             </div>
           </div>
@@ -124,7 +124,7 @@ export const Home = Vue.component("Home", {
                 Employers value your  work experience. Not what your resume says you can do.
                 <br />
                 <br />
-                We monitor your progress through a syllabus. When you reach a certain skill proficiency our AI systems automatically recommend you beginner level jobs in a given category. Directly providing you experience to launch your next career.
+                We monitor your progress through a syllabus. When you reach a certain skill proficiency our AI systems automatically recommend you beginner level jobs in a given category. Directly providing you experience to bearing your next career.
               </p>
             </div>
             <div>
@@ -189,7 +189,7 @@ export const Home = Vue.component("Home", {
                 </div>
                 <div class="content">
                   <h3>5. Find your match.</h3>
-                  <p>Launch automatically matches you with friends studying the same content as you. Work through problems together and accelerate your learning.</p>
+                  <p>Bearing automatically matches you with friends studying the same content as you. Work through problems together and accelerate your learning.</p>
                 </div>
               </div>
             </div>
@@ -204,7 +204,7 @@ export const Home = Vue.component("Home", {
               <div class="avatar"><img src="assets/img/tinacraigen.jpg" alt="" /></div>
             </div>
             <div class="col">
-              <h4>“I would loose motivation all the time trying to teach myself new things online. Then I found Launch. After only 1 months subscription I completed my python course. Success!”</h4>
+              <h4>“I would loose motivation all the time trying to teach myself new things online. Then I found Bearing. After only 1 months subscription I completed my python course. Success!”</h4>
               <a href="#" class="btn-submit" @click.prevent="showPopupHandler('W-65JrtwtTOdc')">Hear Tina’s Story</a>
             </div>
           </div>
@@ -213,7 +213,7 @@ export const Home = Vue.component("Home", {
 
       <section class="how-it-works">
         <div class="container">
-          <h2 class="sect-title">Launch Your Way.</h2>
+          <h2 class="sect-title">Bearing Your Way.</h2>
           <div class="items-container">
             <div class="item">
               <div>
@@ -230,7 +230,7 @@ export const Home = Vue.component("Home", {
                   <img src="assets/img/002-handshake.svg" alt="" />
                 </div>
                 <h3>For Recruiters</h3>
-                <p>Launch Pro is the enterprise edition of our software. Reach out via email to learn about extensive additional features available to Enterprise customers.</p>
+                <p>Bearing Pro is the enterprise edition of our software. Reach out via email to learn about extensive additional features available to Enterprise customers.</p>
               </div>
             </div>
             <div class="item">
@@ -239,7 +239,7 @@ export const Home = Vue.component("Home", {
                   <img src="assets/img/003-secure.svg" alt="" />
                 </div>
                 <h3>Safe & Secure</h3>
-                <p>Launch utilises the latest end-to-end transport layer security to ensure that your data, remains safe whilst in transit. Once on our servers the data remains encrypted. Only you possess the key to unlock it.</p>
+                <p>Bearing utilises the latest end-to-end transport layer security to ensure that your data, remains safe whilst in transit. Once on our servers the data remains encrypted. Only you possess the key to unlock it.</p>
               </div>
             </div>
           </div>
@@ -262,7 +262,7 @@ export const Home = Vue.component("Home", {
           </h3>
           <div class="signup-form">
             <form>
-              <!-- <input type="email" name="email" id="started-email2" placeholder="Enter your email & Get Launch for free" /> -->
+              <!-- <input type="email" name="email" id="started-email2" placeholder="Enter your email & Get Bearing for free" /> -->
               <a id="button-addon2" class="btn-submit"">GET STARTED NOW</a>
             </form>
           </div>
@@ -989,13 +989,13 @@ export const Home = Vue.component("Home", {
 		$("#button-addon1").click(() => {
 			const email = $("#started-email").val()
 			window.open(`https://chrome.google.com/webstore/detail/joblaunch-extension-0113/albjjckfkpinhgdmpijpkhfemccjcdbo`)
-			// window.open(`https://app.launch.us.com/signup?email=${email}`)
+			// window.open(`https://app.bearing.io/signup?email=${email}`)
 		})
 
 		$("#button-addon2").click(() => {
 			const email = $("#started-email2").val()
 			window.open(`https://chrome.google.com/webstore/detail/joblaunch-extension-0113/albjjckfkpinhgdmpijpkhfemccjcdbo`)
-			// window.open(`https://app.launch.us.com/signup?email=${email}`)
+			// window.open(`https://app.bearing.io/signup?email=${email}`)
 		})
 
 		// Countdown timer
