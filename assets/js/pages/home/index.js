@@ -988,13 +988,13 @@ export const Home = Vue.component("Home", {
 
 		$("#button-addon1").click(() => {
 			// const email = $("#started-email").val()
-			window.open(`https://chrome.google.com/webstore/detail/joblaunch-extension-0113/albjjckfkpinhgdmpijpkhfemccjcdbo`)
+			window.open(`https://chrome.google.com/webstore/detail/bearing/ooilkoimbgnniocbhgeckogmgemoadgn`)
 			// window.open(`https://app.bearing.io/signup?email=${email}`)
 		})
 		
 		$("#button-addon2").click(() => {
 			// const email = $("#started-email2").val()
-			window.open(`https://chrome.google.com/webstore/detail/joblaunch-extension-0113/albjjckfkpinhgdmpijpkhfemccjcdbo`)
+			window.open(`https://chrome.google.com/webstore/detail/bearing/ooilkoimbgnniocbhgeckogmgemoadgn`)
 			// window.open(`https://app.bearing.io/signup?email=${email}`)
 		})
 

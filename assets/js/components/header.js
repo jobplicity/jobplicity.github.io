@@ -52,7 +52,7 @@ export const Header = {
                 </li>
 
                 <li @click="showMenu = false">
-                  <a href="https://chrome.google.com/webstore/detail/joblaunch-extension-0113/albjjckfkpinhgdmpijpkhfemccjcdbo" class="header-cta">GET STARTED</a>
+                  <a href="https://chrome.google.com/webstore/detail/bearing/ooilkoimbgnniocbhgeckogmgemoadgn" class="header-cta">GET STARTED</a>
                 </li>
               </ul>
             </nav>
@@ -83,7 +83,7 @@ export const Header = {
             </li> -->
           </ul>
           <a href="https://app.bearing.io/login" class="header-cta hidden-xs">LOGIN</a>
-          <a href="https://chrome.google.com/webstore/detail/joblaunch-extension-0113/albjjckfkpinhgdmpijpkhfemccjcdbo" class="header-cta hidden-xs">GET STARTED</a>
+          <a href="https://chrome.google.com/webstore/detail/bearing/ooilkoimbgnniocbhgeckogmgemoadgn" class="header-cta hidden-xs">GET STARTED</a>
         </div>
       </div>
     </header>

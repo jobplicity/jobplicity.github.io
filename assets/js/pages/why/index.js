@@ -71,7 +71,7 @@ export const Why = Vue.component("Why", {
 
                 <div class="d-grid gap-2 col-md-5 col-xs-10 mx-auto">
                   <a
-                    href="https://chrome.google.com/webstore/detail/joblaunch-extension-0113/albjjckfkpinhgdmpijpkhfemccjcdbo"
+                    href="https://chrome.google.com/webstore/detail/bearing/ooilkoimbgnniocbhgeckogmgemoadgn"
                     target="_blank"
                     ref="noreferrer"
                   >
