@@ -89,6 +89,7 @@ export const Header = {
     </header>
   `,
   data(){
+    console.log("ROUTER", this.$router.currentRoute)
     return {
       showMenu: false,
     }
