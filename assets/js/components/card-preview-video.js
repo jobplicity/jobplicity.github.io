@@ -3,9 +3,9 @@ export const CardPreviewVideo = {
         return {
             index: 0,
             imageSrc: [
-                "url('/assets/img/confused-girl.jpeg')",
-                "url('/assets/img/taryn-elliot.jpeg')",
-                "url('/assets/img/freedom-man.jpeg')",
+                "url('assets/img/confused-girl.jpeg')",
+                "url('assets/img/taryn-elliot.jpeg')",
+                "url('assets/img/freedom-man.jpeg')",
             ],
             textSrc: [
                 'Not sure where to start upskilling for a new career ? Let us map and Launch your journey. Bearing finds the best content in the world for you on a given topic. 🔎',
