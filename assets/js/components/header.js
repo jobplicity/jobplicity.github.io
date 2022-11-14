@@ -92,11 +92,12 @@ export const Header = {
     console.log("ROUTER", this.$router.currentRoute)
     return {
       showMenu: false,
+		  homePath: window.location.origin.includes('localhost') ? '/': '/about/',
     }
   },
   methods: {
     slideToSection(index) {
-			if (this.$router.currentRoute.path != "/") {
+			if (this.$router.currentRoute.path != this.homePath) {
 				this.$router.push("/");
 				setTimeout(() => {
 					$("body,html")

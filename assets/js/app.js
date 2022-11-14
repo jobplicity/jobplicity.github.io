@@ -76,6 +76,7 @@ var app = new Vue({
   `,
 	router,
 	data: {
+		homePath: window.location.origin.includes('localhost') ? '/': '/about/',
 		currentItem: 0,
 		keyword: null,
 		results: null,
@@ -155,7 +156,7 @@ var app = new Vue({
 		},
 
 		slideToSection(index) {
-			if (this.$router.currentRoute.path != "/") {
+			if (this.$router.currentRoute.path != this.homePath) {
 				this.$router.push("/");
 				setTimeout(() => {
 					$("body,html")

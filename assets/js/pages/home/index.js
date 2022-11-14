@@ -201,7 +201,7 @@ export const Home = Vue.component("Home", {
         <div class="container">
           <div class="row">
             <div class="col">
-              <div class="avatar"><img src="assets/img/tinacraigen.jpg" alt="" /></div>
+              <div class="avatar"><img src="assets/img/tinacraigen.jpg" alt="testimonial" /></div>
             </div>
             <div class="col">
               <h4>“I would loose motivation all the time trying to teach myself new things online. Then I found Bearing. After only 1 months subscription I completed my python course. Success!”</h4>
@@ -277,10 +277,15 @@ export const Home = Vue.component("Home", {
       </div>
     </div > 
   `,
+  	data: () => {
+		return {
+			homePath: window.location.origin.includes('localhost') ? '/': '/about/',
+		}
+	},
 	mounted() {
 		$("header").addClass("transparent");
 
-		if (this.$router.currentRoute.path == "/") {
+		if (this.$router.currentRoute.path == this.homePath) {
 			$(window).scroll(function () {
 				if ($(window).scrollTop() > $(".main-v2").innerHeight() - 400) $("header").removeClass("transparent");
 				else $("header").addClass("transparent");
