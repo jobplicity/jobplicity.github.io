@@ -277,15 +277,9 @@ export const Home = Vue.component("Home", {
       </div>
     </div > 
   `,
-  	data: () => {
-		return {
-			homePath: window.location.origin.includes('localhost') ? '/': '/about/',
-		}
-	},
 	mounted() {
 		$("header").addClass("transparent");
-
-		if (this.$router.currentRoute.path == this.homePath) {
+		if (this.homePath.includes(this.$router.currentRoute.path)) {
 			$(window).scroll(function () {
 				if ($(window).scrollTop() > $(".main-v2").innerHeight() - 400) $("header").removeClass("transparent");
 				else $("header").addClass("transparent");
@@ -991,17 +985,20 @@ export const Home = Vue.component("Home", {
 		// gradient.initGradient("#gradient-canvas");
 		gradient2.initGradient("#gradient-canvas-bottom");
 
-		$("#button-addon1").click(() => {
-			// const email = $("#started-email").val()
-			window.open(`https://chrome.google.com/webstore/detail/bearing/ooilkoimbgnniocbhgeckogmgemoadgn`)
-			// window.open(`https://app.bearing.io/signup?email=${email}`)
-		})
-		
-		$("#button-addon2").click(() => {
-			// const email = $("#started-email2").val()
-			window.open(`https://chrome.google.com/webstore/detail/bearing/ooilkoimbgnniocbhgeckogmgemoadgn`)
-			// window.open(`https://app.bearing.io/signup?email=${email}`)
-		})
+		if($("#button-addon1").length) {
+			$("#button-addon1").click(() => {
+				// const email = $("#started-email").val()
+				window.open(`https://chrome.google.com/webstore/detail/bearing/ooilkoimbgnniocbhgeckogmgemoadgn`)
+				// window.open(`https://app.bearing.io/signup?email=${email}`)
+			})
+		}
+		if($("#button-addon2").length) {
+			$("#button-addon2").click(() => {
+				// const email = $("#started-email2").val()
+				window.open(`https://chrome.google.com/webstore/detail/bearing/ooilkoimbgnniocbhgeckogmgemoadgn`)
+				// window.open(`https://app.bearing.io/signup?email=${email}`)
+			})
+		}
 
 		// Countdown timer
 		(function () {
@@ -1034,6 +1031,7 @@ export const Home = Vue.component("Home", {
 	},
 	data() {
 		return {
+			homePath: ['/', '/about/'],
 			videoID: "",
 			originalVideoID: "65JrtwtTOdc",
 			showPopup: false,
