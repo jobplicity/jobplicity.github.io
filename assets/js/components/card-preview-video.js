@@ -44,7 +44,7 @@ export const CardPreviewVideo = {
             :style="{'background-image': imageSrc[index], opacity: opacity}"
         >
         <div style="{opacity: 1}">
-            <img alt="play" src="/assets/img/logos/youtube.svg" class="card-play-button" @click="openVideo">  
+            <img alt="play" src="assets/img/logos/youtube.svg" class="card-play-button" @click="openVideo">  
             <div class="card-content">
                 <div class="card-desc">
                     {{textSrc[index]}}
