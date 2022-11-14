@@ -157,7 +157,7 @@ var app = new Vue({
 
 		slideToSection: (index) => {
 			if (this.homePath.includes(this.$router.currentRoute.path)) {
-				this.$router.push("/");
+				this.$router.push("/about/");
 				setTimeout(() => {
 					$("body,html")
 						.stop()
