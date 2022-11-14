@@ -15,14 +15,14 @@ export const Advisors = Vue.component("Advisors", {
 				{
 					name: "Maxine Sherin",
 					role: "Festival Director at Spark Festival",
-					image: `${window.location.href}assets/img/maxine.jpg`,
+					image: `${window.location.origin}/about/assets/img/maxine.jpg`,
 					description: `<p>Maxine Sherrin is the Program Director of Spark Festival, Australia's largest event for startups, innovators and entrepreneurs. She was previously a co-founder of the Web Directions series of conferences for web professionals and has been following the development of a tech startup ecosystem in Australia since the mid-nineties.</p><p>In her current role with Spark Festival Maxine brings together founders and future-founders, accelerators, hubs, incubators, investors, corporates and more: all the people and organisations who make up the startup ecosystem. She does this because she believes the kind of new economy businesses Australia needs will only thrive in the context of a strong and open network.</p>
 `,
 				},
 				{
 					name: "Murray Hurps",
 					role: "Director of Entrepreneurship, University of Technology Sydney.",
-					image: `${window.location.href}assets/img/murray.jpg`,
+					image: `${window.location.origin}/about/assets/img/murray.jpg`,
 					description:
 						"<p>Murray Hurps is the Director of Entrepreneurship for UTS, leading the work of the University to inspire and support technology-enabled entrepreneurs.</p> <p>Australia&rsquo;s recovery needs job-ready graduates, productivity-boosting research, and new entrepreneurs spreading innovations, creating new jobs and driving our recovery. Murray&rsquo;s work is enabling this critical third pillar of work at UTS.</p> <p>Before building the largest community of student-launched startups at UTS, Murray was CEO of Fishburners, growing it from 100 desks of startup space, to 750 across Sydney, Brisbane and Shanghai, and supporting 508 startups during this time.</p> <p>He founded Startup Muster, the largest survey of Australian startups for five years, reviewing a few thousand Australian startups each year.</p> <p>He founded FUELD, Westpac&rsquo;s data-focused accelerator program.</p> <p>He&rsquo;s been a Director of the Australian Information Industry Association, Spark Festival and WorkVentures, all in support of Australian technology-enabled entrepreneurs.</p> <p>He does what he does because at 16 he founded Ad Muncher, an ad-blocking startup that grew for 14 years, to a peak of 100 million active users. He wants more Australians to understand and pursue the opportunities they have today through technology-enabled entrepreneurship, and for Australia to realise the benefits of this as well.</p>",
 				},
