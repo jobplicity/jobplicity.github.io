@@ -3,7 +3,7 @@ export const Header = {
     <header>
       <div class="header-wrapper">
         <div>
-          <router-link @click.prevent="slideToSection(0)" to="/" id="logo">
+          <router-link @click.prevent="slideToSection(0)" to="/about/" id="logo">
             <!-- <img src="assets/img/jl-logo.png" alt="" /> -->
             <span>Bearing</span>
           </router-link>
@@ -97,7 +97,7 @@ export const Header = {
   methods: {
     slideToSection(index) {
 			if (!this.homePath.includes(this.$router.currentRoute.path)) {
-				this.$router.push("/");
+				this.$router.push("/about/");
 				setTimeout(() => {
 					$("body,html")
 						.stop()
