@@ -19,22 +19,22 @@ import { Footer } from "./components/footer.js"
 
 const routes = [
 	{ 
-		path: "/advisors", 
+		path: "/about/advisors", 
 		component: Advisors, 
 		name: "advisors" 
 	},
 	{ 
-		path: "/why", 
+		path: "/about/why", 
 		component: Why, 
 		name: "why" 
 	},
 	{
-		path: '/termsandconditions',
+		path: '/about/termsandconditions',
 		component: Terms,
 		name: 'tos'
 	},
 	{
-		path: '/privacypolicy',
+		path: '/about/privacypolicy',
 		component: Privacy,
 		name: 'privacy'
 	},

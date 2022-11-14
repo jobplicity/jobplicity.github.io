@@ -39,16 +39,16 @@ export const Header = {
                   <a @click.prevent="slideToSection(0)" href="#home">HOME</a>
                 </li>
                 <li @click="showMenu = false">
-                 <router-link to="/why">Why Bearing?</router-link>
+                 <router-link to="/about/why">Why Bearing?</router-link>
                 </li>
                 <li @click="showMenu = false">
                   <a @click.prevent="slideToSection(4)" href="#how-it-works">HOW IT WORKS</a>
                 </li>
                 <li @click="showMenu = false">
-                  <router-link to="/advisors">Advisors</router-link>
+                  <router-link to="/about/advisors">Advisors</router-link>
                 </li>
                 <li @click="showMenu = false">
-                  <router-link to="/">For Business</router-link>
+                  <router-link to="/about/">For Business</router-link>
                 </li>
 
                 <li @click="showMenu = false">
@@ -64,16 +64,16 @@ export const Header = {
               <a @click.prevent="slideToSection(0)" href="#home">HOME</a>
             </li>
             <li>
-              <router-link to="/why">Why Bearing?</router-link>
+              <router-link to="/about/why">Why Bearing?</router-link>
             </li>
             <li>
               <a @click.prevent="slideToSection(4)" href="#how-it-works">HOW IT WORKS</a>
             </li>
             <li>
-              <router-link to="/advisors">Advisors</router-link>
+              <router-link to="/about/advisors">Advisors</router-link>
             </li>
             <li @click="showMenu = false">
-              <router-link to="/">For Business</router-link>
+              <router-link to="/about/">For Business</router-link>
             </li>
             <!-- <li>
               <a href="https://app.bearing.io/login" id="login">
@@ -89,7 +89,6 @@ export const Header = {
     </header>
   `,
   data(){
-    console.log("ROUTER", this.$router.currentRoute)
     return {
       showMenu: false,
 		  homePath: ['/', '/about/'],
